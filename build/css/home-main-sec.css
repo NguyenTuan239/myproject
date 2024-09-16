@@ -1,0 +1,394 @@
+/* main section2 css*/
+.slider-wrapper{
+    overflow: hidden;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+}
+.slider-wrapper2{
+    overflow: hidden;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+}
+.slider-wrapper3{
+    overflow: hidden;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+}
+.card-list .card-item{
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+
+}
+.card-list .card-item .continue-image{
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+}
+/* main section3 css*/
+.topten-number{
+    position: absolute;
+    transform: translateY(-50%);
+    right: -4px;
+    transition: 1s;
+}
+.topten-item{
+    padding-right: 1%;
+    padding-bottom: 5%;
+}
+.topten-item:hover{
+    .topten-number{
+        transform: translateY(-80%);
+    }
+}
+.topten-image{
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+.pagination_{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
+.pagination_ div[class^="swiper-button"]::after{
+    display: none;
+}
+.pagination_ div[class^="swiper-button"]{
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+@media (min-width: 768px){
+    .card-list .card-item .continue-image{
+        height: 170px;
+    }
+}
+@media (min-width: 1024px){
+    .card-list .card-item .continue-image{
+        height: 200px;
+    }
+}
+/* main section 9 css*/
+.sec9-image{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 7/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 1;
+}
+.sec9-underline{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1.5px;
+}
+/* main section4 css*/
+.only-on-stream-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3/4;
+    background-position: center;
+    background-size: cover;
+    transition: all 1s;
+    z-index: 1;
+}
+.only-on-stream-image::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.5));
+    z-index: 5;
+}
+.only-onstream-item:hover{
+    z-index: 10;
+    .only-on-stream-image{
+        transform: scale(1.15);
+    } 
+    .sec9-image{
+        transform: scale(1.15);
+    }
+    .sec9-underline{
+        display: block;
+    }
+}
+.only-onstream-item:hover .only-on-stream-image::before {
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0.2), hsla(0, 3%, 7%, 1));
+}
+.heart-hover{
+    transition: all 0.5s;
+    opacity: 0;
+}
+.heart-icon, .share-icon{
+    transition: all 0.5s;
+}
+.heart-icon:hover{
+    .heart-hover{
+        opacity: 1;
+    }
+}
+.only-onstream-item {
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+}
+.only-on-stream-icon{
+    top: 65%;
+    left: 7%;
+    transition: all 0.2s;
+    transition-delay: 0.2s;
+    opacity: 0;
+}
+#only-on-stream-button{
+    z-index: 10;
+    position: absolute;
+    right: 7%;
+    top: 61%;
+    transition: all 0.2s;
+    transition-delay: 0.2s;
+    opacity: 0;
+}
+.only-on-stream-card{
+    transition: all 1s;
+}
+.only-on-stream-content{
+    transform: scaleY(0);
+}
+.only-on-stream-card:hover  {
+    z-index: 4;
+    transform: scale(1.1) translateY(-16px);
+    background-color: #334155;
+    .only-on-stream-icon{
+        opacity: 1;
+    }
+    #only-on-stream-button{
+        opacity: 1;
+    }
+    .only-on-stream-content{
+        transform: scaleY(1);
+    }
+}
+/* main section5 css*/
+.section-5{
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.sec5-bg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(90deg,rgb(28, 25, 23, 1),rgba(28, 25, 23, 0.9), rgba(28, 25, 23, 0.3),rgba(28, 25, 23, 0));
+        z-index: 2; 
+    }
+}
+.sec5-content{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2; /* Số dòng bạn muốn giới hạn */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.sec5-bg .sec5-Poster{
+    position: absolute;
+    top: 23%;
+    padding-left: 50px;
+    padding-right: 60px;
+    z-index: 3;
+}
+@media (min-width: 768px){
+    .section-5{
+        height: 650px;
+    }
+    .sec5-bg .sec5-Poster{
+        top: 25%;
+        padding-left: 450px;
+        width: 850px;
+    }
+}
+.sec5-image-slide{
+    position: absolute;
+    width: 300px;
+    height: 86%;
+    top: 7%;
+    left: 70px;
+    z-index: 10;
+}
+.sec5-prev{
+    position: absolute;
+    top: -40px;
+    left: 47%;
+    z-index: 40;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.sec5-next{
+    position: absolute;
+    bottom: -40px;
+    left: 47%;
+    z-index: 40;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+/* main section6 css*/
+.sec6-image{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+/* main section 8 css*/
+.section-8{
+    position: relative;
+    width: 100%;
+    height: 950px;
+}
+.sec8-Poster{
+    position: absolute;
+    top: 20px;
+    padding-left: 20px;
+    padding-right: 60px;
+    z-index: 3;
+}
+.sec8-espisode{
+    position: absolute;
+    top: 400px;
+    background-color: rgb(22, 22, 22);
+    width: 92%;
+    height: 530px;
+    margin-left: 4%;
+    z-index: 2;
+}
+@media (min-width: 768px){
+    .sec8-Poster{
+        top: 25%;
+        width: 50%;
+    }
+    .sec8-espisode{
+        top: 20%;
+        width: 38%;
+        right: 20px;
+    }
+}
+@media (min-width: 1024px){
+    .sec8-Poster{
+        padding-left: 150px;
+    }
+    .sec8-espisode{
+        right: 150px;
+    }
+}
+.sec8-tvshow{
+    width: 80px;
+    height: 85px;
+    overflow: hidden;
+}
+.sec8-tvshow-img{
+    object-fit: cover;
+    transition: all 3s;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+.sec8-season1-content, .sec8-season2-content, .sec8-season3-content{
+    transform-origin: top center;
+    animation: sec8-showcontent 1s forwards ease-in-out;
+}
+@keyframes sec8-showcontent {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.pagination_sec8{
+    position: absolute;
+    width: 150px;
+    top: 5%;
+    right: 3%;
+}
+@media (min-width: 768px){
+    .pagination_sec8{
+        top: auto;
+        right: auto;
+        bottom: 5%;
+        left: 5%;
+        width: 100px;
+    }
+}
+.pagination_sec8 div[class^="swiper-button"]::after{
+    display: none;
+}
+.pagination_sec8 div[class^="swiper-button"]{
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.5s;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phimmoi login</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/aa6f8e22b4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/home-index.css">
+    <link rel="stylesheet" href="../css/menu-button.css">
+    <link rel="stylesheet" href="../css/login-page.css">
+    <link rel="stylesheet" href="../css/home-main.css">
+    <link rel="stylesheet" href="../css/home-main-sec.css">
+</head>
+<body class="min-h-screen w-full bg-[url('../image/pages/01.webp')] bg-cover">
+    <div id="setting-icon" class="fixed right-0 top-32 h-10 w-10 z-50 cursor-pointer bg-black flex justify-center items-center">
+        <i class="fa-solid fa-gear fa-lg text-white "></i>
+    </div>
+    <div id="setting-bar" class="setting-bar fixed right-0 top-32 h-64 w-72 z-50 bg-slate-100 flex flex-col p-4 gap-4 reactive">
+        <div class="flex justify-between my-1 items-center">
+        <h2 class="text-md">Live Customizer</h2>
+        <button id="reset" class="netflix reset">
+            <div class="reset-text">Reset All Settings</div>
+            <i class="fa-solid fa-rotate fa-sm"></i>
+        </button>
+          <button id="setting-bar-exit" class="text-sm">✖️</button>
+        </div>
+        <div class="flex space-x-2">
+          <button id="ltr" class="flex-1 bg-black text-white py-1 rounded-sm">LTR</button>
+          <button id="rtl" class="flex-1 border border-black text-zinc-700 py-1 rounded-sm">RTL</button>
+        </div>
+        <h3 class="text-md">Color Customizer</h3>
+        <div class="grid grid-cols-2 gap-4">
+          <button id="netf" class="border border-black bg-black text-white py-1 rounded-sm">Netflix</button>
+          <button id="hots" class="border border-black text-zinc-700 py-1 rounded-sm">Hotstar</button>
+          <button id="pri" class="border border-black text-zinc-700 py-1 rounded-sm">Prime</button>
+          <button id="hul" class="border border-black text-zinc-700 py-1 rounded-sm">Hulu</button>
+        </div>
+    </div>
+    <div id="reset-dialog" class="dialog">
+        <div class="dialog-content">
+            <p>Are you sure you want to reset your settings?</p>
+            <button id="confirm-reset">Yes</button>
+            <button id="cancel-reset">No</button>
+        </div>
+    </div>
+    <section class="absolute w-full h-full flex justify-center items-center z-10">
+        <div class="login-bar">
+            <a href="../../index.html" class="my-12 mx-auto"><img src="../image/logo.webp" alt="logo" class="logo h-9 w-auto"></a>
+            <div class="w-full mb-4">
+                <p class="font-medium mb-2">Username or Email Address</p>
+                <input type="text" class="login-input red-border" required>
+            </div>
+            <div class="w-full mb-4">
+                <p class="font-medium mb-2">Password</p>
+                <input type="password" class="login-input red-border" required>
+            </div>
+            <a href="reset-password.html" class="netflix ml-auto mb-2 italic font-medium">Forgot password?</a>
+            <label><input type="checkbox" class="login-check red-border mr-2">Remember Me</label>
+            <button id="login-button" class="sub-button w-full my-6 px-7 py-3 text-sm font-bold"><span class="sub-bg netflix-bg rounded-md"></span><span class="sub-button1"></span><span class="sub-button2"></span><span class="uppercase z-10">log in</span></button>
+            <p class="mx-auto">New to Streamit? <a href="../html/register.html" class="netflix">&nbsp;Register</a></p>
+            <hr class="absolute top-3/4 mx-auto w-10/12 border-slate-800 my-4">
+            <div class="absolute left-1/2 top-3/4 z-20 w-7 h-7 pt-1 text-center bg-stone-950">OR</div>
+            <div class="flex gap-6 mx-auto mt-20">
+                <a href="https://www.facebook.com/" class="follow-icon rounded-full bg-slate-900 origin-bottom transition-all duration-500 ease-in-out translate-y-0 cursor-pointer hover:-translate-y-1.5 hover-bg-red"><i class="fa-brands fa-facebook fa-lg py-6 px-4"></i></a>
+                <a href="https://x.com/" class="follow-icon rounded-full bg-slate-900 origin-bottom transition-all duration-500 ease-in-out translate-y-0 cursor-pointer hover:-translate-y-1.5 hover-bg-red"><i class="fa-brands fa-twitter fa-lg py-6 px-4"></i></a>
+                <a href="https://www.instagram.com/" class="follow-icon rounded-full bg-slate-900 origin-bottom transition-all duration-500 ease-in-out translate-y-0 cursor-pointer hover:-translate-y-1.5 hover-bg-red"><i class="fa-brands fa-instagram fa-lg py-6 px-4"></i></a>
+            </div>
+        </div>
+    </section>
+    <script src="../js/login-page.js"></script>
+</body>
+</html>

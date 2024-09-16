@@ -1,0 +1,42 @@
+
+.login-bar{
+    position: absolute;
+    width: 96%;
+    height: 680px;
+    margin: auto;
+    background-color: rgb(12, 10, 9);
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: start;
+    z-index: -3;
+}
+.login-input {
+    border: 1px solid gray;
+    width: 100%;
+    height: 50px;
+    outline: none; 
+    padding-left: 20px;
+    border-radius: 5px;
+}
+.red-border:focus{
+    border-color: red;
+}
+.cyan-border:focus{
+    border-color: cyan;
+}
+.green-border:focus{
+    border-color: green;
+}
+.blue-border:focus{
+    border-color: blue;
+}
+
+.reset-password-bar{
+    height: 430px;
+}
+.register-bar{
+    height: 870px;
+}
+
