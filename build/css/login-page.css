@@ -12,6 +12,25 @@
     align-items: start;
     z-index: -3;
 }
+.register-b{
+    position: absolute;
+    width: 96%;
+    height: 680px;
+    margin: auto;
+    background-color: rgb(12, 10, 9);
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: start;
+    z-index: -3;
+}
+.register-2col{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 35px;
+    width: 100%;
+}
 .login-input {
     border: 1px solid gray;
     width: 100%;
@@ -19,6 +38,7 @@
     outline: none; 
     padding-left: 20px;
     border-radius: 5px;
+    background-color: rgb(29, 28, 28);
 }
 .red-border:focus{
     border-color: red;
@@ -39,4 +59,17 @@
 .register-bar{
     height: 870px;
 }
-
+@media (min-width: 1023px) {
+    .login-bar{
+        width: 40%;
+        max-width: 570px;
+    }
+    .register-2col{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .register-bar{
+        height: 700px;
+        width: 65%;
+        max-width: 900px;
+    }
+}
