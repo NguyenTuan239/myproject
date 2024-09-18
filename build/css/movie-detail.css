@@ -1,0 +1,68 @@
+.video-container{
+    position: relative;
+    width: 100%;
+    height: 240px;
+    top: 0px;
+}
+.detail-video{
+    position: absolute;
+    width: 440px;
+    height: 247.5px;
+    margin-left: 20px;
+    margin-top: 70px;
+    margin-right: 20px;
+    top: 0%;
+    left: 48%;
+    transform: translate(-50%,-50%);
+}
+@media (min-width: 768px) {
+    .video-container{
+        height: 370px;
+    }
+    .detail-video{
+        width: 720px;
+        height: 410px;
+        margin-top: 140px;
+    }
+}
+@media (min-width: 1023px) {
+    .video-container{
+        height: 450px;
+    }
+    .detail-video{
+        width: 870px;
+        height: 490px;
+        margin-top: 190px;
+    }
+}
+@media (min-width: 1280px) {
+    .video-container{
+        height: 570px;
+    }
+    .detail-video{
+        width: 1060px;
+        height: 600px;
+        margin-top: 240px;
+    }
+}
+
+/* Style select2 container */
+.select2-container--default .select2-selection--single {
+    background-color: black; /* Light background */
+    color: red; /* Dark text */
+    border: 4px solid gray;
+    border-radius: 8px;
+}
+
+/* Style options in the dropdown */
+.select2-container--default .select2-results__option {
+    padding: 10px;
+    background-color: black;
+    color: red;
+}
+
+/* Option hover effect */
+.select2-container--default .select2-results__option--highlighted {
+    background-color: black;
+    color: red;
+}

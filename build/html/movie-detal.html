@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>phimmoi login</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <script src="https://kit.fontawesome.com/aa6f8e22b4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/home-index.css">
     <link rel="stylesheet" href="../css/menu-button.css">
-    <link rel="stylesheet" href="../css/login-page.css">
+    <link rel="stylesheet" href="../css/movie-detail.css">
     <link rel="stylesheet" href="../css/home-main.css">
     <link rel="stylesheet" href="../css/home-main-sec.css">
+    <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
 </head>
 <body class="min-h-screen w-full bg-stone-900 text-slate-200">
     <div id="setting-icon" class="fixed right-0 top-32 h-10 w-10 z-50 cursor-pointer bg-black flex justify-center items-center">
@@ -268,16 +274,88 @@
               </div>
         </section>
     </header>
-    <main class="mt-14 md:mt-16">
-      <section>
-        
+    <main class="mt-14 md:mt-16 w-full">
+
+      <!-- Video baner -->
+      <section class="video-container">
+        <video
+          id="my-video"
+          class="video-js detail-video"
+          controls
+          preload="auto"
+          width="640"
+          height="264"
+          poster="https://i.ytimg.com/vi_webp/rKVEoyTedv4/maxresdefault.webp"
+          data-setup="{}"
+        >
+          <source src="../image/video/sample-video.mp4" type="video/mp4" />
+          <source src="../image/video/sample-video.webm" type="video/webm" />
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a
+            web browser that
+            <a href="https://videojs.com/html5-video-support/" target="_blank"
+              >supports HTML5 video</a
+            >
+          </p>
+        </video>
+      </section>
+
+      <!-- Video description -->
+      <section class="p-4">
+        <h2 class="text-3xl font-semibold movie-poster-hl">Zombie Island</h2>
+        <div class="flex gap-4">
+          <ul class="flex text-yellow-400">
+            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star-half" aria-hidden="true"></i></li>
+          </ul>
+          <span class="text-white ms-2">4.8 (imdb)</span>
+        </div>
+        <ul class="my-3 flex font-medium">
+          <li class="netflix"><a class="text-primary" href="./view-all-movie.html">Action&nbsp;&nbsp;•&nbsp;&nbsp;</a></li>
+          <li class="netflix"><a class="text-primary" href="./view-all-movie.html">Adventure&nbsp;&nbsp;•&nbsp;&nbsp;</a></li>
+          <li class="netflix"><a class="text-primary" href="./view-all-movie.html">Drama</a></li>
+        </ul>
+        <div class="flex gap-2 mb-4">
+          <span class="bg-slate-600 p-1 rounded-md text-xs text-center">Horror</span>
+          <span class="">1hr 48mins</span>
+          <span class="">
+            Feb 2017
+          </span>
+        </div>
+        <div class="flex items-center gap-6 flex-wrap mb-4">
+          <ul class="flex gap-6">
+            <li class="relative z-30">
+              <div class="share-icon rounded-full bg-white border-4 border-gray-500 z-20"><i class="fa-solid fa-share-nodes p-2 netflix"></i></div>
+              <div class="share-hover hidden bg-stone-800 absolute top-0 left-8 -z-10">
+                <i class="fa-brands fa-facebook p-3"></i>
+                <i class="fa-brands fa-twitter p-3"></i>
+                <i class="fa-solid fa-link p-3"></i>
+              </div>
+            </li>
+            <li class=" rounded-full bg-white border-4 border-gray-500"><i class="fa-solid fa-heart p-2 netflix"></i></li>
+            <li class=" rounded-full bg-white border-4 border-gray-500"><i class="fa-solid fa-plus p-2 netflix"></i></li>
+            <li class=" rounded-full bg-white border-4 border-gray-500"><span><a href="../image/video/sample-video.mp4" download><i class="fa-solid fa-download p-2 netflix"></i></a></span></li>
+          </ul>
+          <div class="netflix">
+            <select name="movieselect" class="movie-select">
+              <option value="1">Playlist</option>
+              <option value="2">Zombie Island</option>
+              <option value="3">Sand Dust</option>
+              <option value="4">Jumbo Queen</option>
+            </select>          
+          </div>
+        </div>
       </section>
     </main>
+    <hr class="mx-auto w-11/12 border-slate-700">
     <footer>
         <section class="w-full">
           <div class="py-16 px-3 xl:px-24 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-3 text-slate-200 font-light text-sm">
             <div>
-              <a href="../../index.html"><img src="../image/logo.webp" alt="logo" class="logo h-8 w-auto cursor-pointer mb-8"></a>
+              <a href="../../index.html"><img src="../image/logo.webp" alt="logo" class="logo h-8 w-auto mb-8"></a>
               <p>Email us: <a href="mailto:customer@streamit.com" class="font-normal">customer@streamit.com</a></p>
               <p class="mt-4">CUSTOMER SERVICES</p>
               <h3 class="text-lg font-semibold">+ (480) 555-0103</h3>
@@ -355,5 +433,6 @@
         </section>
       </footer>
     <script src="../js/login-page.js"></script>
+    <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
 </body>
 </html>

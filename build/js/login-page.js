@@ -399,3 +399,53 @@ window.onscroll = function() {
         backToTop.classList.remove('show');
     }
 };
+
+
+//Share icon Hover js
+const shareElements = document.querySelectorAll('.share-icon');
+const shareHoverElements = document.querySelectorAll('.share-hover');
+let shareHovered = true;
+let shareHoverHovered = true;
+
+shareElements.forEach(function(shareElement) {
+    shareElement.addEventListener('mouseenter', function() {
+        shareHovered = true;
+        shareHoverElements.forEach(function(shareHover) {
+            shareHover.classList.remove('hidden');
+            shareHover.classList.add('flex');
+        });
+    });
+
+    shareElement.addEventListener('mouseleave', function() {
+        shareHovered = false;
+        hideHoverIfBothNotHover();
+    });
+});
+
+shareHoverElements.forEach(function(shareHoverElement) {
+    shareHoverElement.addEventListener('mouseenter', function() {
+        shareHoverHovered = true;
+        shareHoverElement.classList.remove('hidden');
+        shareHoverElement.classList.add('flex');
+    });
+
+    shareHoverElement.addEventListener('mouseleave', function() {
+        shareHoverHovered = false;
+        hideHoverIfBothNotHover();
+    });
+});
+
+function hideHoverIfBothNotHover() {
+    if (!shareHovered && !shareHoverHovered) {
+        shareHoverElements.forEach(function(shareHover) {
+            shareHover.classList.add('hidden');
+            // shareHover.classList.remove('flex');
+        });
+    }
+}
+
+$(document).ready(function() {
+    $('.movie-select').select2({
+        width: 'resolve'
+    });
+});
