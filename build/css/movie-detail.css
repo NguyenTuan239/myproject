@@ -46,23 +46,131 @@
     }
 }
 
+/* select2 css start
 /* Style select2 container */
 .select2-container--default .select2-selection--single {
-    background-color: black; /* Light background */
-    color: red; /* Dark text */
-    border: 4px solid gray;
+    color: red !important;
+    border: 4px solid gray !important;
+    height: 38px !important;
     border-radius: 8px;
 }
-
 /* Style options in the dropdown */
-.select2-container--default .select2-results__option {
-    padding: 10px;
-    background-color: black;
-    color: red;
+.select2-container--default .select2-results__options {
+    max-height: 200px; /* Set a max height */
+    overflow-y: hidden !important; /* Hide vertical scrollbar */
+    background-color: black !important;
+    color: white;
+    outline: 1px solid red !important;
 }
-
+/* Change font size and color of selected option */
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: red !important;
+  }
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    right: 5% !important;
+    top: 15% !important;
+}
 /* Option hover effect */
 .select2-container--default .select2-results__option--highlighted {
-    background-color: black;
-    color: red;
+    background-color: red !important;
 }
+
+/* Prevent horizontal scrollbar */
+.select2-container--default .select2-results__options::-webkit-scrollbar {
+    display: none;
+}
+/* Search input area inside the dropdown */
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    background-color: black !important; /* Set search field background to black */
+    border-left: 1px solid red !important;
+    border-right: 1px solid red !important;
+    border-bottom: none !important;
+    border-top: 1px solid red !important;
+    outline: none !important;
+    box-shadow: none !important;
+    filter: none !important;
+    transform: scaleX(1.085) scaleY(1.25) !important;
+}
+/* select2 css end*/
+
+/* trailer scc start*/
+.trailer-img{
+    position: relative;
+    top: 0px;
+    left: 0;
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+.trailer-img::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55); 
+    z-index: 2; 
+}
+.trailer-link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* movie description  */
+.detail-nav-bg{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg,rgb(28,25,23), rgb(40, 40, 40), rgb(28,25,23));
+}
+.detail-movie-des-nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: transparent;
+    cursor: pointer;
+    padding: 18px;
+    .detail-movie-des-line{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 4px;
+        background-color: red;
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: all 1s ease;
+    }
+}
+
+.detail-movie-des-nav.toggle {
+    animation: detail-mv-nav 0.4s ease-out forwards;
+    .detail-movie-des-line{
+        transform: scaleX(1);
+    }
+}
+
+@keyframes detail-mv-nav {
+    0% {
+        background-color: transparent;
+    }
+    100% {
+        background-image: linear-gradient(rgba(196, 3, 3, 0.534),rgba(28, 25, 23, 0.384));
+    }
+}
+
+

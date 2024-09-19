@@ -763,10 +763,6 @@ video {
   z-index: 50;
 }
 
-.m-2 {
-  margin: 0.5rem;
-}
-
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -826,6 +822,10 @@ video {
   margin-bottom: -0.5rem;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -852,6 +852,10 @@ video {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.me-2 {
+  margin-inline-end: 0.5rem;
 }
 
 .ml-1 {
@@ -1177,10 +1181,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-5 {
-  gap: 1.25rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1533,6 +1533,10 @@ video {
   background-size: cover;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -1547,10 +1551,6 @@ video {
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
 }
 
 .px-2 {
@@ -1790,11 +1790,6 @@ video {
   color: rgb(63 63 70 / var(--tw-text-opacity));
 }
 
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
-}
-
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1883,8 +1878,20 @@ video {
     height: 4rem;
   }
 
+  .md\:w-4\/12 {
+    width: 33.333333%;
+  }
+
+  .md\:max-w-96 {
+    max-width: 24rem;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:justify-between {
@@ -1902,6 +1909,11 @@ video {
 
   .md\:text-6xl {
     font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 }
@@ -1945,6 +1957,10 @@ video {
 
   .lg\:top-4 {
     top: 1rem;
+  }
+
+  .lg\:mr-16 {
+    margin-right: 4rem;
   }
 
   .lg\:block {
@@ -1999,6 +2015,10 @@ video {
     margin-right: 5rem;
   }
 
+  .xl\:mr-28 {
+    margin-right: 7rem;
+  }
+
   .xl\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
@@ -2009,9 +2029,8 @@ video {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .dark\:bg-white {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+@media (min-width: 1536px) {
+  .\32xl\:mr-40 {
+    margin-right: 10rem;
   }
 }

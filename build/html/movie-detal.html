@@ -24,7 +24,7 @@
     </div>
     <div id="setting-bar" class="setting-bar fixed right-0 top-32 h-64 w-72 z-50 bg-slate-100 flex flex-col p-4 gap-4 reactive">
         <div class="flex justify-between my-1 items-center">
-        <h2 class="text-md">Live Customizer</h2>
+        <h2 class="text-md text-black">Live Customizer</h2>
         <button id="reset" class="netflix reset">
             <div class="reset-text">Reset All Settings</div>
             <i class="fa-solid fa-rotate fa-sm"></i>
@@ -301,51 +301,101 @@
       </section>
 
       <!-- Video description -->
-      <section class="p-4">
-        <h2 class="text-3xl font-semibold movie-poster-hl">Zombie Island</h2>
-        <div class="flex gap-4">
-          <ul class="flex text-yellow-400">
-            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-            <li><i class="fa fa-star-half" aria-hidden="true"></i></li>
+      <section class="p-4 flex flex-col md:flex-row md:justify-between">
+        <div>
+          <h2 class="text-3xl font-semibold movie-poster-hl md:text-7xl">Zombie Island</h2>
+          <div class="flex gap-4">
+            <ul class="flex text-yellow-400">
+              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+              <li><i class="fa fa-star-half" aria-hidden="true"></i></li>
+            </ul>
+            <span class="text-white ms-2">4.8 (imdb)</span>
+          </div>
+          <ul class="my-3 flex font-medium">
+            <li class="netflix"><a class="text-primary" href="./view-all-movie.html">Action&nbsp;&nbsp;•&nbsp;&nbsp;</a></li>
+            <li class="netflix"><a class="text-primary" href="./view-all-movie.html">Adventure&nbsp;&nbsp;•&nbsp;&nbsp;</a></li>
+            <li class="netflix"><a class="text-primary" href="./view-all-movie.html">Drama</a></li>
           </ul>
-          <span class="text-white ms-2">4.8 (imdb)</span>
-        </div>
-        <ul class="my-3 flex font-medium">
-          <li class="netflix"><a class="text-primary" href="./view-all-movie.html">Action&nbsp;&nbsp;•&nbsp;&nbsp;</a></li>
-          <li class="netflix"><a class="text-primary" href="./view-all-movie.html">Adventure&nbsp;&nbsp;•&nbsp;&nbsp;</a></li>
-          <li class="netflix"><a class="text-primary" href="./view-all-movie.html">Drama</a></li>
-        </ul>
-        <div class="flex gap-2 mb-4">
-          <span class="bg-slate-600 p-1 rounded-md text-xs text-center">Horror</span>
-          <span class="">1hr 48mins</span>
-          <span class="">
-            Feb 2017
-          </span>
-        </div>
-        <div class="flex items-center gap-6 flex-wrap mb-4">
-          <ul class="flex gap-6">
-            <li class="relative z-30">
-              <div class="share-icon rounded-full bg-white border-4 border-gray-500 z-20"><i class="fa-solid fa-share-nodes p-2 netflix"></i></div>
-              <div class="share-hover hidden bg-stone-800 absolute top-0 left-8 -z-10">
-                <i class="fa-brands fa-facebook p-3"></i>
-                <i class="fa-brands fa-twitter p-3"></i>
-                <i class="fa-solid fa-link p-3"></i>
-              </div>
-            </li>
-            <li class=" rounded-full bg-white border-4 border-gray-500"><i class="fa-solid fa-heart p-2 netflix"></i></li>
-            <li class=" rounded-full bg-white border-4 border-gray-500"><i class="fa-solid fa-plus p-2 netflix"></i></li>
-            <li class=" rounded-full bg-white border-4 border-gray-500"><span><a href="../image/video/sample-video.mp4" download><i class="fa-solid fa-download p-2 netflix"></i></a></span></li>
-          </ul>
-          <div class="netflix">
-            <select name="movieselect" class="movie-select">
+          <div class="flex gap-2 mb-4">
+            <span class="bg-slate-600 p-1 rounded-md text-xs text-center">Horror</span>
+            <span class="">1hr 48mins</span>
+            <span class="">
+              Feb 2017
+            </span>
+          </div>
+          <div class="flex items-center gap-6 flex-wrap mb-4">
+            <ul class="flex gap-6">
+              <li class="relative z-30">
+                <div class="share-icon rounded-full bg-white border-4 border-gray-500 z-20"><i class="fa-solid fa-share-nodes p-2 netflix"></i></div>
+                <div class="share-hover hidden bg-stone-800 absolute top-0 left-8 -z-10">
+                  <a href=""><i class="fa-brands fa-facebook p-3"></i></a>
+                  <a href=""><i class="fa-brands fa-twitter p-3"></i></a>
+                  <a href=""><i class="fa-solid fa-link p-3"></i></a>
+                </div>
+              </li>
+              <li class=" rounded-full bg-white border-4 border-gray-500"><a href="#"><i class="fa-solid fa-heart p-2 netflix"></i></a></li>
+              <li class=" rounded-full bg-white border-4 border-gray-500"><a href="#"><i class="fa-solid fa-plus p-2 netflix"></i></a></li>
+              <li class=" rounded-full bg-white border-4 border-gray-500"><span><a href="../image/video/sample-video.mp4" download><i class="fa-solid fa-download p-2 netflix"></i></a></span></li>
+            </ul>
+            <select name="movieselect" class="movie-select w-32">
               <option value="1">Playlist</option>
               <option value="2">Zombie Island</option>
               <option value="3">Sand Dust</option>
               <option value="4">Jumbo Queen</option>
             </select>          
+          </div>
+          <ul class="flex flex-wrap items-center gap-3 p-0">
+            <li class="mb-0 netflix">
+              <i class="fa fa-tags" aria-hidden="true"></i>
+              Tags:
+            </li>
+            <li><a class="hover-red" href="./view-all-movie.html">Action</a><span
+                class="text-secondary">,</span></li>
+            <li><a class="hover-red" href="./view-all-movie.html">Adventure</a><span
+                class="text-secondary">,</span></li>
+            <li><a class="hover-red" href="./view-all-movie.html">Drama</a></li>
+          </ul>
+        </div>
+        <div class="mt-8 w-full h-auto md:w-4/12 md:max-w-96 lg:mr-16 xl:mr-28 2xl:mr-40">
+          <a data-fslightbox="html5-video" href="https://www.youtube.com/watch?v=QCGq1epI9pQ"
+            class="relative">
+            <div class="trailer-img"><img src="../image/genre/01.webp"
+              class="" alt="" loading="lazy" /></div>
+            <span class="trailer-link">
+              <i class="fa fa-play me-2 text-white"></i>
+              <span>Trailer Link</span>
+            </span>
+          </a>
+        </div>
+      </section>
+      <section>
+        <div>
+          <div class="detail-nav-bg">
+            <div id="detail-movie-des-nav-1" class="detail-movie-des-nav">
+              <span class="detail-movie-des-line"></span>
+                Description
+            </div>
+            <div id="detail-movie-des-nav-2" class="detail-movie-des-nav">
+              <span class="detail-movie-des-line"></span>
+                Rate &amp; Review
+            </div>
+            <div id="detail-movie-des-nav-3" class="detail-movie-des-nav">
+              <span class="detail-movie-des-line"></span>
+                Sources
+            </div> 
+          </div>
+          <div id="detail-movie-des-des" class="detail-movie-des-des">
+            <p>
+              Zombie Island is a 1998 direct-to-video animated comedy horror film
+              based on Hanna-Barbera's Scooby-Doo Saturday-morning cartoons. In the
+              film, Shaggy, Scooby, Fred, Velma, and Daphne reunite after a
+              year-long hiatus from Mystery, Inc. to investigate a bayou island said
+              to be haunted by the ghost of the pirate Morgan Moonscar. The film was
+              directed by Jim Stenstrum, from a screenplay by Glenn Leopold.
+            </p>
           </div>
         </div>
       </section>

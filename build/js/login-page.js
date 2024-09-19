@@ -98,6 +98,48 @@ hots.addEventListener('click', function () {
     pri.classList.add('text-zinc-700');
     hul.classList.remove('bg-black', 'text-white');
     hul.classList.add('text-zinc-700');
+    // Inject dynamic CSS with !important
+    const styleSheet = document.createElement("style");
+    styleSheet.type = "text/css";
+    styleSheet.innerText = `
+        .select2-container--default .select2-selection--single {
+            color: blue !important;
+            border: 4px solid gray !important;
+        }
+        .select2-container--default .select2-results__options {
+            background-color: black !important;
+            color: white !important;
+            outline: 1px solid blue !important;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            color: blue !important;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            right: 5% !important;
+            top: 15% !important;
+        }
+        .select2-container--default .select2-results__option--highlighted {
+            background-color: blue !important;
+        }
+        .select2-container--default .select2-search--dropdown .select2-search__field {
+            background-color: black !important;
+            border-left: 1px solid blue !important;
+            border-right: 1px solid blue !important;
+            border-top: 1px solid blue !important;
+        }
+    `;
+    document.head.appendChild(styleSheet);
+    $(document).on('mouseenter', '.select2-results__option--selected', function() {
+        $(this).css({
+            'background-color': 'blue', // Change to red on hover
+            'color': 'white' // Ensure text color is white for contrast
+        });
+    }).on('mouseleave', '.select2-results__option--selected', function() {
+        $(this).css({
+            'background-color': 'black', // Revert back to black when not hovered
+            'color': 'white' // Ensure text color remains white
+        });
+    });
 });
 netf.addEventListener('click', function () {
     netflixText.forEach(function (netflix) {
@@ -131,6 +173,48 @@ netf.addEventListener('click', function () {
     pri.classList.add('text-zinc-700');
     hul.classList.remove('bg-black', 'text-white');
     hul.classList.add('text-zinc-700');
+    // Inject dynamic CSS with !important
+    const styleSheet = document.createElement("style");
+    styleSheet.type = "text/css";
+    styleSheet.innerText = `
+        .select2-container--default .select2-selection--single {
+            color: red !important;
+            border: 4px solid gray !important;
+        }
+        .select2-container--default .select2-results__options {
+            background-color: black !important;
+            color: white !important;
+            outline: 1px solid red !important;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            color: red !important;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            right: 5% !important;
+            top: 15% !important;
+        }
+        .select2-container--default .select2-results__option--highlighted {
+            background-color: red !important;
+        }
+        .select2-container--default .select2-search--dropdown .select2-search__field {
+            background-color: black !important;
+            border-left: 1px solid red !important;
+            border-right: 1px solid red !important;
+            border-top: 1px solid red !important;
+        }
+    `;
+    document.head.appendChild(styleSheet);
+    $(document).on('mouseenter', '.select2-results__option--selected', function() {
+        $(this).css({
+            'background-color': 'red', // Change to red on hover
+            'color': 'white' // Ensure text color is white for contrast
+        });
+    }).on('mouseleave', '.select2-results__option--selected', function() {
+        $(this).css({
+            'background-color': 'black', // Revert back to black when not hovered
+            'color': 'white' // Ensure text color remains white
+        });
+    });
 });
 pri.addEventListener('click', function () {
     netflixText.forEach(function (netflix) {
@@ -165,6 +249,48 @@ pri.addEventListener('click', function () {
     netf.classList.add('text-zinc-700');
     hul.classList.remove('bg-black', 'text-white');
     hul.classList.add('text-zinc-700');
+    // Inject dynamic CSS with !important
+    const styleSheet = document.createElement("style");
+    styleSheet.type = "text/css";
+    styleSheet.innerText = `
+        .select2-container--default .select2-selection--single {
+            color: cyan !important;
+            border: 4px solid gray !important;
+        }
+        .select2-container--default .select2-results__options {
+            background-color: black !important;
+            color: white !important;
+            outline: 1px solid cyan !important;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            color: cyan !important;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            right: 5% !important;
+            top: 15% !important;
+        }
+        .select2-container--default .select2-results__option--highlighted {
+            background-color: cyan !important;
+        }
+        .select2-container--default .select2-search--dropdown .select2-search__field {
+            background-color: black !important;
+            border-left: 1px solid cyan !important;
+            border-right: 1px solid cyan !important;
+            border-top: 1px solid cyan !important;
+        }
+    `;
+    document.head.appendChild(styleSheet);
+    $(document).on('mouseenter', '.select2-results__option--selected', function() {
+        $(this).css({
+            'background-color': 'cyan', // Change to red on hover
+            'color': 'white' // Ensure text color is white for contrast
+        });
+    }).on('mouseleave', '.select2-results__option--selected', function() {
+        $(this).css({
+            'background-color': 'black', // Revert back to black when not hovered
+            'color': 'white' // Ensure text color remains white
+        });
+    });
 });
 hul.addEventListener('click', function () {
     netflixText.forEach(function (netflix) {
@@ -199,6 +325,48 @@ hul.addEventListener('click', function () {
     netf.classList.add('text-zinc-700');
     pri.classList.remove('bg-black', 'text-white');
     pri.classList.add('text-zinc-700');
+    // Inject dynamic CSS with !important
+    const styleSheet = document.createElement("style");
+    styleSheet.type = "text/css";
+    styleSheet.innerText = `
+        .select2-container--default .select2-selection--single {
+            color: greenyellow !important;
+            border: 4px solid gray !important;
+        }
+        .select2-container--default .select2-results__options {
+            background-color: black !important;
+            color: white !important;
+            outline: 1px solid greenyellow !important;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            color: greenyellow !important;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            right: 5% !important;
+            top: 15% !important;
+        }
+        .select2-container--default .select2-results__option--highlighted {
+            background-color: greenyellow !important;
+        }
+        .select2-container--default .select2-search--dropdown .select2-search__field {
+            background-color: black !important;
+            border-left: 1px solid greenyellow !important;
+            border-right: 1px solid greenyellow !important;
+            border-top: 1px solid greenyellow !important;
+        }
+    `;
+    document.head.appendChild(styleSheet);
+    $(document).on('mouseenter', '.select2-results__option--selected', function() {
+        $(this).css({
+            'background-color': 'greenyellow', // Change to red on hover
+            'color': 'white' // Ensure text color is white for contrast
+        });
+    }).on('mouseleave', '.select2-results__option--selected', function() {
+        $(this).css({
+            'background-color': 'black', // Revert back to black when not hovered
+            'color': 'white' // Ensure text color remains white
+        });
+    });
 });
 
 
@@ -448,4 +616,44 @@ $(document).ready(function() {
     $('.movie-select').select2({
         width: 'resolve'
     });
+    // Auto-focus on the search box when the dropdown opens
+    $('.movie-select').on('select2:open', function() {
+        setTimeout(function() {
+            document.querySelector('.select2-search__field').focus();
+        }, 1);
+    });
+    // Change background color on hover
+    $(document).on('mouseenter', '.select2-results__option--selected', function() {
+        $(this).css({
+            'background-color': 'red', // Change to red on hover
+            'color': 'white' // Ensure text color is white for contrast
+        });
+    }).on('mouseleave', '.select2-results__option--selected', function() {
+        $(this).css({
+            'background-color': 'black', // Revert back to black when not hovered
+            'color': 'white' // Ensure text color remains white
+        });
+    });
+});
+
+const detailMovieNav1 = document.getElementById('detail-movie-des-nav-1');
+const detailMovieNav2 = document.getElementById('detail-movie-des-nav-2');
+const detailMovieNav3 = document.getElementById('detail-movie-des-nav-3');
+
+detailMovieNav1.addEventListener('click', function() {
+    this.classList.add('toggle');
+    detailMovieNav2.classList.remove('toggle');
+    detailMovieNav3.classList.remove('toggle');
+});
+
+detailMovieNav2.addEventListener('click', function() {
+    this.classList.add('toggle');
+    detailMovieNav1.classList.remove('toggle');
+    detailMovieNav3.classList.remove('toggle');
+});
+
+detailMovieNav3.addEventListener('click', function() {
+    this.classList.add('toggle');
+    detailMovieNav1.classList.remove('toggle');
+    detailMovieNav2.classList.remove('toggle');
 });
