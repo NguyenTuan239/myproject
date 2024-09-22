@@ -813,6 +813,11 @@ video {
   margin-bottom: 1rem;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -942,12 +947,20 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
 
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .grid {
@@ -968,6 +981,10 @@ video {
 
 .h-10 {
   height: 2.5rem;
+}
+
+.h-12 {
+  height: 3rem;
 }
 
 .h-14 {
@@ -1042,10 +1059,6 @@ video {
   width: 4rem;
 }
 
-.w-24 {
-  width: 6rem;
-}
-
 .w-28 {
   width: 7rem;
 }
@@ -1054,8 +1067,16 @@ video {
   width: 8rem;
 }
 
+.w-36 {
+  width: 9rem;
+}
+
 .w-4\/6 {
   width: 66.666667%;
+}
+
+.w-40 {
+  width: 10rem;
 }
 
 .w-44 {
@@ -1175,6 +1196,10 @@ video {
   gap: 1rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-6 {
   gap: 1.5rem;
 }
@@ -1205,6 +1230,10 @@ video {
 
 .scroll-smooth {
   scroll-behavior: smooth;
+}
+
+.text-wrap {
+  text-wrap: wrap;
 }
 
 .text-nowrap {
@@ -1341,192 +1370,276 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/image\/genre\/01\.webp\'\)\] {
-  background-image: url('../image/genre/01.webp');
+.bg-\[url\(\'\.\.\/\.\.\/build\/image\/movie\/recommended\/01\.webp\'\)\] {
+  background-image: url('../../build/image/movie/recommended/01.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/genre\/02\.webp\'\)\] {
-  background-image: url('../image/genre/02.webp');
+.bg-\[url\(\'\.\.\/\.\.\/build\/image\/movie\/recommended\/02\.webp\'\)\] {
+  background-image: url('../../build/image/movie/recommended/02.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/genre\/03\.webp\'\)\] {
-  background-image: url('../image/genre/03.webp');
+.bg-\[url\(\'\.\.\/\.\.\/build\/image\/movie\/recommended\/03\.webp\'\)\] {
+  background-image: url('../../build/image/movie/recommended/03.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/genre\/04\.webp\'\)\] {
-  background-image: url('../image/genre/04.webp');
+.bg-\[url\(\'\.\.\/\.\.\/build\/image\/movie\/recommended\/04\.webp\'\)\] {
+  background-image: url('../../build/image/movie/recommended/04.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/genre\/05\.webp\'\)\] {
-  background-image: url('../image/genre/05.webp');
+.bg-\[url\(\'\.\.\/\.\.\/build\/image\/movie\/recommended\/05\.webp\'\)\] {
+  background-image: url('../../build/image/movie/recommended/05.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/genre\/06\.webp\'\)\] {
-  background-image: url('../image/genre/06.webp');
+.bg-\[url\(\'\.\.\/\.\.\/build\/image\/movie\/recommended\/06\.webp\'\)\] {
+  background-image: url('../../build/image/movie/recommended/06.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/genre\/07\.webp\'\)\] {
-  background-image: url('../image/genre/07.webp');
+.bg-\[url\(\'\.\.\/\.\.\/build\/image\/movie\/recommended\/07\.webp\'\)\] {
+  background-image: url('../../build/image/movie/recommended/07.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/ott1\.webp\'\)\] {
-  background-image: url('../image/movie/ott1.webp');
+.bg-\[url\(\'\.\.\/\.\.\/build\/image\/movie\/related\/01\.webp\'\)\] {
+  background-image: url('../../build/image/movie/related/01.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/ott2\.webp\'\)\] {
-  background-image: url('../image/movie/ott2.webp');
+.bg-\[url\(\'\.\.\/\.\.\/build\/image\/movie\/related\/02\.webp\'\)\] {
+  background-image: url('../../build/image/movie/related/02.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/ott3\.webp\'\)\] {
-  background-image: url('../image/movie/ott3.webp');
+.bg-\[url\(\'\.\.\/\.\.\/build\/image\/movie\/related\/03\.webp\'\)\] {
+  background-image: url('../../build/image/movie/related/03.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/popular\/01\.webp\'\)\] {
-  background-image: url('../image/movie/popular/01.webp');
+.bg-\[url\(\'\.\.\/\.\.\/build\/image\/movie\/related\/04\.webp\'\)\] {
+  background-image: url('../../build/image/movie/related/04.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/popular\/02\.webp\'\)\] {
-  background-image: url('../image/movie/popular/02.webp');
+.bg-\[url\(\'\.\.\/\.\.\/build\/image\/movie\/related\/05\.webp\'\)\] {
+  background-image: url('../../build/image/movie/related/05.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/popular\/03\.webp\'\)\] {
-  background-image: url('../image/movie/popular/03.webp');
+.bg-\[url\(\'\.\.\/\.\.\/build\/image\/movie\/related\/06\.webp\'\)\] {
+  background-image: url('../../build/image/movie/related/06.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/popular\/04\.webp\'\)\] {
-  background-image: url('../image/movie/popular/04.webp');
+.bg-\[url\(\'\.\.\/\.\.\/build\/image\/movie\/related\/07\.webp\'\)\] {
+  background-image: url('../../build/image/movie/related/07.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/popular\/05\.webp\'\)\] {
-  background-image: url('../image/movie/popular/05.webp');
+.bg-\[url\(\'\.\.\/\.\.\/build\/image\/movie\/upcoming\/01\.webp\'\)\] {
+  background-image: url('../../build/image/movie/upcoming/01.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/popular\/06\.webp\'\)\] {
-  background-image: url('../image/movie/popular/06.webp');
+.bg-\[url\(\'\.\.\/\.\.\/build\/image\/movie\/upcoming\/02\.webp\'\)\] {
+  background-image: url('../../build/image/movie/upcoming/02.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/popular\/07\.webp\'\)\] {
-  background-image: url('../image/movie/popular/07.webp');
+.bg-\[url\(\'\.\.\/\.\.\/build\/image\/movie\/upcoming\/03\.webp\'\)\] {
+  background-image: url('../../build/image/movie/upcoming/03.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/recommended\/01\.webp\'\)\] {
-  background-image: url('../image/movie/recommended/01.webp');
+.bg-\[url\(\'\.\.\/\.\.\/build\/image\/movie\/upcoming\/04\.webp\'\)\] {
+  background-image: url('../../build/image/movie/upcoming/04.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/recommended\/02\.webp\'\)\] {
-  background-image: url('../image/movie/recommended/02.webp');
+.bg-\[url\(\'\.\.\/\.\.\/build\/image\/movie\/upcoming\/05\.webp\'\)\] {
+  background-image: url('../../build/image/movie/upcoming/05.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/recommended\/03\.webp\'\)\] {
-  background-image: url('../image/movie/recommended/03.webp');
+.bg-\[url\(\'\.\.\/\.\.\/build\/image\/movie\/upcoming\/06\.webp\'\)\] {
+  background-image: url('../../build/image/movie/upcoming/06.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/recommended\/04\.webp\'\)\] {
-  background-image: url('../image/movie/recommended/04.webp');
+.bg-\[url\(\'\.\.\/\.\.\/build\/image\/movie\/upcoming\/07\.webp\'\)\] {
+  background-image: url('../../build/image/movie/upcoming/07.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/recommended\/05\.webp\'\)\] {
-  background-image: url('../image/movie/recommended/05.webp');
+.bg-\[url\(\'\.\.\/build\/image\/genre\/01\.webp\'\)\] {
+  background-image: url('../build/image/genre/01.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/recommended\/06\.webp\'\)\] {
-  background-image: url('../image/movie/recommended/06.webp');
+.bg-\[url\(\'\.\.\/build\/image\/genre\/02\.webp\'\)\] {
+  background-image: url('../build/image/genre/02.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/recommended\/07\.webp\'\)\] {
-  background-image: url('../image/movie/recommended/07.webp');
+.bg-\[url\(\'\.\.\/build\/image\/genre\/03\.webp\'\)\] {
+  background-image: url('../build/image/genre/03.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/related\/01\.webp\'\)\] {
-  background-image: url('../image/movie/related/01.webp');
+.bg-\[url\(\'\.\.\/build\/image\/genre\/04\.webp\'\)\] {
+  background-image: url('../build/image/genre/04.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/related\/02\.webp\'\)\] {
-  background-image: url('../image/movie/related/02.webp');
+.bg-\[url\(\'\.\.\/build\/image\/genre\/05\.webp\'\)\] {
+  background-image: url('../build/image/genre/05.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/related\/03\.webp\'\)\] {
-  background-image: url('../image/movie/related/03.webp');
+.bg-\[url\(\'\.\.\/build\/image\/genre\/06\.webp\'\)\] {
+  background-image: url('../build/image/genre/06.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/related\/04\.webp\'\)\] {
-  background-image: url('../image/movie/related/04.webp');
+.bg-\[url\(\'\.\.\/build\/image\/genre\/07\.webp\'\)\] {
+  background-image: url('../build/image/genre/07.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/related\/05\.webp\'\)\] {
-  background-image: url('../image/movie/related/05.webp');
+.bg-\[url\(\'\.\.\/build\/image\/movie\/ott1\.webp\'\)\] {
+  background-image: url('../build/image/movie/ott1.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/related\/06\.webp\'\)\] {
-  background-image: url('../image/movie/related/06.webp');
+.bg-\[url\(\'\.\.\/build\/image\/movie\/ott2\.webp\'\)\] {
+  background-image: url('../build/image/movie/ott2.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/related\/07\.webp\'\)\] {
-  background-image: url('../image/movie/related/07.webp');
+.bg-\[url\(\'\.\.\/build\/image\/movie\/ott3\.webp\'\)\] {
+  background-image: url('../build/image/movie/ott3.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/top-picks\/01\.webp\'\)\] {
-  background-image: url('../image/movie/top-picks/01.webp');
+.bg-\[url\(\'\.\.\/build\/image\/movie\/popular\/01\.webp\'\)\] {
+  background-image: url('../build/image/movie/popular/01.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/top-picks\/02\.webp\'\)\] {
-  background-image: url('../image/movie/top-picks/02.webp');
+.bg-\[url\(\'\.\.\/build\/image\/movie\/popular\/02\.webp\'\)\] {
+  background-image: url('../build/image/movie/popular/02.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/top-picks\/03\.webp\'\)\] {
-  background-image: url('../image/movie/top-picks/03.webp');
+.bg-\[url\(\'\.\.\/build\/image\/movie\/popular\/03\.webp\'\)\] {
+  background-image: url('../build/image/movie/popular/03.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/top-picks\/04\.webp\'\)\] {
-  background-image: url('../image/movie/top-picks/04.webp');
+.bg-\[url\(\'\.\.\/build\/image\/movie\/popular\/04\.webp\'\)\] {
+  background-image: url('../build/image/movie/popular/04.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/top-picks\/05\.webp\'\)\] {
-  background-image: url('../image/movie/top-picks/05.webp');
+.bg-\[url\(\'\.\.\/build\/image\/movie\/popular\/05\.webp\'\)\] {
+  background-image: url('../build/image/movie/popular/05.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/top-picks\/06\.webp\'\)\] {
-  background-image: url('../image/movie/top-picks/06.webp');
+.bg-\[url\(\'\.\.\/build\/image\/movie\/popular\/06\.webp\'\)\] {
+  background-image: url('../build/image/movie/popular/06.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/movie\/top-picks\/07\.webp\'\)\] {
-  background-image: url('../image/movie/top-picks/07.webp');
+.bg-\[url\(\'\.\.\/build\/image\/movie\/popular\/07\.webp\'\)\] {
+  background-image: url('../build/image/movie/popular/07.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/pages\/01\.webp\'\)\] {
-  background-image: url('../image/pages/01.webp');
+.bg-\[url\(\'\.\.\/build\/image\/movie\/recommended\/01\.webp\'\)\] {
+  background-image: url('../build/image/movie/recommended/01.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/tab-slider\/01\.webp\'\)\] {
-  background-image: url('../image/tab-slider/01.webp');
+.bg-\[url\(\'\.\.\/build\/image\/movie\/recommended\/02\.webp\'\)\] {
+  background-image: url('../build/image/movie/recommended/02.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/tab-slider\/02\.webp\'\)\] {
-  background-image: url('../image/tab-slider/02.webp');
+.bg-\[url\(\'\.\.\/build\/image\/movie\/recommended\/03\.webp\'\)\] {
+  background-image: url('../build/image/movie/recommended/03.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/tab-slider\/03\.webp\'\)\] {
-  background-image: url('../image/tab-slider/03.webp');
+.bg-\[url\(\'\.\.\/build\/image\/movie\/recommended\/04\.webp\'\)\] {
+  background-image: url('../build/image/movie/recommended/04.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/top-10\/01\.webp\'\)\] {
-  background-image: url('../image/top-10/01.webp');
+.bg-\[url\(\'\.\.\/build\/image\/movie\/recommended\/05\.webp\'\)\] {
+  background-image: url('../build/image/movie/recommended/05.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/top-10\/02\.webp\'\)\] {
-  background-image: url('../image/top-10/02.webp');
+.bg-\[url\(\'\.\.\/build\/image\/movie\/recommended\/06\.webp\'\)\] {
+  background-image: url('../build/image/movie/recommended/06.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/top-10\/03\.webp\'\)\] {
-  background-image: url('../image/top-10/03.webp');
+.bg-\[url\(\'\.\.\/build\/image\/movie\/recommended\/07\.webp\'\)\] {
+  background-image: url('../build/image/movie/recommended/07.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/top-10\/04\.webp\'\)\] {
-  background-image: url('../image/top-10/04.webp');
+.bg-\[url\(\'\.\.\/build\/image\/movie\/related\/01\.webp\'\)\] {
+  background-image: url('../build/image/movie/related/01.webp');
 }
 
-.bg-\[url\(\'\.\.\/image\/top-10\/05\.webp\'\)\] {
-  background-image: url('../image/top-10/05.webp');
+.bg-\[url\(\'\.\.\/build\/image\/movie\/related\/02\.webp\'\)\] {
+  background-image: url('../build/image/movie/related/02.webp');
+}
+
+.bg-\[url\(\'\.\.\/build\/image\/movie\/related\/03\.webp\'\)\] {
+  background-image: url('../build/image/movie/related/03.webp');
+}
+
+.bg-\[url\(\'\.\.\/build\/image\/movie\/related\/04\.webp\'\)\] {
+  background-image: url('../build/image/movie/related/04.webp');
+}
+
+.bg-\[url\(\'\.\.\/build\/image\/movie\/related\/05\.webp\'\)\] {
+  background-image: url('../build/image/movie/related/05.webp');
+}
+
+.bg-\[url\(\'\.\.\/build\/image\/movie\/related\/06\.webp\'\)\] {
+  background-image: url('../build/image/movie/related/06.webp');
+}
+
+.bg-\[url\(\'\.\.\/build\/image\/movie\/related\/07\.webp\'\)\] {
+  background-image: url('../build/image/movie/related/07.webp');
+}
+
+.bg-\[url\(\'\.\.\/build\/image\/movie\/top-picks\/01\.webp\'\)\] {
+  background-image: url('../build/image/movie/top-picks/01.webp');
+}
+
+.bg-\[url\(\'\.\.\/build\/image\/movie\/top-picks\/02\.webp\'\)\] {
+  background-image: url('../build/image/movie/top-picks/02.webp');
+}
+
+.bg-\[url\(\'\.\.\/build\/image\/movie\/top-picks\/03\.webp\'\)\] {
+  background-image: url('../build/image/movie/top-picks/03.webp');
+}
+
+.bg-\[url\(\'\.\.\/build\/image\/movie\/top-picks\/04\.webp\'\)\] {
+  background-image: url('../build/image/movie/top-picks/04.webp');
+}
+
+.bg-\[url\(\'\.\.\/build\/image\/movie\/top-picks\/05\.webp\'\)\] {
+  background-image: url('../build/image/movie/top-picks/05.webp');
+}
+
+.bg-\[url\(\'\.\.\/build\/image\/movie\/top-picks\/06\.webp\'\)\] {
+  background-image: url('../build/image/movie/top-picks/06.webp');
+}
+
+.bg-\[url\(\'\.\.\/build\/image\/movie\/top-picks\/07\.webp\'\)\] {
+  background-image: url('../build/image/movie/top-picks/07.webp');
+}
+
+.bg-\[url\(\'\.\.\/build\/image\/pages\/01\.webp\'\)\] {
+  background-image: url('../build/image/pages/01.webp');
+}
+
+.bg-\[url\(\'\.\.\/build\/image\/tab-slider\/01\.webp\'\)\] {
+  background-image: url('../build/image/tab-slider/01.webp');
+}
+
+.bg-\[url\(\'\.\.\/build\/image\/tab-slider\/02\.webp\'\)\] {
+  background-image: url('../build/image/tab-slider/02.webp');
+}
+
+.bg-\[url\(\'\.\.\/build\/image\/tab-slider\/03\.webp\'\)\] {
+  background-image: url('../build/image/tab-slider/03.webp');
+}
+
+.bg-\[url\(\'\.\.\/build\/image\/top-10\/01\.webp\'\)\] {
+  background-image: url('../build/image/top-10/01.webp');
+}
+
+.bg-\[url\(\'\.\.\/build\/image\/top-10\/02\.webp\'\)\] {
+  background-image: url('../build/image/top-10/02.webp');
+}
+
+.bg-\[url\(\'\.\.\/build\/image\/top-10\/03\.webp\'\)\] {
+  background-image: url('../build/image/top-10/03.webp');
+}
+
+.bg-\[url\(\'\.\.\/build\/image\/top-10\/04\.webp\'\)\] {
+  background-image: url('../build/image/top-10/04.webp');
+}
+
+.bg-\[url\(\'\.\.\/build\/image\/top-10\/05\.webp\'\)\] {
+  background-image: url('../build/image/top-10/05.webp');
 }
 
 .bg-cover {
@@ -1568,6 +1681,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .px-7 {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
@@ -1576,6 +1694,11 @@ video {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-16 {
@@ -1596,6 +1719,11 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .py-6 {
@@ -1627,6 +1755,10 @@ video {
   padding-left: 0.75rem;
 }
 
+.pl-4 {
+  padding-left: 1rem;
+}
+
 .pl-5 {
   padding-left: 1.25rem;
 }
@@ -1651,8 +1783,17 @@ video {
   padding-top: 0.75rem;
 }
 
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
@@ -1730,6 +1871,11 @@ video {
   letter-spacing: 0.1em;
 }
 
+.\!text-slate-100 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(241 245 249 / var(--tw-text-opacity)) !important;
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1768,11 +1914,6 @@ video {
 .text-slate-50 {
   --tw-text-opacity: 1;
   color: rgb(248 250 252 / var(--tw-text-opacity));
-}
-
-.text-slate-800 {
-  --tw-text-opacity: 1;
-  color: rgb(30 41 59 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -2022,6 +2163,11 @@ video {
   .xl\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .xl\:px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
   }
 
   .xl\:pr-24 {

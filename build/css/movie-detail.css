@@ -1,3 +1,8 @@
+:root{
+    --main-color: #ff0000;
+    --hover-backgournd-color:#ff00002a;
+}
+
 .video-container{
     position: relative;
     width: 100%;
@@ -49,7 +54,7 @@
 /* select2 css start
 /* Style select2 container */
 .select2-container--default .select2-selection--single {
-    color: red !important;
+    color: var(--main-color) !important;
     border: 4px solid gray !important;
     height: 38px !important;
     border-radius: 8px;
@@ -60,11 +65,11 @@
     overflow-y: hidden !important; /* Hide vertical scrollbar */
     background-color: black !important;
     color: white;
-    outline: 1px solid red !important;
+    outline: 1px solid var(--main-color) !important;
 }
 /* Change font size and color of selected option */
 .select2-container--default .select2-selection--single .select2-selection__rendered {
-    color: red !important;
+    color: var(--main-color) !important;
   }
 .select2-container--default .select2-selection--single .select2-selection__arrow {
     right: 5% !important;
@@ -72,7 +77,7 @@
 }
 /* Option hover effect */
 .select2-container--default .select2-results__option--highlighted {
-    background-color: red !important;
+    background-color: var(--main-color) !important;
 }
 
 /* Prevent horizontal scrollbar */
@@ -82,10 +87,10 @@
 /* Search input area inside the dropdown */
 .select2-container--default .select2-search--dropdown .select2-search__field {
     background-color: black !important; /* Set search field background to black */
-    border-left: 1px solid red !important;
-    border-right: 1px solid red !important;
+    border-left: 1px solid var(--main-color) !important;
+    border-right: 1px solid var(--main-color) !important;
     border-bottom: none !important;
-    border-top: 1px solid red !important;
+    border-top: 1px solid var(--main-color) !important;
     outline: none !important;
     box-shadow: none !important;
     filter: none !important;
@@ -126,7 +131,7 @@
 }
 
 
-/* movie description  */
+/* movie description nav */
 .detail-nav-bg{
     display: flex;
     width: 100%;
@@ -134,7 +139,7 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(90deg,rgb(28,25,23), rgb(40, 40, 40), rgb(28,25,23));
+    background-image: linear-gradient(90deg,rgb(28,25,23), rgb(43, 43, 43), rgb(28,25,23));
 }
 .detail-movie-des-nav {
     position: relative;
@@ -149,8 +154,8 @@
         position: absolute;
         top: 0;
         width: 100%;
-        height: 4px;
-        background-color: red;
+        height: 3px;
+        background-color: var(--main-color);
         transform-origin: left;
         transform: scaleX(0);
         transition: all 1s ease;
@@ -158,6 +163,7 @@
 }
 
 .detail-movie-des-nav.toggle {
+    color: var(--main-color);
     animation: detail-mv-nav 0.4s ease-out forwards;
     .detail-movie-des-line{
         transform: scaleX(1);
@@ -169,8 +175,151 @@
         background-color: transparent;
     }
     100% {
-        background-image: linear-gradient(rgba(196, 3, 3, 0.534),rgba(28, 25, 23, 0.384));
+        background-image: linear-gradient(var(--hover-backgournd-color),rgb(41, 37, 36,0));
     }
 }
+.detail-movie-des{
+    transform-origin: top;
+    animation: detail-mv-des 0.7s ease-in-out forwards;
+}
+@keyframes detail-mv-des {
+    0%{
+        transform: translateY(70%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* movie description: rate & review */
+.form-control, .text-control{
+    border: 1px solid rgb(35, 35, 35);
+    width: 100%;
+    height: 50px;
+    outline: none; 
+    padding-left: 20px;
+    border-radius: 5px;
+    background-color: rgb(35, 35, 35);
+}
+.text-control{
+    height: 200px;
+    padding-top: 10px;
+}
 
+/* css for detail-movie table*/
+.table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+}
+.detail-mv-table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    text-align: left;
+    min-width: 700px;
+}
+.detail-nav-bg th, td{
+    padding-left: 20px;
+}
+/* Tùy chỉnh thanh cuộn cho WebKit (Chrome, Safari) */
+.table-wrapper::-webkit-scrollbar {
+    height: 10px; /* Chiều cao của thanh cuộn ngang */
+    border-radius: 10px; /* Bo tròn các góc của thanh cuộn */
+}
 
+/* Đường dẫn của thanh cuộn */
+.table-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Màu nền của đường dẫn thanh cuộn */
+    border-radius: 10px; /* Bo tròn đường dẫn */
+}
+/* Thumb của thanh cuộn (phần di chuyển) */
+.table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #a8a6a6; /* Màu của thumb */
+    border-radius: 10px; /* Bo tròn thumb */
+}
+
+.sub-but {
+    position: relative;
+    .sub-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  
+    .sub-but1,
+    .sub-but2 {
+      position: absolute;
+      top: 0.5px;
+      bottom: 0.5px;
+      width: 0%;
+      height: auto;
+      background-color: rgba(37, 18, 18, 0.366);
+      z-index: 2;
+      transition: width 0.5s ease-in-out; 
+    }
+    .sub-but-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-wrap: nowrap;
+        text-transform: uppercase;
+        transform: translate(-50%,-50%);
+        z-index: 10;
+    }
+  
+    .sub-but1 {
+      left: 0;
+    }
+  
+    .sub-but2 {
+      right: 0;
+    }
+  
+    &:hover .sub-but1,
+    &:hover .sub-but2 {
+      width: 50%; /* expand on hover */
+    }
+  }
+
+/* css for cast crew */
+.detail-nav-bg-2{
+    display: flex;
+    margin-top: 30px;
+    padding-left: 40px;
+    width: 100%;
+    height: 60px;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(43, 43, 43);
+    /* background-image: url(../image/movie/recommended/01.webp); */
+}
+.detail-movie-des-card{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background: rgb(43, 43, 43);
+    .detail-movie-des-img{
+        flex: 1;
+        height: 150px;
+        aspect-ratio: 6/5;
+    }
+    .detail-movie-des-text{
+        flex: 5;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding-left: 10px;
+    }
+}
+@media (min-width: 640px) {
+    .detail-movie-des-img{
+        aspect-ratio: 5/7 !important;
+    }
+}

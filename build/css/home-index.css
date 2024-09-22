@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root{
+    --main-color: #ff0000;
+    --hover-backgournd-color:#ff00002a;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -88,10 +93,6 @@ body{
     border-color: transparent;
     transition: all 0.5s ease-in;
 }
-.web-nav-li-red:hover{
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.1),rgb(41, 37, 36,0));
-    border-color: rgb(239 68 68);
-}
 .li-font{
     font-weight: 300;
     color: rgb(190, 190, 190);
@@ -136,69 +137,28 @@ body{
     }
 }
 .netflix{
-    color: rgb(226, 29, 29);
+    color: var(--main-color);
 }
 .red-text{
-    color: rgb(226, 29, 29);
+    color: var(--main-color)
 }
 .netflix-bg{
-    background-color: rgb(223, 3, 3);
-}
-.hotstar{
-    color: rgb(0, 81, 255);
-}
-.hotstar-bg{
-    background-color: rgb(0, 81, 255);
-}
-.prime{
-    color: cyan;
-}
-.prime-bg{
-    background-color: rgb(0, 184, 184);
-}
-.hulu{
-    color: greenyellow;
-}
-.hulu-bg{
-    background-color: rgb(99, 165, 0);
+    background-color: var(--main-color);
 }
 .hover-red:hover {
-    color: red;
-}
-.hover-blue:hover {
-    color: blue;
-}
-.hover-cyan:hover {
-    color: cyan;
-}
-.hover-green:hover {
-    color: greenyellow;
+    color: var(--main-color);
 }
 .hover-bg-red:hover {
-    background-color: red;
+    background-color: var(--main-color);
 }
-.hover-bg-blue:hover {
-    background-color: blue;
+.web-nav-li-red:hover{
+    background-image: linear-gradient(to right, var(--hover-backgournd-color),rgb(41, 37, 36,0));
+    border-color: var(--main-color);
 }
-.hover-bg-cyan:hover {
-    background-color: cyan;
+.red-border:focus{
+    border-color: var(--main-color);
 }
-.hover-bg-green:hover {
-    background-color: greenyellow;
-}
-.web-nav-li-blue:hover{
-    background-image: linear-gradient(to right, rgba(0, 38, 255, 0.1),rgb(41, 37, 36,0));
-    border-color: rgb(0, 47, 255);
-}
-.web-nav-li-cyan:hover{
-    background-image: linear-gradient(to right, rgb(0, 255, 255, 0.1),rgb(41, 37, 36,0));
-    border-color: cyan;
-}
-.web-nav-li-green:hover{
-    background-image: linear-gradient(to right, rgb(173, 255, 47, 0.1),rgb(41, 37, 36,0));
-    border-color: greenyellow;
-}
-.logo-blue{
+/* .logo-blue{
     filter: hue-rotate(245deg);
 }
 .logo-cyan{
@@ -206,7 +166,7 @@ body{
 }
 .logo-green{
     filter: sepia(1) hue-rotate(75deg) saturate(6);
-}
+} */
 #backToTop {
     position: fixed;
     width: 45px;

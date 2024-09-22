@@ -22,7 +22,31 @@ const swiper = new Swiper('.slider-wrapper', {
             spaceBetween: 30,
         }
     }
+});
+/* main section 10 js*/
+const swiper10 = new Swiper('.slider-wrapper4', {
+    loop: false,
+    speed: 1000,
+    breakpoints: {
+        0: {
+            slidesPerView:1,
+            spaceBetween: 10,
+        },
+        640: {
+            slidesPerView:2,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView:3,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView:5,
+            spaceBetween: 20,
+        }
+    }
   });
+
   /* main section3 js*/
 const swiper2 = new Swiper('.slider-wrapper2', {
     loop: false,
@@ -168,326 +192,6 @@ var swiper8 = new Swiper(".mySwiper4", {
         prevEl: '.swiper-button-prev',
     },
 });
-
-const sec8Season1 = document.getElementById("sec8-season1");
-const sec8Season2 = document.getElementById("sec8-season2");
-const sec8Season3 = document.getElementById("sec8-season3");
-let isSec8Season1Clicked = true;
-let isSec8Season2Clicked = false;
-let isSec8Season3Clicked = false;
-const sec8Season1Content = document.getElementById("sec8-season1-content");
-const sec8Season2Content = document.getElementById("sec8-season2-content");
-const sec8Season3Content = document.getElementById("sec8-season3-content");
-
-sec8Season1.addEventListener('click', function () {
-    isSec8Season1Clicked = true;
-    isSec8Season2Clicked = false;
-    isSec8Season3Clicked = false;
-    sec8Season1Content.classList.remove('hidden');
-    sec8Season2Content.classList.add('hidden');
-    sec8Season3Content.classList.add('hidden');
-    if (isNetfClicked) {
-        sec8Season1.classList.add('red-text');
-        sec8Season1.classList.remove('hotstar','prime','hulu');
-        sec8Season2.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isHotsClicked) {
-        sec8Season1.classList.add('hotstar');
-        sec8Season1.classList.remove('red-text','prime','hulu');
-        sec8Season2.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isPriClicked) {
-        sec8Season1.classList.add('prime');
-        sec8Season1.classList.remove('red-text','hotstar','hulu');
-        sec8Season2.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isHulClicked) {
-        sec8Season1.classList.add('hulu');
-        sec8Season1.classList.remove('red-text','hotstar','prime');
-        sec8Season2.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3.classList.remove('hotstar','red-text','prime','hulu');
-    }
-})
-sec8Season2.addEventListener('click', function () {
-    isSec8Season1Clicked = false;
-    isSec8Season2Clicked = true;
-    isSec8Season3Clicked = false;
-    sec8Season2Content.classList.remove('hidden');
-    sec8Season1Content.classList.add('hidden');
-    sec8Season3Content.classList.add('hidden');
-    if (isNetfClicked) {
-        sec8Season2.classList.add('red-text');
-        sec8Season2.classList.remove('hotstar','prime','hulu');
-        sec8Season1.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isHotsClicked) {
-        sec8Season2.classList.add('hotstar');
-        sec8Season2.classList.remove('red-text','prime','hulu');
-        sec8Season1.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isPriClicked) {
-        sec8Season2.classList.add('prime');
-        sec8Season2.classList.remove('red-text','hotstar','hulu');
-        sec8Season1.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isHulClicked) {
-        sec8Season2.classList.add('hulu');
-        sec8Season2.classList.remove('red-text','hotstar','prime');
-        sec8Season1.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3.classList.remove('hotstar','red-text','prime','hulu');
-    }
-})
-sec8Season3.addEventListener('click', function () {
-    isSec8Season1Clicked = false;
-    isSec8Season2Clicked = false;
-    isSec8Season3Clicked = true;
-    sec8Season3Content.classList.remove('hidden');
-    sec8Season1Content.classList.add('hidden');
-    sec8Season2Content.classList.add('hidden');
-    if (isNetfClicked) {
-        sec8Season3.classList.add('red-text');
-        sec8Season3.classList.remove('hotstar','prime','hulu');
-        sec8Season2.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season1.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isHotsClicked) {
-        sec8Season3.classList.add('hotstar');
-        sec8Season3.classList.remove('red-text','prime','hulu');
-        sec8Season2.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season1.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isPriClicked) {
-        sec8Season3.classList.add('prime');
-        sec8Season3.classList.remove('red-text','hotstar','hulu');
-        sec8Season2.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season1.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isHulClicked) {
-        sec8Season3.classList.add('hulu');
-        sec8Season3.classList.remove('red-text','hotstar','prime');
-        sec8Season2.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season1.classList.remove('hotstar','red-text','prime','hulu');
-    }
-})
-const sec8Season1S2 = document.getElementById("sec8-season1-s2");
-const sec8Season2S2 = document.getElementById("sec8-season2-s2");
-const sec8Season3S2 = document.getElementById("sec8-season3-s2");
-let isSec8Season1S2Clicked = true;
-let isSec8Season2S2Clicked = false;
-let isSec8Season3S2Clicked = false;
-const sec8Season1ContentS2 = document.getElementById("sec8-season1-content-s2");
-const sec8Season2ContentS2 = document.getElementById("sec8-season2-content-s2");
-const sec8Season3ContentS2 = document.getElementById("sec8-season3-content-s2");
-
-sec8Season1S2.addEventListener('click', function () {
-    isSec8Season1S2Clicked = true;
-    isSec8Season2S2Clicked = false;
-    isSec8Season3S2Clicked = false;
-    sec8Season1ContentS2.classList.remove('hidden');
-    sec8Season2ContentS2.classList.add('hidden');
-    sec8Season3ContentS2.classList.add('hidden');
-    if (isNetfClicked) {
-        sec8Season1S2.classList.add('red-text');
-        sec8Season1S2.classList.remove('hotstar','prime','hulu');
-        sec8Season2S2.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3S2.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isHotsClicked) {
-        sec8Season1S2.classList.add('hotstar');
-        sec8Season1S2.classList.remove('red-text','prime','hulu');
-        sec8Season2S2.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3S2.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isPriClicked) {
-        sec8Season1S2.classList.add('prime');
-        sec8Season1S2.classList.remove('red-text','hotstar','hulu');
-        sec8Season2S2.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3S2.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isHulClicked) {
-        sec8Season1S2.classList.add('hulu');
-        sec8Season1S2.classList.remove('red-text','hotstar','prime');
-        sec8Season2S2.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3S2.classList.remove('hotstar','red-text','prime','hulu');
-    }
-})
-sec8Season2S2.addEventListener('click', function () {
-    isSec8Season1S2Clicked = false;
-    isSec8Season2S2Clicked = true;
-    isSec8Season3S2Clicked = false;
-    sec8Season2ContentS2.classList.remove('hidden');
-    sec8Season1ContentS2.classList.add('hidden');
-    sec8Season3ContentS2.classList.add('hidden');
-    if (isNetfClicked) {
-        sec8Season2S2.classList.add('red-text');
-        sec8Season2S2.classList.remove('hotstar','prime','hulu');
-        sec8Season1S2.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3S2.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isHotsClicked) {
-        sec8Season2S2.classList.add('hotstar');
-        sec8Season2S2.classList.remove('red-text','prime','hulu');
-        sec8Season1S2.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3S2.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isPriClicked) {
-        sec8Season2S2.classList.add('prime');
-        sec8Season2S2.classList.remove('red-text','hotstar','hulu');
-        sec8Season1S2.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3S2.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isHulClicked) {
-        sec8Season2S2.classList.add('hulu');
-        sec8Season2S2.classList.remove('red-text','hotstar','prime');
-        sec8Season1S2.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3S2.classList.remove('hotstar','red-text','prime','hulu');
-    }
-})
-sec8Season3S2.addEventListener('click', function () {
-    isSec8Season1S2Clicked = false;
-    isSec8Season2S2Clicked = false;
-    isSec8Season3S2Clicked = true;
-    sec8Season3ContentS2.classList.remove('hidden');
-    sec8Season1ContentS2.classList.add('hidden');
-    sec8Season2ContentS2.classList.add('hidden');
-    if (isNetfClicked) {
-        sec8Season3S2.classList.add('red-text');
-        sec8Season3S2.classList.remove('hotstar','prime','hulu');
-        sec8Season2S2.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season1S2.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isHotsClicked) {
-        sec8Season3S2.classList.add('hotstar');
-        sec8Season3S2.classList.remove('red-text','prime','hulu');
-        sec8Season2S2.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season1S2.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isPriClicked) {
-        sec8Season3S2.classList.add('prime');
-        sec8Season3S2.classList.remove('red-text','hotstar','hulu');
-        sec8Season2S2.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season1S2.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isHulClicked) {
-        sec8Season3S2.classList.add('hulu');
-        sec8Season3S2.classList.remove('red-text','hotstar','prime');
-        sec8Season2S2.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season1S2.classList.remove('hotstar','red-text','prime','hulu');
-    }
-})
-const sec8Season1S3 = document.getElementById("sec8-season1-s3");
-const sec8Season2S3 = document.getElementById("sec8-season2-s3");
-const sec8Season3S3 = document.getElementById("sec8-season3-s3");
-let isSec8Season1S3Clicked = true;
-let isSec8Season2S3Clicked = false;
-let isSec8Season3S3Clicked = false;
-const sec8Season1ContentS3 = document.getElementById("sec8-season1-content-s3");
-const sec8Season2ContentS3 = document.getElementById("sec8-season2-content-s3");
-const sec8Season3ContentS3 = document.getElementById("sec8-season3-content-s3");
-
-sec8Season1S3.addEventListener('click', function () {
-    isSec8Season1S3Clicked = true;
-    isSec8Season2S3Clicked = false;
-    isSec8Season3S3Clicked = false;
-    sec8Season1ContentS3.classList.remove('hidden');
-    sec8Season2ContentS3.classList.add('hidden');
-    sec8Season3ContentS3.classList.add('hidden');
-    if (isNetfClicked) {
-        sec8Season1S3.classList.add('red-text');
-        sec8Season1S3.classList.remove('hotstar','prime','hulu');
-        sec8Season2S3.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3S3.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isHotsClicked) {
-        sec8Season1S3.classList.add('hotstar');
-        sec8Season1S3.classList.remove('red-text','prime','hulu');
-        sec8Season2S3.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3S3.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isPriClicked) {
-        sec8Season1S3.classList.add('prime');
-        sec8Season1S3.classList.remove('red-text','hotstar','hulu');
-        sec8Season2S3.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3S3.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isHulClicked) {
-        sec8Season1S3.classList.add('hulu');
-        sec8Season1S3.classList.remove('red-text','hotstar','prime');
-        sec8Season2S3.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3S3.classList.remove('hotstar','red-text','prime','hulu');
-    }
-})
-sec8Season2S3.addEventListener('click', function () {
-    isSec8Season1S2Clicked = false;
-    isSec8Season2S2Clicked = true;
-    isSec8Season3S2Clicked = false;
-    sec8Season2ContentS3.classList.remove('hidden');
-    sec8Season1ContentS3.classList.add('hidden');
-    sec8Season3ContentS3.classList.add('hidden');
-    if (isNetfClicked) {
-        sec8Season2S3.classList.add('red-text');
-        sec8Season2S3.classList.remove('hotstar','prime','hulu');
-        sec8Season1S3.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3S3.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isHotsClicked) {
-        sec8Season2S3.classList.add('hotstar');
-        sec8Season2S3.classList.remove('red-text','prime','hulu');
-        sec8Season1S3.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3S3.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isPriClicked) {
-        sec8Season2S3.classList.add('prime');
-        sec8Season2S3.classList.remove('red-text','hotstar','hulu');
-        sec8Season1S3.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3S3.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isHulClicked) {
-        sec8Season2S3.classList.add('hulu');
-        sec8Season2S3.classList.remove('red-text','hotstar','prime');
-        sec8Season1S3.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season3S3.classList.remove('hotstar','red-text','prime','hulu');
-    }
-})
-sec8Season3S3.addEventListener('click', function () {
-    isSec8Season1S3Clicked = false;
-    isSec8Season2S3Clicked = false;
-    isSec8Season3S3Clicked = true;
-    sec8Season3ContentS3.classList.remove('hidden');
-    sec8Season1ContentS3.classList.add('hidden');
-    sec8Season2ContentS3.classList.add('hidden');
-    if (isNetfClicked) {
-        sec8Season3S3.classList.add('red-text');
-        sec8Season3S3.classList.remove('hotstar','prime','hulu');
-        sec8Season2S3.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season1S3.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isHotsClicked) {
-        sec8Season3S3.classList.add('hotstar');
-        sec8Season3S3.classList.remove('red-text','prime','hulu');
-        sec8Season2S3.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season1S3.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isPriClicked) {
-        sec8Season3S3.classList.add('prime');
-        sec8Season3S3.classList.remove('red-text','hotstar','hulu');
-        sec8Season2S3.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season1S3.classList.remove('hotstar','red-text','prime','hulu');
-    }
-    if (isHulClicked) {
-        sec8Season3S3.classList.add('hulu');
-        sec8Season3S3.classList.remove('red-text','hotstar','prime');
-        sec8Season2S3.classList.remove('hotstar','red-text','prime','hulu');
-        sec8Season1S3.classList.remove('hotstar','red-text','prime','hulu');
-    }
-})
-
 /* main section 9 css*/
 const swiper9 = new Swiper('.mySwiper5', {
     loop: true,
@@ -513,3 +217,4 @@ const swiper9 = new Swiper('.mySwiper5', {
         }
     }
 });
+

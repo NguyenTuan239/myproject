@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>phimmoi login</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <script src="https://kit.fontawesome.com/aa6f8e22b4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/home-index.css">
     <link rel="stylesheet" href="../css/menu-button.css">
@@ -13,30 +13,30 @@
     <link rel="stylesheet" href="../css/home-main-sec.css">
 </head>
 <body class="min-h-screen w-full bg-stone-900 text-slate-200">
-    <div id="setting-icon" class="fixed right-0 top-32 h-10 w-10 z-50 cursor-pointer bg-black flex justify-center items-center">
-        <i class="fa-solid fa-gear fa-lg text-white "></i>
-    </div>
-    <div id="setting-bar" class="setting-bar fixed right-0 top-32 h-64 w-72 z-50 bg-slate-100 flex flex-col p-4 gap-4 reactive">
-        <div class="flex justify-between my-1 items-center">
-        <h2 class="text-md text-black">Live Customizer</h2>
-        <button id="reset" class="netflix reset">
-            <div class="reset-text">Reset All Settings</div>
-            <i class="fa-solid fa-rotate fa-sm"></i>
-        </button>
+  <div id="setting-icon" class="fixed right-0 top-32 h-10 w-10 z-50 cursor-pointer bg-black flex justify-center items-center">
+    <i class="fa-solid fa-gear fa-lg text-white "></i>
+  </div>
+  <div id="setting-bar" class="setting-bar fixed right-0 top-32 h-64 w-72 z-50 bg-slate-100 flex flex-col p-4 gap-4 reactive">
+      <div class="flex justify-between my-1 items-center">
+          <h2 class="text-md">Live Customizer</h2>
+          <button id="reset" class="netflix reset">
+          <div class="reset-text">Reset All Settings</div>
+          <i class="fa-solid fa-rotate fa-sm"></i>
+          </button>
           <button id="setting-bar-exit" class="text-sm">✖️</button>
-        </div>
-        <div class="flex space-x-2">
+      </div>
+      <div class="flex space-x-2">
           <button id="ltr" class="flex-1 bg-black text-white py-1 rounded-sm">LTR</button>
           <button id="rtl" class="flex-1 border border-black text-zinc-700 py-1 rounded-sm">RTL</button>
-        </div>
-        <h3 class="text-md">Color Customizer</h3>
-        <div class="grid grid-cols-2 gap-4">
-          <button id="netf" class="border border-black bg-black text-white py-1 rounded-sm">Netflix</button>
-          <button id="hots" class="border border-black text-zinc-700 py-1 rounded-sm">Hotstar</button>
-          <button id="pri" class="border border-black text-zinc-700 py-1 rounded-sm">Prime</button>
-          <button id="hul" class="border border-black text-zinc-700 py-1 rounded-sm">Hulu</button>
-        </div>
-    </div>
+      </div>
+      <h3 class="text-md">Color Customizer</h3>
+      <div class="grid grid-cols-2 gap-4">
+          <button class="theme-buttons border border-black bg-black text-white py-1 rounded-sm" data-color="#ff0000" hover-bg-color="#ff00002a" logo-color="logo.webp">Netflix</button>
+          <button class="theme-buttons border border-black text-zinc-700 py-1 rounded-sm" data-color="#0000ff" hover-bg-color="#0000ff2a" logo-color="logo-hotstar.webp">Hotstar</button>
+          <button class="theme-buttons border border-black text-zinc-700 py-1 rounded-sm" data-color="#00ffff" hover-bg-color="#00ffff2a" logo-color="logo-prime.webp">Prime</button>
+          <button class="theme-buttons border border-black text-zinc-700 py-1 rounded-sm" data-color="#adff2f" hover-bg-color="#adff2f2a" logo-color="logo-hulu.webp">Hulu</button>
+      </div>
+  </div>
     <div id="reset-dialog" class="dialog">
         <div class="dialog-content">
             <p>Are you sure you want to reset your settings?</p>
@@ -47,7 +47,7 @@
     <a href="#back-to-top" id="backToTop" class="netflix-bg"><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i></a>
     <header class="sticky top-0 w-full h-14 md:h-16 bg-stone-900/80 z-50">
         <section class="flex justify-center text-slate-200">
-            <a href="../../index.html"><img src="../image/logo.webp" alt="logo" class="logo absolute left-12 top-2 h-8 w-auto cursor-pointer lg:left-4 lg:top-4 xl:left-20"></a>
+            <a href="../../index.html"><img src="logo.webp" alt="logo" class="logo absolute left-12 top-2 h-8 w-auto cursor-pointer lg:left-4 lg:top-4 xl:left-20"></a>
             <div class="web-nav hidden relative lg:flex justify-center items-center gap-10 mt-0 ml-20 text-sm ">
                 <p id="web-nav-home" class="cursor-pointer px-2 h-16 flex justify-center items-center hover-red">Home&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
                 <div id="home-hover" class="hidden absolute top-16 -left-28 -right-14 lg:-left-36 lg:-right-32 h-auto w-auto bg-stone-900">
@@ -166,7 +166,7 @@
             <div id="nav-button-cover" class="bg-black/50 w-full h-screen z-30 mt-8 hidden"></div>
             <div id="nav-mobile" class="fixed inset-y-0 left-0 bg-black text-white w-72 p-4 overflow-y-scroll scroll-smooth">
                 <div class="flex items-center justify-between mb-8">
-                  <span><a href="../../index.html"><img src="../image/logo.webp" alt="logo" class="logo absolute left-6 top-4 h-8 w-auto cursor-pointer md:left-4 md:top-4 lg:left-20"></a></span>
+                  <span><a href="../../index.html"><img src="logo.webp" alt="logo" class="logo absolute left-6 top-4 h-8 w-auto cursor-pointer md:left-4 md:top-4 lg:left-20"></a></span>
                   <button id="exButton"><i class="fa-solid fa-xmark fa-xl text-slate-400 hover:text-slate-300"></i></button>
                 </div>
                 <ul class="text-sm">
@@ -175,7 +175,7 @@
                     <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus1"></span></button>
                   </li>
                   <ul id="li-1">
-                    <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red"><a href="../../index.html">OTT Home</a></li>
+                    <a href="../../index.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">OTT Home</li></a>
                     <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Home</li>
                     <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Movie</li>
                     <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">TV Show</li>
@@ -306,7 +306,7 @@
         <section class="w-full">
           <div class="py-16 px-3 xl:px-24 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-3 text-slate-200 font-light text-sm">
             <div>
-              <a href="../../index.html"><img src="../image/logo.webp" alt="logo" class="logo h-8 w-auto cursor-pointer mb-8"></a>
+              <a href="../../index.html"><img src="logo.webp" alt="logo" class="logo h-8 w-auto cursor-pointer mb-8"></a>
               <p>Email us: <a href="mailto:customer@streamit.com" class="font-normal">customer@streamit.com</a></p>
               <p class="mt-4">CUSTOMER SERVICES</p>
               <h3 class="text-lg font-semibold">+ (480) 555-0103</h3>
@@ -384,5 +384,6 @@
         </section>
       </footer>
     <script src="../js/login-page.js"></script>
+    <script src="../js/st.js"></script>
 </body>
 </html>

@@ -40,19 +40,6 @@
     border-radius: 5px;
     background-color: rgb(29, 28, 28);
 }
-.red-border:focus{
-    border-color: red;
-}
-.cyan-border:focus{
-    border-color: cyan;
-}
-.green-border:focus{
-    border-color: green;
-}
-.blue-border:focus{
-    border-color: blue;
-}
-
 .reset-password-bar{
     height: 430px;
 }
@@ -92,15 +79,96 @@
     margin-right: 10px; /* Space between bullet and text */
 }
 
+
+/* css for Playlist page */
 .playlist-profile{
     position: relative;
-    margin-top: 56px;
-    padding: 30px;
     width: 100%;
     height: 140px;
     background-color: rgb(44, 44, 44);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: -4;
+}
+
+.playlist-bg{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.playlist-nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: transparent;
+    cursor: pointer;
+    padding: 18px;
+    .playlist-line{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: all 1s ease;
+    }
+}
+.playlist-nav:hover {
+    .playlist-line{
+        transform: scaleX(1);
+    }
+}
+.playlist-nav.toggle {
+    .playlist-line{
+        transform: scaleX(1);
+    }
+}
+.playlist-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-row-gap: 50px;
+}
+.playlist-card img{
+    transition: all 1s;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.playlist-card:hover img{
+    transform: scale(1.15);
+}
+@media (min-width: 768px) {
+    .playlist-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 30px;
+    }
+}
+@media (min-width: 1024px) {
+    .playlist-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+.playlist-des{
+    transform-origin: top;
+    animation: playlist-des 0.7s ease-in-out forwards;
+}
+@keyframes playlist-des {
+    0%{
+        transform: translateY(70%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

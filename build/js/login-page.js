@@ -1,406 +1,4 @@
 
-// Chức năng của tab cài đặt
-const settingIcon = document.getElementById('setting-icon');
-const settingBar = document.getElementById('setting-bar');
-const settingBarEx = document.getElementById('setting-bar-exit');
-const rlt = document.getElementById('rtl');
-const ltr = document.getElementById('ltr');
-
-settingIcon.addEventListener('click',function(){
-    if(!settingBar.classList.contains('reve')){
-        settingBar.classList.add('active');
-    }else{
-        settingBar.classList.remove('reve')
-    }
-});
-settingBarEx.addEventListener('click',function(){
-    if(settingBar.classList.contains('reactive')){
-        settingBar.classList.remove('active')
-    }else{
-        settingBar.classList.add('reve')
-    }
-})
-document.addEventListener('click', function(event) {
-    if (!settingBar.contains(event.target) && !settingIcon.contains(event.target)) {
-        if(settingBar.classList.contains('reactive')){
-            settingBar.classList.remove('active')
-        }else{
-            settingBar.classList.add('reve')
-        }
-    }
-});
-// Chuyển sang chế độ RTL
-rlt.addEventListener('click', function() {
-    settingBar.classList.remove('right-0');
-    settingBar.classList.add('left-0');
-    settingBar.classList.remove('reactive');
-    settingIcon.classList.remove('right-0');
-    settingIcon.classList.add('left-0');
-    this.classList.add('bg-black', 'text-white');
-    this.classList.remove('text-zinc-700');
-    ltr.classList.remove('bg-black', 'text-white');
-    ltr.classList.add('text-zinc-700');
-});
-
-// Chuyển sang chế độ LTR
-ltr.addEventListener('click', function() {
-    settingBar.classList.remove('left-0');
-    settingBar.classList.add('right-0');
-    settingBar.classList.add('reactive');
-    settingIcon.classList.remove('left-0');
-    settingIcon.classList.add('right-0');
-    this.classList.add('bg-black', 'text-white');
-    this.classList.remove('text-zinc-700');
-    rlt.classList.remove('bg-black', 'text-white');
-    rlt.classList.add('text-zinc-700');
-});
-const hots = document.getElementById('hots');
-const netf = document.getElementById('netf');
-const pri = document.getElementById('pri');
-const hul = document.getElementById('hul');
-const netflixText = document.querySelectorAll('.netflix');
-const netflixBG = document.querySelectorAll('.netflix-bg');
-const hoverBg = document.querySelectorAll('.hover-bg-red');
-const hoverText = document.querySelectorAll('.hover-red');
-const hoverWebnav = document.querySelectorAll('.red-border');
-const logo = document.querySelectorAll('.logo');
-
-hots.addEventListener('click', function () {
-    netflixText.forEach(function (netflix) {
-        netflix.classList.add('hotstar');
-        netflix.classList.remove('netflix','prime','hulu');
-    });
-    netflixBG.forEach(function (netflix) {
-        netflix.classList.add('hotstar-bg');
-        netflix.classList.remove('netflix-bg','prime-bg','hulu-bg');
-    });
-    hoverBg.forEach(function (icon) {
-        icon.classList.remove('hover-bg-red','hover-bg-cyan','hover-bg-green');
-        icon.classList.add('hover-bg-blue');
-    });
-    hoverText.forEach(function (link) {
-        link.classList.remove('hover-red','hover-cyan','hover-green');
-        link.classList.add('hover-blue');
-    });
-    hoverWebnav.forEach(function (link) {
-        link.classList.remove('red-border','cyan-border','green-border');
-        link.classList.add('blue-border');
-    });
-    logo.forEach(function (link) {
-        link.classList.remove('logo-cyan','logo-green');
-        link.classList.add('logo-blue');
-    });
-    this.classList.add('bg-black', 'text-white');
-    this.classList.remove('text-zinc-700');
-    netf.classList.remove('bg-black', 'text-white');
-    netf.classList.add('text-zinc-700');
-    pri.classList.remove('bg-black', 'text-white');
-    pri.classList.add('text-zinc-700');
-    hul.classList.remove('bg-black', 'text-white');
-    hul.classList.add('text-zinc-700');
-    // Inject dynamic CSS with !important
-    const styleSheet = document.createElement("style");
-    styleSheet.type = "text/css";
-    styleSheet.innerText = `
-        .select2-container--default .select2-selection--single {
-            color: blue !important;
-            border: 4px solid gray !important;
-        }
-        .select2-container--default .select2-results__options {
-            background-color: black !important;
-            color: white !important;
-            outline: 1px solid blue !important;
-        }
-        .select2-container--default .select2-selection--single .select2-selection__rendered {
-            color: blue !important;
-        }
-        .select2-container--default .select2-selection--single .select2-selection__arrow {
-            right: 5% !important;
-            top: 15% !important;
-        }
-        .select2-container--default .select2-results__option--highlighted {
-            background-color: blue !important;
-        }
-        .select2-container--default .select2-search--dropdown .select2-search__field {
-            background-color: black !important;
-            border-left: 1px solid blue !important;
-            border-right: 1px solid blue !important;
-            border-top: 1px solid blue !important;
-        }
-    `;
-    document.head.appendChild(styleSheet);
-    $(document).on('mouseenter', '.select2-results__option--selected', function() {
-        $(this).css({
-            'background-color': 'blue', // Change to red on hover
-            'color': 'white' // Ensure text color is white for contrast
-        });
-    }).on('mouseleave', '.select2-results__option--selected', function() {
-        $(this).css({
-            'background-color': 'black', // Revert back to black when not hovered
-            'color': 'white' // Ensure text color remains white
-        });
-    });
-});
-netf.addEventListener('click', function () {
-    netflixText.forEach(function (netflix) {
-        netflix.classList.add('netflix');
-        netflix.classList.remove('hotstar','prime','hulu');
-    });
-    netflixBG.forEach(function (netflix) {
-        netflix.classList.add('netflix-bg');
-        netflix.classList.remove('hotstar-bg','prime-bg','hulu-bg');
-    });
-    hoverBg.forEach(function (icon) {
-        icon.classList.remove('hover-bg-blue','hover-bg-cyan','hover-bg-green');
-        icon.classList.add('hover-bg-red');
-    });
-    hoverText.forEach(function (link) {
-        link.classList.remove('hover-blue','hover-cyan','hover-green');
-        link.classList.add('hover-red');
-    });
-    hoverWebnav.forEach(function (link) {
-        link.classList.remove('blue-border','cyan-border','green-border');
-        link.classList.add('red-border');
-    });
-    logo.forEach(function (link) {
-        link.classList.remove('logo-cyan','logo-green','logo-blue');
-    });
-    this.classList.add('bg-black', 'text-white');
-    this.classList.remove('text-zinc-700');
-    hots.classList.remove('bg-black', 'text-white');
-    hots.classList.add('text-zinc-700');
-    pri.classList.remove('bg-black', 'text-white');
-    pri.classList.add('text-zinc-700');
-    hul.classList.remove('bg-black', 'text-white');
-    hul.classList.add('text-zinc-700');
-    // Inject dynamic CSS with !important
-    const styleSheet = document.createElement("style");
-    styleSheet.type = "text/css";
-    styleSheet.innerText = `
-        .select2-container--default .select2-selection--single {
-            color: red !important;
-            border: 4px solid gray !important;
-        }
-        .select2-container--default .select2-results__options {
-            background-color: black !important;
-            color: white !important;
-            outline: 1px solid red !important;
-        }
-        .select2-container--default .select2-selection--single .select2-selection__rendered {
-            color: red !important;
-        }
-        .select2-container--default .select2-selection--single .select2-selection__arrow {
-            right: 5% !important;
-            top: 15% !important;
-        }
-        .select2-container--default .select2-results__option--highlighted {
-            background-color: red !important;
-        }
-        .select2-container--default .select2-search--dropdown .select2-search__field {
-            background-color: black !important;
-            border-left: 1px solid red !important;
-            border-right: 1px solid red !important;
-            border-top: 1px solid red !important;
-        }
-    `;
-    document.head.appendChild(styleSheet);
-    $(document).on('mouseenter', '.select2-results__option--selected', function() {
-        $(this).css({
-            'background-color': 'red', // Change to red on hover
-            'color': 'white' // Ensure text color is white for contrast
-        });
-    }).on('mouseleave', '.select2-results__option--selected', function() {
-        $(this).css({
-            'background-color': 'black', // Revert back to black when not hovered
-            'color': 'white' // Ensure text color remains white
-        });
-    });
-});
-pri.addEventListener('click', function () {
-    netflixText.forEach(function (netflix) {
-        netflix.classList.add('prime');
-        netflix.classList.remove('hotstar','netflix','hulu');
-    });
-    netflixBG.forEach(function (netflix) {
-        netflix.classList.add('prime-bg');
-        netflix.classList.remove('hotstar-bg','netflix-bg','hulu-bg');
-    });
-    hoverBg.forEach(function (icon) {
-        icon.classList.remove('hover-bg-blue','hover-bg-red','hover-bg-green');
-        icon.classList.add('hover-bg-cyan');
-    });
-    hoverText.forEach(function (link) {
-        link.classList.remove('hover-blue','hover-red','hover-green');
-        link.classList.add('hover-cyan');
-    });
-    hoverWebnav.forEach(function (link) {
-        link.classList.remove('blue-border','red-border','green-border');
-        link.classList.add('cyan-border');
-    });
-    logo.forEach(function (link) {
-        link.classList.remove('logo-green','logo-blue');
-        link.classList.add('logo-cyan');
-    });
-    this.classList.add('bg-black', 'text-white');
-    this.classList.remove('text-zinc-700');
-    hots.classList.remove('bg-black', 'text-white');
-    hots.classList.add('text-zinc-700');
-    netf.classList.remove('bg-black', 'text-white');
-    netf.classList.add('text-zinc-700');
-    hul.classList.remove('bg-black', 'text-white');
-    hul.classList.add('text-zinc-700');
-    // Inject dynamic CSS with !important
-    const styleSheet = document.createElement("style");
-    styleSheet.type = "text/css";
-    styleSheet.innerText = `
-        .select2-container--default .select2-selection--single {
-            color: cyan !important;
-            border: 4px solid gray !important;
-        }
-        .select2-container--default .select2-results__options {
-            background-color: black !important;
-            color: white !important;
-            outline: 1px solid cyan !important;
-        }
-        .select2-container--default .select2-selection--single .select2-selection__rendered {
-            color: cyan !important;
-        }
-        .select2-container--default .select2-selection--single .select2-selection__arrow {
-            right: 5% !important;
-            top: 15% !important;
-        }
-        .select2-container--default .select2-results__option--highlighted {
-            background-color: cyan !important;
-        }
-        .select2-container--default .select2-search--dropdown .select2-search__field {
-            background-color: black !important;
-            border-left: 1px solid cyan !important;
-            border-right: 1px solid cyan !important;
-            border-top: 1px solid cyan !important;
-        }
-    `;
-    document.head.appendChild(styleSheet);
-    $(document).on('mouseenter', '.select2-results__option--selected', function() {
-        $(this).css({
-            'background-color': 'cyan', // Change to red on hover
-            'color': 'white' // Ensure text color is white for contrast
-        });
-    }).on('mouseleave', '.select2-results__option--selected', function() {
-        $(this).css({
-            'background-color': 'black', // Revert back to black when not hovered
-            'color': 'white' // Ensure text color remains white
-        });
-    });
-});
-hul.addEventListener('click', function () {
-    netflixText.forEach(function (netflix) {
-        netflix.classList.add('hulu');
-        netflix.classList.remove('hotstar','netflix','prime');
-    });
-    netflixBG.forEach(function (netflix) {
-        netflix.classList.add('hulu-bg');
-        netflix.classList.remove('hotstar-bg','netflix-bg','prime-bg');
-    });
-    hoverBg.forEach(function (icon) {
-        icon.classList.remove('hover-bg-blue','hover-bg-red','hover-bg-cyan');
-        icon.classList.add('hover-bg-green');
-    });
-    hoverText.forEach(function (link) {
-        link.classList.remove('hover-blue','hover-red','hover-cyan');
-        link.classList.add('hover-green');
-    });
-    hoverWebnav.forEach(function (link) {
-        link.classList.remove('blue-border','red-border','cyan-border');
-        link.classList.add('green-border');
-    });
-    logo.forEach(function (link) {
-        link.classList.remove('logo-cyan','logo-blue');
-        link.classList.add('logo-green');
-    });
-    this.classList.add('bg-black', 'text-white');
-    this.classList.remove('text-zinc-700');
-    hots.classList.remove('bg-black', 'text-white');
-    hots.classList.add('text-zinc-700');
-    netf.classList.remove('bg-black', 'text-white');
-    netf.classList.add('text-zinc-700');
-    pri.classList.remove('bg-black', 'text-white');
-    pri.classList.add('text-zinc-700');
-    // Inject dynamic CSS with !important
-    const styleSheet = document.createElement("style");
-    styleSheet.type = "text/css";
-    styleSheet.innerText = `
-        .select2-container--default .select2-selection--single {
-            color: greenyellow !important;
-            border: 4px solid gray !important;
-        }
-        .select2-container--default .select2-results__options {
-            background-color: black !important;
-            color: white !important;
-            outline: 1px solid greenyellow !important;
-        }
-        .select2-container--default .select2-selection--single .select2-selection__rendered {
-            color: greenyellow !important;
-        }
-        .select2-container--default .select2-selection--single .select2-selection__arrow {
-            right: 5% !important;
-            top: 15% !important;
-        }
-        .select2-container--default .select2-results__option--highlighted {
-            background-color: greenyellow !important;
-        }
-        .select2-container--default .select2-search--dropdown .select2-search__field {
-            background-color: black !important;
-            border-left: 1px solid greenyellow !important;
-            border-right: 1px solid greenyellow !important;
-            border-top: 1px solid greenyellow !important;
-        }
-    `;
-    document.head.appendChild(styleSheet);
-    $(document).on('mouseenter', '.select2-results__option--selected', function() {
-        $(this).css({
-            'background-color': 'greenyellow', // Change to red on hover
-            'color': 'white' // Ensure text color is white for contrast
-        });
-    }).on('mouseleave', '.select2-results__option--selected', function() {
-        $(this).css({
-            'background-color': 'black', // Revert back to black when not hovered
-            'color': 'white' // Ensure text color remains white
-        });
-    });
-});
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    var resetButton = document.getElementById('reset');
-    var dialog = document.getElementById('reset-dialog');
-    var confirmButton = document.getElementById('confirm-reset');
-    var cancelButton = document.getElementById('cancel-reset');
-
-    // Show dialog
-    resetButton.addEventListener('click', function(event) {
-        event.preventDefault();
-        dialog.style.display = 'block';
-    });
-
-    // Confirm reset and reload page
-    confirmButton.addEventListener('click', function() {
-        dialog.style.display = 'none';
-        location.reload();
-    });
-
-    // Cancel reset
-    cancelButton.addEventListener('click', function() {
-        dialog.style.display = 'none';
-    });
-
-    // Close dialog if user clicks outside of it
-    window.addEventListener('click', function(event) {
-        if (event.target === dialog) {
-            dialog.style.display = 'none';
-        }
-    });
-});
-
 // Terms of use Hearder and Footer
 const searchIcon = document.getElementById('search-icon');
 const searchInput = document.getElementById('search-input');
@@ -568,8 +166,6 @@ window.onscroll = function() {
     }
 };
 
-
-//Share icon Hover js
 const shareElements = document.querySelectorAll('.share-icon');
 const shareHoverElements = document.querySelectorAll('.share-hover');
 let shareHovered = true;
@@ -580,7 +176,6 @@ shareElements.forEach(function(shareElement) {
         shareHovered = true;
         shareHoverElements.forEach(function(shareHover) {
             shareHover.classList.remove('hidden');
-            shareHover.classList.add('flex');
         });
     });
 
@@ -594,7 +189,6 @@ shareHoverElements.forEach(function(shareHoverElement) {
     shareHoverElement.addEventListener('mouseenter', function() {
         shareHoverHovered = true;
         shareHoverElement.classList.remove('hidden');
-        shareHoverElement.classList.add('flex');
     });
 
     shareHoverElement.addEventListener('mouseleave', function() {
@@ -607,7 +201,48 @@ function hideHoverIfBothNotHover() {
     if (!shareHovered && !shareHoverHovered) {
         shareHoverElements.forEach(function(shareHover) {
             shareHover.classList.add('hidden');
-            // shareHover.classList.remove('flex');
+        });
+    }
+}
+
+//Share icon Hover js
+const shareElements2 = document.querySelectorAll('.share-icon1');
+const shareHoverElements2 = document.querySelectorAll('.share-hover1');
+let shareHovered2 = true;
+let shareHoverHovered2 = true;
+
+shareElements2.forEach(function(shareElement) {
+    shareElement.addEventListener('mouseenter', function() {
+        shareHovered2 = true;
+        shareHoverElements2.forEach(function(shareHover) {
+            shareHover.classList.remove('hidden');
+            shareHover.classList.add('flex');
+        });
+    });
+
+    shareElement.addEventListener('mouseleave', function() {
+        shareHovered2 = false;
+        hideHoverIfBothNotHover2();
+    });
+});
+
+shareHoverElements2.forEach(function(shareHoverElement) {
+    shareHoverElement.addEventListener('mouseenter', function() {
+        shareHoverHovered2 = true;
+        shareHoverElement.classList.remove('hidden');
+        shareHoverElement.classList.add('flex');
+    });
+
+    shareHoverElement.addEventListener('mouseleave', function() {
+        shareHoverHovered2 = false;
+        hideHoverIfBothNotHover2();
+    });
+});
+
+function hideHoverIfBothNotHover2() {
+    if (!shareHovered2 && !shareHoverHovered2) {
+        shareHoverElements2.forEach(function(shareHover) {
+            shareHover.classList.add('hidden');
         });
     }
 }
@@ -636,24 +271,54 @@ $(document).ready(function() {
     });
 });
 
+/* Detail movie page js */
 const detailMovieNav1 = document.getElementById('detail-movie-des-nav-1');
 const detailMovieNav2 = document.getElementById('detail-movie-des-nav-2');
 const detailMovieNav3 = document.getElementById('detail-movie-des-nav-3');
+const detailMovieNav4 = document.getElementById('detail-movie-des-nav-4');
+const detailMovieNav5 = document.getElementById('detail-movie-des-nav-5');
+const detailMovieDes1 = document.getElementById('detail-movie-des-1');
+const detailMovieDes2 = document.getElementById('detail-movie-des-2');
+const detailMovieDes3 = document.getElementById('detail-movie-des-3');
+const detailMovieDes4 = document.getElementById('detail-movie-des-4');
+const detailMovieDes5 = document.getElementById('detail-movie-des-5');
 
 detailMovieNav1.addEventListener('click', function() {
     this.classList.add('toggle');
     detailMovieNav2.classList.remove('toggle');
     detailMovieNav3.classList.remove('toggle');
+    detailMovieDes1.classList.remove('hidden');
+    detailMovieDes2.classList.add('hidden');
+    detailMovieDes3.classList.add('hidden');
 });
 
 detailMovieNav2.addEventListener('click', function() {
     this.classList.add('toggle');
     detailMovieNav1.classList.remove('toggle');
     detailMovieNav3.classList.remove('toggle');
+    detailMovieDes1.classList.add('hidden');
+    detailMovieDes2.classList.remove('hidden');
+    detailMovieDes3.classList.add('hidden');
 });
 
 detailMovieNav3.addEventListener('click', function() {
     this.classList.add('toggle');
     detailMovieNav1.classList.remove('toggle');
     detailMovieNav2.classList.remove('toggle');
+    detailMovieDes1.classList.add('hidden');
+    detailMovieDes2.classList.add('hidden');
+    detailMovieDes3.classList.remove('hidden');
 });
+detailMovieNav4.addEventListener('click', function() {
+    this.classList.add('toggle');
+    detailMovieNav5.classList.remove('toggle');
+    detailMovieDes5.classList.add('hidden');
+    detailMovieDes4.classList.remove('hidden');
+});
+detailMovieNav5.addEventListener('click', function() {
+    this.classList.add('toggle');
+    detailMovieNav4.classList.remove('toggle');
+    detailMovieDes4.classList.add('hidden');
+    detailMovieDes5.classList.remove('hidden');
+});
+
