@@ -77,9 +77,11 @@ window.addEventListener('load', () => {
         color.style.setProperty('--main-color', savedColor);
         color.style.setProperty('--hover-backgournd-color', savedBGColor);
     });
-    document.querySelectorAll('.logo').forEach(logo => {
-        logo.src = savedLogoColor;
-    })
+    if(savedLogoColor){
+        document.querySelectorAll('.logo').forEach(logo => {
+            logo.src = savedLogoColor;
+        })
+    }
 
     if (activeButtonIndex) {
         document.querySelectorAll('.theme-buttons').forEach((button, index) => {
@@ -112,7 +114,10 @@ themeButtons.forEach((button, index) => {
         })
 
         // Đặt nền đen cho nút được chọn và xóa khỏi các nút khác
-        themeButtons.forEach(btn => btn.classList.remove('bg-black', 'text-white'));
+        themeButtons.forEach(btn => {
+            btn.classList.remove('bg-black', 'text-white');
+            btn.classList.add('text-zinc-700');
+        });
         button.classList.add('bg-black', 'text-white');
         button.classList.remove('text-zinc-700');
 
@@ -122,4 +127,39 @@ themeButtons.forEach((button, index) => {
         localStorage.setItem('logoColor', logoColor);
         localStorage.setItem('activeButtonIndex', index);
     });
+});
+
+// Show the reset confirmation dialog
+const resetButton = document.getElementById('reset');
+const resetDialog = document.getElementById('reset-dialog');
+
+resetButton.addEventListener('click', function() {
+    resetDialog.style.display = 'block'; // Show dialog
+});
+
+// Handle confirm reset
+const confirmResetButton = document.getElementById('confirm-reset');
+confirmResetButton.addEventListener('click', function() {
+    // Clear localStorage
+    localStorage.removeItem('direction');
+    localStorage.removeItem('themeColor');
+    localStorage.removeItem('themeBGColor');
+    localStorage.removeItem('logoColor');
+    localStorage.removeItem('activeButtonIndex');
+
+    // Hide the reset dialog
+    resetDialog.style.display = 'none';
+    location.reload();
+});
+
+// Handle cancel reset
+const cancelResetButton = document.getElementById('cancel-reset');
+cancelResetButton.addEventListener('click', function() {
+    resetDialog.style.display = 'none'; // Hide dialog
+});
+// Close dialog if user clicks outside of it
+window.addEventListener('click', function(event) {
+    if (event.target === resetDialog) {
+        resetDialog.style.display = 'none';
+    }
 });

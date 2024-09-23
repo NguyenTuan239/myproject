@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../css/menu-button.css">
     <link rel="stylesheet" href="../css/login-page.css">
     <link rel="stylesheet" href="../css/home-main.css">
-    <link rel="stylesheet" href="../css/home-main-sec.css">
     <link rel="stylesheet" href="../css/movie-detail.css">
 </head>
 <body class="min-h-screen w-full bg-stone-900 text-slate-100">
@@ -18,25 +17,25 @@
     <i class="fa-solid fa-gear fa-lg text-white "></i>
   </div>
   <div id="setting-bar" class="setting-bar fixed right-0 top-32 h-64 w-72 z-50 bg-slate-100 flex flex-col p-4 gap-4 reactive">
-    <div class="flex justify-between my-1 items-center">
-        <h2 class="text-md">Live Customizer</h2>
-        <button id="reset" class="netflix reset">
-        <div class="reset-text">Reset All Settings</div>
-        <i class="fa-solid fa-rotate fa-sm"></i>
-        </button>
-        <button id="setting-bar-exit" class="text-sm">✖️</button>
-    </div>
-    <div class="flex space-x-2">
-        <button id="ltr" class="flex-1 bg-black text-white py-1 rounded-sm">LTR</button>
-        <button id="rtl" class="flex-1 border border-black text-zinc-700 py-1 rounded-sm">RTL</button>
-    </div>
-    <h3 class="text-md">Color Customizer</h3>
-    <div class="grid grid-cols-2 gap-4">
-        <button class="theme-buttons border border-black bg-black text-white py-1 rounded-sm" data-color="#ff0000" hover-bg-color="#ff00002a" logo-color="logo.webp">Netflix</button>
-        <button class="theme-buttons border border-black text-zinc-700 py-1 rounded-sm" data-color="#0000ff" hover-bg-color="#0000ff2a" logo-color="logo-hotstar.webp">Hotstar</button>
-        <button class="theme-buttons border border-black text-zinc-700 py-1 rounded-sm" data-color="#00ffff" hover-bg-color="#00ffff2a" logo-color="logo-prime.webp">Prime</button>
-        <button class="theme-buttons border border-black text-zinc-700 py-1 rounded-sm" data-color="#adff2f" hover-bg-color="#adff2f2a" logo-color="logo-hulu.webp">Hulu</button>
-    </div>
+      <div class="flex justify-between my-1 items-center">
+          <h2 class="text-md text-zinc-700">Live Customizer</h2>
+          <button id="reset" class="netflix reset">
+              <div class="reset-text">Reset All Settings</div>
+              <i class="fa-solid fa-rotate fa-sm"></i>
+          </button>
+          <button id="setting-bar-exit" class="text-sm">✖️</button>
+      </div>
+      <div class="flex space-x-2">
+          <button id="ltr" class="flex-1 border border-black bg-black text-white py-1 rounded-sm">LTR</button>
+          <button id="rtl" class="flex-1 border border-black text-zinc-700 py-1 rounded-sm">RTL</button>
+      </div>
+      <h3 class="text-md text-zinc-700">Color Customizer</h3>
+      <div class="grid grid-cols-2 gap-4">
+          <button class="theme-buttons border border-black bg-black text-white py-1 rounded-sm" data-color="#ff0000" hover-bg-color="#ff00002a" logo-color="logo.webp">Netflix</button>
+          <button class="theme-buttons border border-black text-zinc-700 py-1 rounded-sm" data-color="#0000ff" hover-bg-color="#0000ff2a" logo-color="logo-hotstar.webp">Hotstar</button>
+          <button class="theme-buttons border border-black text-zinc-700 py-1 rounded-sm" data-color="#02afaf" hover-bg-color="#00ffff2a" logo-color="logo-prime.webp">Prime</button>
+          <button class="theme-buttons border border-black text-zinc-700 py-1 rounded-sm" data-color="#599401" hover-bg-color="#adff2f2a" logo-color="logo-hulu.webp">Hulu</button>
+      </div>
   </div>
   <div id="reset-dialog" class="dialog">
       <div class="dialog-content">
@@ -45,229 +44,229 @@
           <button id="cancel-reset">No</button>
       </div>
   </div>
-  <a href="#back-to-top" id="backToTop" class="netflix-bg"><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i></a>
+  <a href="#" id="backToTop" class="netflix-bg"><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i></a>
   <header class="sticky top-0 w-full h-14 md:h-16 bg-stone-900/80 z-50">
-      <section class="flex justify-center text-slate-200">
-          <a href="../../index.html"><img src="logo.webp" alt="logo" class="logo absolute left-12 top-2 h-8 w-auto cursor-pointer lg:left-4 lg:top-4 xl:left-20"></a>
-          <div class="web-nav hidden relative lg:flex justify-center items-center gap-10 mt-0 ml-20 text-sm ">
-              <p id="web-nav-home" class="cursor-pointer px-2 h-16 flex justify-center items-center hover-red">Home&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
-              <div id="home-hover" class="hidden absolute top-16 -left-28 -right-14 lg:-left-36 lg:-right-32 h-auto w-auto bg-stone-900">
-                <ul class="my-2 mx-4 flex justify-evenly">
-                  <li class="flex flex-col justify-center items-center gap-2 hover-red"><a href="../../index.html"><img class="w-28 lg:w-36 h-auto" src="../image/mega-menu/new-home.webp" alt="new home menu"><span><a href="../../index.html">OTT Home</a></span></a></li>
-                  <li class="flex flex-col justify-center items-center gap-2 hover-red"><img class="w-28 lg:w-36 h-auto" src="../image/mega-menu/home.webp" alt="home menu"><span>Home</span></li>
-                  <li class="flex flex-col justify-center items-center gap-2 hover-red"><img class="w-28 lg:w-36 h-auto" src="../image/mega-menu/movie.webp" alt="movie"><span>Movie</span></li>
-                  <li class="flex flex-col justify-center items-center gap-2 hover-red"><img class="w-28 lg:w-36 h-auto" src="../image/mega-menu/tv-show.webp" alt="Tv Show"><span>Tv Show</span></li>
-                  <li class="flex flex-col justify-center items-center gap-2 hover-red"><img class="w-28 lg:w-36 h-auto" src="../image/mega-menu/video.webp" alt="Video"><span>Video</span></li>
-                  <li class="flex flex-col justify-center items-center pt-3 hover-red"><img class="w-28 lg:w-36 h-auto" src="../image/mega-menu/shop-home.webp" alt="Merchadise Store"><span class="w-4/6 pt-2 -mb-2">Merchadise</span><span>Store</span></li>
-                </ul>
-              </div>
-              <p id="web-nav-features" class="cursor-pointer px-2 h-16 flex justify-center items-center hover-red">Features&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
-              <div id="features-hover" class="hidden absolute top-16 left-28 w-52 bg-stone-900">
-                <ul class="py-1 text-slate-400">
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Restricted Content</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Related Merchadise</li>
-                  <a href="playlist.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Playlist</li></a>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Geners</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Cast</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Tags</li>
-              </div>
-              <p id="web-nav-pages" class="cursor-pointer px-2 h-16 flex justify-center items-center hover-red">Pages&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
-              <div id="pages-hover" class="hidden absolute top-16 left-56 w-52 bg-stone-900">
-                <ul class="py-1 text-slate-400">
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>About Us</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Contract Us</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>FAQ</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Privacy Policy</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Pricing Plan</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Comming Soon</li>
-                  <li id="web-nav-error-page" class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error Page <i class="fa-solid fa-caret-right fa-sm pl-20"></i></li>
-                  <div id="error-page-hover" class="hidden absolute w-52 bg-stone-900 top-64 -left-52 lg:left-52">
-                    <ul class="p-3 text-slate-300">
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error page 1</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error page 2</li>
-                    </ul>
-                  </div>
-                </ul>
-              </div>
-              <p id="web-nav-Blog" class="cursor-pointer px-2 h-16 flex justify-center items-center hover-red">Blog&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
-              <div id="Blog-hover" class="hidden absolute top-16 -right-10 w-52 bg-stone-900">
-                <ul class="py-1 text-slate-400">
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Listing</li>
-                  <li id="web-nav-BlogGrid" class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Grid<i class="fa-solid fa-caret-right fa-sm absolute top-5 right-5"></i></li>
-                  <div id="BlogGrid-hover" class="hidden absolute w-52 bg-stone-900 top-11 -left-52 lg:left-52">
-                    <ul class="p-3 text-slate-300">
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>1 Colume</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>2 Colume</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>3 Colume</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>4 Colume</li>
-                    </ul>
-                  </div>
-                  <li id="web-nav-BlogSidebar" class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Sidebar<i class="fa-solid fa-caret-right fa-sm absolute top-5 right-5"></i></li>
-                  <div id="BlogSidebar-hover" class="hidden absolute w-52 bg-stone-900 top-20 -left-52 lg:left-52">
-                    <ul class="p-3 text-slate-300">
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Left Sidebar</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Right Sidebar</li>
-                    </ul>
-                  </div>
-                  <li id="web-nav-BlogSingle" class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Single<i class="fa-solid fa-caret-right fa-sm absolute top-5 right-5"></i></li>
-                  <div id="BlogSingle-hover" class="hidden absolute w-52 bg-stone-900 top-32 -left-52 lg:left-52">
-                    <ul class="p-3 text-slate-300">
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Template</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Standard</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Audio</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Video</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Link</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Quote</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Gallery</li>
-                    </ul>
-                  </div>
-                </ul>
-              </div>
-              <p id="web-nav-Shop" class="cursor-pointer px-2 h-16 flex justify-center items-center hover-red z-10">Shop&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
-              <div id="Shop-hover" class="hidden absolute top-16 -right-24 w-44 bg-stone-900">
-                <ul class="py-1 text-slate-400">
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Shop</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>My Account Page</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Cart Page</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Wishlist Page</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Checkout Page</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Order Page</li>
-                </ul>
-              </div>
-          </div>
-          <button id="search" class="search hidden absolute top-16 right-16 z-40 h-9 lg:hidden text-slate-400 cursor-pointer pt-1 px-3 hover:text-slate-300"><i class="fa-solid fa-magnifying-glass"></i></button>
-          <div class="absolute top-28 right-16 lg:right-24 lg:top-3 lg:block xl:pr-24 z-10">
-            <button id="search-icon" class="search-icon hidden lg:block absolute h-9 text-slate-400 cursor-pointer pt-1 px-3 hover:text-slate-300"><i  class="fa-solid fa-magnifying-glass"></i></button>
-            <input id="search-input" type="text" class="search-input h-9 bg-stone-900 text-slate-200 border-none focus:outline-none focus:ring-0 focus:bg-stone-900" placeholder="Search...">
-          </div>
-          <button id="account-button" class="account-button hidden absolute top-16 right-6 lg:top-3 lg:right-5 h-9 w-9 bg-stone-900 rounded-full text-slate-400 hover:text-slate-300 lg:block xl:mr-20 z-10"><i class="fa-solid fa-user-plus fa-sm"></i></button>
-          <div id="account" class="absolute h-60 w-52 right-4 top-28 bg-stone-900 text-sm lg:top-16 xl:right-20">
-              <p class="p-4 pl-12 ">
-                  <span class="absolute top-3 left-2 w-9 h-9"><img src="../image/profile.png" alt=""></span>
-                  Tuan Nguyen
-              </p>
-              <div class="w-full h-0.5 mt-1 bg-stone-700"></div>
-              <ul class="flex flex-col items-start justify-center ml-4">
-                  <li class="p-3 cursor-pointer "><i class="fa-regular fa-user fa-sm pr-4"></i><span class="hover-red">My Account</span></li>
-                  <li class="p-3 cursor-pointer"><i class="fa-solid fa-plus fa-sm pr-4"></i><span class="hover-red">Watchlist</span></li>
-                  <li class="p-3 cursor-pointer"><i class="fa-regular fa-star fa-sm pr-4"></i><span class="hover-red">Subcription</span></li>
-              </ul>
-              <a href="login.html" class="absolute h-10 w-full bottom-0 bg-stone-700 text-center pt-2"><i class="fa-solid fa-right-from-bracket fa-sm"></i> <span class="hover-red">&nbsp;Logout</span></a>
-          </div>
-      </section>
-      <section class="lg:hidden">
-          <div id="menuButton" class="menuButton cursor-pointer absolute right-3 top-2" for="check">
-              <span class="top"></span>
-              <span class="mid"></span>
-              <span class="bot"></span>
-          </div>
-          <div id="mobile-menu" class="mobile-menu absolute top-12 h-16 w-full bg-stone-900">
-          </div>
-          <button id="nav-button"><i class="fa-solid fa-circle-arrow-right fa-xl absolute top-6 left-3 cursor-pointer netflix hover:text-slate-600"></i></button>
-          <div id="nav-button-cover" class="bg-black/50 w-full h-screen z-30 mt-8 hidden"></div>
-          <div id="nav-mobile" class="fixed inset-y-0 left-0 bg-black text-white w-72 p-4 overflow-y-scroll scroll-smooth">
-              <div class="flex items-center justify-between mb-8">
-                <span><a href="../../index.html"><img src="logo.webp" alt="logo" class="logo absolute left-6 top-4 h-8 w-auto cursor-pointer md:left-4 md:top-4 lg:left-20"></a></span>
-                <button id="exButton"><i class="fa-solid fa-xmark fa-xl text-slate-400 hover:text-slate-300"></i></button>
-              </div>
-              <ul class="text-sm">
-                <li id="nav-1" class="flex justify-between items-center py-4 px-4 border-b border-slate-900 hover-red">
-                  <span>Home</span>
-                  <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus1"></span></button>
-                </li>
-                <ul id="li-1">
-                  <a href="../../index.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">OTT Home</li></a>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Home</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Movie</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">TV Show</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Video</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Merchadise</li>
-                </ul>
-                <li id="nav-2" class="flex justify-between items-center py-4 px-4 border-b border-slate-900 hover-red">
-                  <span>Features</span>
-                  <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus2"></span></button>
-                </li>
-                <ul id="li-2">
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Restricted Content</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Related Merchandise</li>
-                  <a href="playlist.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Playlist</li></a>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Geners</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Cast</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Tags</li>
-                </ul>
-                <li id="nav-3" class="flex justify-between items-center py-4 px-4 border-b border-slate-900 hover-red">
-                  <span>Pages</span>
-                  <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus3"></span></button>
-                </li>
-                <ul id="li-3">
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">About Us</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Contact Us</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">FAQ</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Privacy Policy</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Pricing Plan</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Coming Soon</li>
-                  <li id="nav-3-1" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
-                      <span>Error Page</span>
-                      <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus31"></span></button>
-                  </li>
-                  <ul id="li-3-1">
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Error Page 1</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Error Page 2</li>
-                  </ul>
-                </ul>
-                <li id="nav-4" class="flex justify-between items-center py-4 px-4 border-b border-slate-900 hover-red">
-                  <span>Blog</span>
-                  <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus4"></span></button>
-                </li>
-                <ul id="li-4">
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Listing</li>
-                  <li id="nav-4-1" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
-                      <span>Blog Grid</span>
-                      <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus41"></span></button>
-                  </li>
-                  <ul id="li-4-1">
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">1 Colume</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">2 Colume</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">3 Colume</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">4 Colume</li>
-                  </ul>
-                  <li id="nav-4-2" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
-                      <span>Blog Sidebar</span>
-                      <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus42"></span></button>
-                  </li>
-                  <ul id="li-4-2">
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Left Sidebar</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Right Sidebar</li>
-                  </ul>
-                  <li id="nav-4-3" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
-                      <span>Blog Single</span>
-                      <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus43"></span></button>
-                  </li>
-                  <ul id="li-4-3">
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Blog Template</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Standard</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Audio</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Video</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Link</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Quote</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Gallery</li>
-                  </ul>
-                </ul>
-                <li id="nav-5" class="flex justify-between items-center py-4 px-4 border-b border-slate-900 hover-red">
-                  <span>Shop</span>
-                  <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus5"></span></button>
-                </li>
-                <ul id="li-5">
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Shop</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">My Account</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Cart Page</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Wishlist Page</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Check Out Page</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Order Tracking</li>
-                </ul>
+    <section class="flex justify-center text-slate-200">
+        <a href="../../index.html"><img src="logo.webp" alt="logo" class="logo absolute left-12 top-2 h-8 w-auto lg:left-4 lg:top-4 xl:left-20"></a>
+        <div class="web-nav hidden relative lg:flex justify-center items-center gap-10 mt-0 ml-20 text-sm ">
+            <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center hover-red">Home&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
+            <div class="home-hover hidden absolute top-16 -left-28 -right-14 lg:-left-36 lg:-right-32 h-auto w-auto bg-stone-900">
+              <ul class="my-2 mx-4 flex justify-evenly">
+                <a href="../../index.html"><li class="flex flex-col justify-center items-center gap-2 hover-red"><img class="w-28 lg:w-36 h-auto" src="../image/mega-menu/new-home.webp" alt="new home menu"><span>OTT Home</span></li></a>
+                <li class="flex flex-col justify-center items-center gap-2 hover-red"><img class="w-28 lg:w-36 h-auto" src="../image/mega-menu/home.webp" alt="home menu"><span>Home</span></li>
+                <li class="flex flex-col justify-center items-center gap-2 hover-red"><img class="w-28 lg:w-36 h-auto" src="../image/mega-menu/movie.webp" alt="movie"><span>Movie</span></li>
+                <li class="flex flex-col justify-center items-center gap-2 hover-red"><img class="w-28 lg:w-36 h-auto" src="../image/mega-menu/tv-show.webp" alt="Tv Show"><span>Tv Show</span></li>
+                <li class="flex flex-col justify-center items-center gap-2 hover-red"><img class="w-28 lg:w-36 h-auto" src="../image/mega-menu/video.webp" alt="Video"><span>Video</span></li>
+                <li class="flex flex-col justify-center items-center pt-3 hover-red"><img class="w-28 lg:w-36 h-auto" src="../image/mega-menu/shop-home.webp" alt="Merchadise Store"><span class="w-4/6 pt-2 -mb-2">Merchadise</span><span>Store</span></li>
               </ul>
             </div>
-      </section>
+            <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center hover-red">Features&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
+            <div class="home-hover hidden absolute top-16 left-28 w-52 bg-stone-900">
+              <ul class="py-1 text-slate-400">
+                <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Restricted Content</li>
+                <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Related Merchadise</li>
+                <a href="playlist.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Playlist</li></a>
+                <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Geners</li>
+                <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Cast</li>
+                <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Tags</li>
+            </div>
+            <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center hover-red">Pages&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
+            <div class="home-hover hidden absolute top-16 left-56 w-52 bg-stone-900">
+              <ul class="py-1 text-slate-400">
+                <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>About Us</li>
+                <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Contract Us</li>
+                <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>FAQ</li>
+                <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Privacy Policy</li>
+                <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Pricing Plan</li>
+                <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Comming Soon</li>
+                <li class="web-nav-home li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error Page <i class="fa-solid fa-caret-right fa-sm pl-20"></i></li>
+                <div class="home-hover hidden absolute w-52 bg-stone-900 top-64 -left-52 lg:left-52">
+                  <ul class="p-3 text-slate-300">
+                    <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error page 1</li>
+                    <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error page 2</li>
+                  </ul>
+                </div>
+              </ul>
+            </div>
+            <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center hover-red">Blog&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
+            <div class="home-hover hidden absolute top-16 -right-10 w-52 bg-stone-900">
+              <ul class="py-1 text-slate-400">
+                <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Listing</li>
+                <li class="web-nav-home li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Grid<i class="fa-solid fa-caret-right fa-sm absolute top-5 right-5"></i></li>
+                <div class="home-hover hidden absolute w-52 bg-stone-900 top-11 -left-52 lg:left-52">
+                  <ul class="p-3 text-slate-300">
+                    <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>1 Colume</li>
+                    <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>2 Colume</li>
+                    <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>3 Colume</li>
+                    <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>4 Colume</li>
+                  </ul>
+                </div>
+                <li class="web-nav-home li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Sidebar<i class="fa-solid fa-caret-right fa-sm absolute top-5 right-5"></i></li>
+                <div class="home-hover hidden absolute w-52 bg-stone-900 top-20 -left-52 lg:left-52">
+                  <ul class="p-3 text-slate-300">
+                    <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Left Sidebar</li>
+                    <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Right Sidebar</li>
+                  </ul>
+                </div>
+                <li class="web-nav-home li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Single<i class="fa-solid fa-caret-right fa-sm absolute top-5 right-5"></i></li>
+                <div class="home-hover hidden absolute w-52 bg-stone-900 top-32 -left-52 lg:left-52">
+                  <ul class="p-3 text-slate-300">
+                    <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Template</li>
+                    <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Standard</li>
+                    <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Audio</li>
+                    <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Video</li>
+                    <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Link</li>
+                    <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Quote</li>
+                    <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Gallery</li>
+                  </ul>
+                </div>
+              </ul>
+            </div>
+            <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center hover-red z-10">Shop&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
+            <div class="home-hover hidden absolute top-16 -right-24 w-44 bg-stone-900">
+              <ul class="py-1 text-slate-400">
+                <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Shop</li>
+                <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>My Account Page</li>
+                <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Cart Page</li>
+                <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Wishlist Page</li>
+                <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Checkout Page</li>
+                <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Order Page</li>
+              </ul>
+            </div>
+        </div>
+        <button id="search" class="search hidden absolute top-16 right-16 z-40 h-9 lg:hidden text-slate-400 cursor-pointer pt-1 px-3 hover:text-slate-300"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div class="absolute top-28 right-16 lg:right-24 lg:top-3 lg:block xl:pr-24 z-10">
+          <button id="search-icon" class="search-icon hidden lg:block absolute h-9 text-slate-400 cursor-pointer pt-1 px-3 hover:text-slate-300"><i  class="fa-solid fa-magnifying-glass"></i></button>
+          <input id="search-input" type="text" class="search-input h-9 bg-stone-900 text-slate-200 border-none focus:outline-none focus:ring-0 focus:bg-stone-900" placeholder="Search...">
+        </div>
+        <button id="account-button" class="account-button hidden absolute top-16 right-6 lg:top-3 lg:right-5 h-9 w-9 bg-stone-900 rounded-full text-slate-400 hover:text-slate-300 lg:block xl:mr-20 z-10"><i class="fa-solid fa-user-plus fa-sm"></i></button>
+        <div id="account" class="absolute h-60 w-52 right-4 top-28 bg-stone-900 text-sm lg:top-16 xl:right-20">
+            <p class="p-4 pl-12 ">
+                <span class="absolute top-3 left-2 w-9 h-9"><img src="../image/profile.png" alt=""></span>
+                Tuan Nguyen
+            </p>
+            <div class="w-full h-0.5 mt-1 bg-stone-700"></div>
+            <ul class="flex flex-col items-start justify-center ml-4">
+                <li class="p-3 cursor-pointer "><i class="fa-regular fa-user fa-sm pr-4"></i><span class="hover-red">My Account</span></li>
+                <li class="p-3 cursor-pointer"><i class="fa-solid fa-plus fa-sm pr-4"></i><span class="hover-red">Watchlist</span></li>
+                <li class="p-3 cursor-pointer"><i class="fa-regular fa-star fa-sm pr-4"></i><span class="hover-red">Subcription</span></li>
+            </ul>
+            <a href="login.html" class="absolute h-10 w-full bottom-0 bg-stone-700 text-center pt-2"><i class="fa-solid fa-right-from-bracket fa-sm"></i> <span class="hover-red">&nbsp;Logout</span></a>
+        </div>
+    </section>
+    <section class="lg:hidden">
+        <div id="menuButton" class="menuButton cursor-pointer absolute right-3 top-2" for="check">
+            <span class="top"></span>
+            <span class="mid"></span>
+            <span class="bot"></span>
+        </div>
+        <div id="mobile-menu" class="mobile-menu absolute top-12 h-16 w-full bg-stone-900">
+        </div>
+        <button id="nav-button"><i class="fa-solid fa-circle-arrow-right fa-xl absolute top-6 left-3 cursor-pointer netflix hover:text-slate-600"></i></button>
+        <div id="nav-button-cover" class="bg-black/50 w-full h-screen z-30 mt-8 hidden"></div>
+        <div id="nav-mobile" class="fixed inset-y-0 left-0 bg-black text-white w-72 p-4 overflow-y-scroll scroll-smooth">
+            <div class="flex items-center justify-between mb-8">
+              <span><a href="../../index.html"><img src="logo.webp" alt="logo" class="logo absolute left-6 top-4 h-8 w-auto cursor-pointer md:left-4 md:top-4 lg:left-20"></a></span>
+              <button id="exButton"><i class="fa-solid fa-xmark fa-xl text-slate-400 hover:text-slate-300"></i></button>
+            </div>
+            <ul class="text-sm">
+              <li id="nav-1" class="flex justify-between items-center py-4 px-4 border-b border-slate-900 hover-red">
+                <span>Home</span>
+                <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus1"></span></button>
+              </li>
+              <ul id="li-1">
+                <a href="../../index.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">OTT Home</li></a>
+                <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Home</li>
+                <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Movie</li>
+                <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">TV Show</li>
+                <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Video</li>
+                <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Merchadise</li>
+              </ul>
+              <li id="nav-2" class="flex justify-between items-center py-4 px-4 border-b border-slate-900 hover-red">
+                <span>Features</span>
+                <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus2"></span></button>
+              </li>
+              <ul id="li-2">
+                <a href="#"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Restricted Content</li></a>
+                <a href="#"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Related Merchandise</li></a>
+                <a href="playlist.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Playlist</li></a>
+                <a href="#"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Geners</li></a>
+                <a href="#"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Cast</li></a>
+                <a href="#"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Tags</li></a>
+              </ul>
+              <li id="nav-3" class="flex justify-between items-center py-4 px-4 border-b border-slate-900 hover-red">
+                <span>Pages</span>
+                <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus3"></span></button>
+              </li>
+              <ul id="li-3">
+                <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">About Us</li>
+                <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Contact Us</li>
+                <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">FAQ</li>
+                <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Privacy Policy</li>
+                <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Pricing Plan</li>
+                <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Coming Soon</li>
+                <li id="nav-3-1" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
+                    <span>Error Page</span>
+                    <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus31"></span></button>
+                </li>
+                <ul id="li-3-1">
+                    <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Error Page 1</li>
+                    <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Error Page 2</li>
+                </ul>
+              </ul>
+              <li id="nav-4" class="flex justify-between items-center py-4 px-4 border-b border-slate-900 hover-red">
+                <span>Blog</span>
+                <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus4"></span></button>
+              </li>
+              <ul id="li-4">
+                <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Listing</li>
+                <li id="nav-4-1" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
+                    <span>Blog Grid</span>
+                    <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus41"></span></button>
+                </li>
+                <ul id="li-4-1">
+                    <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">1 Colume</li>
+                    <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">2 Colume</li>
+                    <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">3 Colume</li>
+                    <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">4 Colume</li>
+                </ul>
+                <li id="nav-4-2" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
+                    <span>Blog Sidebar</span>
+                    <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus42"></span></button>
+                </li>
+                <ul id="li-4-2">
+                    <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Left Sidebar</li>
+                    <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Right Sidebar</li>
+                </ul>
+                <li id="nav-4-3" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
+                    <span>Blog Single</span>
+                    <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus43"></span></button>
+                </li>
+                <ul id="li-4-3">
+                    <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Blog Template</li>
+                    <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Standard</li>
+                    <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Audio</li>
+                    <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Video</li>
+                    <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Link</li>
+                    <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Quote</li>
+                    <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Gallery</li>
+                </ul>
+              </ul>
+              <li id="nav-5" class="flex justify-between items-center py-4 px-4 border-b border-slate-900 hover-red">
+                <span>Shop</span>
+                <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus5"></span></button>
+              </li>
+              <ul id="li-5">
+                <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Shop</li>
+                <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">My Account</li>
+                <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Cart Page</li>
+                <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Wishlist Page</li>
+                <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Check Out Page</li>
+                <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Order Tracking</li>
+              </ul>
+            </ul>
+          </div>
+    </section>
   </header>
   <main class="w-full bg-black">
       <div class="playlist-profile px-5 xl:px-28">
@@ -402,8 +401,37 @@
         </div>
       </div>
       <div class="flex items-center justify-center py-3">
-        <div class="sub-but my-5 w-48 h-14 text-sm font-bold"><span class="sub-bg netflix-bg rounded-md"></span><span class="sub-but1"></span><span class="sub-but2"></span><span class="sub-but-text">creat playlist<i class="fa-solid fa-caret-right fa-xl pl-3"></i></span></div>
+        <div id="creat-playlist-bt" class="sub-but my-5 w-48 h-14 text-sm font-bold"><span class="sub-bg netflix-bg rounded-md"></span><span class="sub-but1"></span><span class="sub-but2"></span><span class="sub-but-text">creat playlist<i class="fa-solid fa-caret-right fa-xl pl-3"></i></span></div>
       </div>
+      <div id="playlist-dialog" class="playlist-dialog">
+        <form class="creat-playlist-dialog">
+          <div id="playlist-dialog-exit" class="text-sm cursor-pointer">✖️</div>
+          <h2 class="text-2xl font-medium">Create New Playlist</h2>
+          <p class="font-light mb-3">Please fill in all information below to create new playlist.</p>
+          <div class="w-full mb-4">
+            <p class="mb-2">Name*</p>
+            <input type="text" class="form-control red-border !bg-black" name="Name" required>
+          </div>
+          <div class="w-full mb-4 red-border">
+            <p class="mb-2">Description</p>
+            <textarea class="red-border text-control w-full !h-40 !bg-black" name="Description" cols="5" rows="5"></textarea>
+          </div>
+          <p>Privacy</p>
+          <select name="PrivacySelect" class="playlist-privacy-select red-border my-3">
+            <option value="1">Public</option>
+            <option value="2">Private</option>
+          </select>
+          <p>Playlist Thumbnail</p>
+          <p class="font-light text-sm mt-2">Support *.webp, *webp, *.gif, *.webp. Maximun upload file size: 5mb.</p>
+          <div class="relative w-full h-12 my-4">
+            <input type="file" id="file-upload" name="file-upload" accept=".webp,.gif" class="file-upload-input red-border">
+          </div>
+          <div class="flex gap-5">
+            <div id="playlist-dialog-cancel" class="bg-slate-200 py-4 px-7 rounded-md text-black text-sm font-semibold hover:bg-slate-400 cursor-pointer">CANCEL</div>
+            <button type="submit" class="netflix-bg text-white py-4 px-7 rounded-md text-sm font-semibold border border-transparent hover:bg-slate-800 hover:border-white">SAVE</button>
+          </div>
+        </form>
+    </div>
   </main>
   <footer>
       <section class="w-full">
@@ -486,8 +514,8 @@
         </div>
       </section>
     </footer>
+  <script src="../js/home-index.js"></script>
   <script src="../js/playlist.js"></script>
-  <script src="../js/login-page.js"></script>
-  <script src="../js/st.js"></script>
+  <script src="../js/setting.js"></script>
 </body>
 </html>

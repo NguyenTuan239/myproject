@@ -1,34 +1,38 @@
 /* Detail movie page js */
-const playlistNav1 = document.getElementById('playlist-nav-1');
-const playlistNav2 = document.getElementById('playlist-nav-2');
-const playlistNav3 = document.getElementById('playlist-nav-3');
-const playlistDes1 = document.getElementById('playlist-des-1');
-const playlistDes2 = document.getElementById('playlist-des-2');
-const playlistDes3 = document.getElementById('playlist-des-3');
+const playlists = [
+    { nav: 'playlist-nav-1', des: 'playlist-des-1' },
+    { nav: 'playlist-nav-2', des: 'playlist-des-2' },
+    { nav: 'playlist-nav-3', des: 'playlist-des-3' }
+];
 
-playlistNav1.addEventListener('click', function() {
-    this.classList.add('toggle');
-    playlistNav2.classList.remove('toggle');
-    playlistNav3.classList.remove('toggle');
-    playlistDes1.classList.remove('hidden');
-    playlistDes2.classList.add('hidden');
-    playlistDes3.classList.add('hidden');
+playlists.forEach(({ nav, des }, index) => {
+    document.getElementById(nav).addEventListener('click', function() {
+        playlists.forEach(({ nav: otherNav, des: otherDes }, otherIndex) => {
+            const isActive = index === otherIndex;
+            document.getElementById(otherNav).classList.toggle('toggle', isActive);
+            document.getElementById(otherDes).classList.toggle('hidden', !isActive);
+        });
+    });
 });
 
-playlistNav2.addEventListener('click', function() {
-    this.classList.add('toggle');
-    playlistNav1.classList.remove('toggle');
-    playlistNav3.classList.remove('toggle');
-    playlistDes1.classList.add('hidden');
-    playlistDes2.classList.remove('hidden');
-    playlistDes3.classList.add('hidden');
-});
+// Show the Creat New Playlist dialog
+const creatPlaylistBt = document.getElementById('creat-playlist-bt');
+const creatPlaylistDialog = document.getElementById('playlist-dialog');
+const PlaylistDialogEx = document.getElementById('playlist-dialog-exit');
+const PlaylistDialogCancel = document.getElementById('playlist-dialog-cancel');
 
-playlistNav3.addEventListener('click', function() {
-    this.classList.add('toggle');
-    playlistNav1.classList.remove('toggle');
-    playlistNav2.classList.remove('toggle');
-    playlistDes1.classList.add('hidden');
-    playlistDes2.classList.add('hidden');
-    playlistDes3.classList.remove('hidden');
+creatPlaylistBt.addEventListener('click', () => {
+    creatPlaylistDialog.style.display = 'block'
+});
+PlaylistDialogEx.addEventListener('click', () => {
+    creatPlaylistDialog.style.display = 'none'
+});
+PlaylistDialogCancel.addEventListener('click', () => {
+    creatPlaylistDialog.style.display = 'none'
+});
+// Close dialog if user clicks outside of it
+window.addEventListener('click', function(event) {
+    if (event.target === creatPlaylistDialog) {
+        creatPlaylistDialog.style.display = 'none';
+    }
 });

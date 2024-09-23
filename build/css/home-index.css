@@ -158,15 +158,6 @@ body{
 .red-border:focus{
     border-color: var(--main-color);
 }
-/* .logo-blue{
-    filter: hue-rotate(245deg);
-}
-.logo-cyan{
-    filter: sepia(1) hue-rotate(180deg) saturate(2);
-}
-.logo-green{
-    filter: sepia(1) hue-rotate(75deg) saturate(6);
-} */
 #backToTop {
     position: fixed;
     width: 45px;
@@ -184,4 +175,10 @@ body{
 }
 #backToTop.show {
     opacity: 1;
+}
+.web-nav-home:hover + .home-hover{
+    display: block;
+}
+.home-hover:hover{
+    display: block;
 }
