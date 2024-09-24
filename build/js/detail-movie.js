@@ -29,7 +29,7 @@ const detailMovies = [
 ];
 
 detailMovies.forEach(({ nav, des }, index) => {
-    document.getElementById(nav).addEventListener('click', function() {
+    document.getElementById(nav).addEventListener('click', () => {
         detailMovies.forEach(({ nav: otherNav, des: otherDes }, otherIndex) => {
             const isActive = index === otherIndex;
             document.getElementById(otherNav).classList.toggle('toggle', isActive);
@@ -49,10 +49,9 @@ detailMovieNav4.addEventListener('click', function() {
     detailMovieDes5.classList.add('hidden');
     detailMovieDes4.classList.remove('hidden');
 });
-detailMovieNav5.addEventListener('click', function() {
+detailMovieNav5.addEventListener('click', function () {
     this.classList.add('toggle');
     detailMovieNav4.classList.remove('toggle');
     detailMovieDes4.classList.add('hidden');
     detailMovieDes5.classList.remove('hidden');
 });
-

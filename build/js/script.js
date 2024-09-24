@@ -217,4 +217,15 @@ const swiper9 = new Swiper('.mySwiper5', {
         }
     }
 });
+/* HomePG main section 1 css*/
+const swiper11 = new Swiper('.mySwiper11', {
+    loop: true,
+    speed: 500,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
 

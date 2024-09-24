@@ -32,25 +32,25 @@
     top: 100px;
     z-index: 3;
 }
-.item1 .moviePoster .moviePoster-content1,
-.item1 .moviePoster .moviePoster-content2,
-.item1 .moviePoster .moviePoster-content3,
-.item1 .moviePoster .moviePoster-content4,
-.item1 .moviePoster .moviePoster-content5 {
+.moviePoster-content1,
+.moviePoster-content2,
+.moviePoster-content3,
+.moviePoster-content4,
+.moviePoster-content5 {
     opacity: 0;
     animation: showcontent 0.6s ease-in-out forwards;
 }
 
-.item1 .moviePoster .moviePoster-content2 {
+.moviePoster-content2 {
     animation-delay: 0.15s;
 }
-.item1 .moviePoster .moviePoster-content3 {
+.moviePoster-content3 {
     animation-delay: 0.3s;
 }
-.item1 .moviePoster .moviePoster-content4 {
+.moviePoster-content4 {
     animation-delay: 0.45s;
 }
-.item1 .moviePoster .moviePoster-content5 {
+.moviePoster-content5 {
     animation-delay: 0.6s;
 }
 

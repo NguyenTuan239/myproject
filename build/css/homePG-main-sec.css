@@ -1,0 +1,97 @@
+:root{
+    --main-color: #ff0000;
+    --hover-backgournd-color:#ff00002a;
+}
+.homePG-section1{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(90deg, rgba(28, 25, 23, 0.866),rgba(0, 0, 0, 0.16));
+    .homePG-section1-img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .homePG-section1-poster{
+        position: absolute;
+        width: 80%;
+        height: auto;
+        top: 110px;
+        z-index: 3;
+    }
+}
+/* Watch Trailer Button */
+.homePG-sec1-button {
+    padding: 40px 20px;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    font-size: 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 400px;
+    right: 15%;
+    display: none;
+    overflow: hidden;
+    transition: all 0.5s;
+    text-transform: uppercase;
+}
+.homePG-sec1-button::after,
+.homePG-sec1-button::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: var(--hover-backgournd-color);
+    top: 0;
+    transform: skewX(35deg);
+    transition: all 0.5s;
+    z-index: -1;
+}
+.homePG-sec1-button::after {
+    left: -20px;
+}
+.homePG-sec1-button::before {
+    right: -20px;
+}
+.homePG-sec1-button:hover::after {
+    width: 50%;
+    left: 0;
+}
+.homePG-sec1-button:hover::before {
+    width: 50%;
+    right: 0;
+}
+@media (min-width: 768px) {
+    .homePG-section1{
+        height: 830px;
+        .homePG-section1-poster{
+            top: 180px;
+        }
+    }
+}
+@media (min-width: 1280px) {
+    .homePG-section1{
+        .homePG-section1-poster{
+            width: 50%;
+            left: 60px;
+        }
+    }
+    .homePG-sec1-button{
+        display: block;
+    }
+}
+/* Home Movie Trailer css */
+.home-trailer-container{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: #00000083;
+    z-index: 10;
+    #my-video{
+        position: absolute;
+        top: 200px;
+    }
+}
