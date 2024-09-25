@@ -1127,8 +1127,12 @@ video {
   width: 100%;
 }
 
-.w-24 {
-  width: 6rem;
+.w-6\/12 {
+  width: 50%;
+}
+
+.w-8\/12 {
+  width: 66.666667%;
 }
 
 .flex-1 {
@@ -1214,10 +1218,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-36 {
-  gap: 9rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1773,6 +1773,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -1827,6 +1832,18 @@ video {
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
+.pb-28 {
+  padding-bottom: 7rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
 }
 
 .text-center {
@@ -2068,10 +2085,6 @@ video {
     margin-top: 4rem;
   }
 
-  .md\:mt-6 {
-    margin-top: 1.5rem;
-  }
-
   .md\:mt-7 {
     margin-top: 1.75rem;
   }
@@ -2104,11 +2117,6 @@ video {
     justify-content: space-between;
   }
 
-  .md\:py-5 {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
-
   .md\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -2131,6 +2139,11 @@ video {
   .md\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:font-semibold {
@@ -2211,10 +2224,6 @@ video {
     gap: 0.75rem;
   }
 
-  .lg\:gap-20 {
-    gap: 5rem;
-  }
-
   .lg\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
@@ -2227,36 +2236,24 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:left-20 {
-    left: 5rem;
-  }
-
-  .xl\:right-20 {
-    right: 5rem;
-  }
-
-  .xl\:left-60 {
-    left: 15rem;
-  }
-
-  .xl\:-right-11 {
-    right: -2.75rem;
-  }
-
-  .xl\:-right-12 {
-    right: -3rem;
-  }
-
-  .xl\:-right-9 {
-    right: -2.25rem;
+  .xl\:-right-28 {
+    right: -7rem;
   }
 
   .xl\:-right-8 {
     right: -2rem;
   }
 
-  .xl\:-right-28 {
-    right: -7rem;
+  .xl\:left-20 {
+    left: 5rem;
+  }
+
+  .xl\:left-60 {
+    left: 15rem;
+  }
+
+  .xl\:right-20 {
+    right: 5rem;
   }
 
   .xl\:mr-20 {
@@ -2265,10 +2262,6 @@ video {
 
   .xl\:mr-28 {
     margin-right: 7rem;
-  }
-
-  .xl\:gap-20 {
-    gap: 5rem;
   }
 
   .xl\:gap-14 {
@@ -2289,8 +2282,17 @@ video {
     padding-right: 6rem;
   }
 
+  .xl\:pt-24 {
+    padding-top: 6rem;
+  }
+
   .xl\:text-7xl {
     font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .xl\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 }
