@@ -104,6 +104,7 @@ var swiper4 = new Swiper(".mySwiper2", {
     loop: true,
     spaceBetween: 20,
     slidesPerView: 3,
+    touchRatio: 0.2,
     navigation: {
         nextEl: '.sec5-next',
         prevEl: '.sec5-prev',
@@ -229,3 +230,61 @@ const swiper11 = new Swiper('.mySwiper11', {
     },
 });
 
+
+const swiper12 = new Swiper('.mySwiper12', {
+    loop: true,
+    speed: 700,
+    touchRatio: 0.2,
+    followFinger: true,
+    slideToClickedSlide: true,
+
+    breakpoints: {
+        0: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+        },
+    },
+});
+// Hàm xử lý sự kiện slide
+function handleSlideChange(swiper) {
+    document.querySelectorAll('.swiper-slide .HomePG-trending-img').forEach(function(img) {
+        img.classList.remove('scale-up');
+    });
+    swiper.slides.forEach(function (slide) {
+        slide.classList.remove('active');
+    });
+
+    const slidesPerView = swiper.params.slidesPerView;
+    const activeIndex = swiper.activeIndex;
+    let middleSlideIndex;
+
+    // Nếu slidesPerView là 3, thì slide ở giữa là slide thứ 2 (index 1)
+    if (slidesPerView === 3) {
+        middleSlideIndex = activeIndex + 1;
+    }
+    // Nếu slidesPerView là 5, thì slide ở giữa là slide thứ 3 (index 2)
+    else if (slidesPerView === 5) {
+        middleSlideIndex = activeIndex + 2;
+    }
+
+    // Áp dụng class scale-up để phóng to slide giữa
+    const middleSlide = swiper.slides[middleSlideIndex];
+    if (middleSlide) {
+        middleSlide.querySelector('.HomePG-trending-img').classList.add('scale-up');
+        middleSlide.classList.add('active');
+    }
+}
+handleSlideChange(swiper12);
+// Sự kiện chuyển slide
+swiper12.on('slideChangeTransitionStart', function (swiper) {
+    handleSlideChange(swiper);
+});
+
+// Sự kiện resize
+window.addEventListener('resize', function () {
+    handleSlideChange(swiper12);
+});

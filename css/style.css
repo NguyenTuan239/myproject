@@ -1115,6 +1115,10 @@ video {
   width: 2rem;
 }
 
+.w-8\/12 {
+  width: 66.666667%;
+}
+
 .w-9 {
   width: 2.25rem;
 }
@@ -1125,14 +1129,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-6\/12 {
-  width: 50%;
-}
-
-.w-8\/12 {
-  width: 66.666667%;
 }
 
 .flex-1 {
@@ -1773,9 +1769,8 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.py-32 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+.pb-24 {
+  padding-bottom: 6rem;
 }
 
 .pb-3 {
@@ -1832,18 +1827,6 @@ video {
 
 .pt-5 {
   padding-top: 1.25rem;
-}
-
-.pb-32 {
-  padding-bottom: 8rem;
-}
-
-.pb-28 {
-  padding-bottom: 7rem;
-}
-
-.pb-24 {
-  padding-bottom: 6rem;
 }
 
 .text-center {
@@ -2131,6 +2114,11 @@ video {
     line-height: 2rem;
   }
 
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -2139,11 +2127,6 @@ video {
   .md\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .md\:font-semibold {
@@ -2286,13 +2269,13 @@ video {
     padding-top: 6rem;
   }
 
-  .xl\:text-7xl {
-    font-size: 4.5rem;
+  .xl\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 
-  .xl\:text-6xl {
-    font-size: 3.75rem;
+  .xl\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 }

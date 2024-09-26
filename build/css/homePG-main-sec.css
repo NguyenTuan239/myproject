@@ -131,3 +131,33 @@
         }
     }
 }
+.mySwiper12{
+    width: 92%;
+}
+.HomePG-trending-slide {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    
+}
+.swiper-slide.active {
+    z-index: 3; /* Đảm bảo slide active ở trên cùng */
+}
+.HomePG-trending-img{
+    transition: transform 0.3s ease;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.74);
+        z-index: 1;
+    }
+}
+.scale-up{
+    transform: scale(1.4);
+    z-index: 10;
+    padding: 8px;
+    border: 1px solid rgb(75, 73, 73);
+}
