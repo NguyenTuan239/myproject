@@ -218,6 +218,7 @@ const swiper9 = new Swiper('.mySwiper5', {
         }
     }
 });
+
 /* HomePG main section 1 css*/
 const swiper11 = new Swiper('.mySwiper11', {
     loop: true,
@@ -231,60 +232,122 @@ const swiper11 = new Swiper('.mySwiper11', {
 });
 
 
+/* Home mian section8 */
 const swiper12 = new Swiper('.mySwiper12', {
     loop: true,
     speed: 700,
     touchRatio: 0.2,
-    followFinger: true,
     slideToClickedSlide: true,
+    slidesPerView: 5,
+    spaceBetween: 20,
+});
 
-    breakpoints: {
-        0: {
-            slidesPerView: 3,
-            spaceBetween: 10,
-        },
-        768: {
-            slidesPerView: 5,
-            spaceBetween: 20,
-        },
+const swiper14 = new Swiper('.mySwiper14', {
+    loop: true,
+    speed: 700,
+    touchRatio: 0.2,
+    slidesPerView: 3,
+    spaceBetween: 20,
+    slideToClickedSlide: true,
+});
+const swiper13 = new Swiper(".mySwiper13", {
+    effect: 'fade',
+    loop: true,
+    speed: 700,
+    followFinger: false,
+    simulateTouch: false,
+    fadeEffect: {
+        crossFade: true
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
 });
+
+// Đồng bộ hóa mySwiper2 với mySwiper khi slide của mySwiper thay đổi
+swiper13.on('slideChangeTransitionStart', function () {
+    swiper12.slideToLoop(swiper13.realIndex); 
+});
+
+// Đồng bộ hóa mySwiper khi slide của mySwiper2 thay đổi
+swiper12.on('slideChangeTransitionStart', function () {
+    swiper13.slideToLoop(swiper12.realIndex); 
+});
+// Đồng bộ hóa mySwiper2 với mySwiper khi slide của mySwiper thay đổi
+swiper13.on('slideChangeTransitionStart', function () {
+    swiper14.slideToLoop(swiper13.realIndex); 
+});
+
+// Đồng bộ hóa mySwiper khi slide của mySwiper2 thay đổi
+swiper14.on('slideChangeTransitionStart', function () {
+    swiper13.slideToLoop(swiper14.realIndex); 
+});
+
+
 // Hàm xử lý sự kiện slide
-function handleSlideChange(swiper) {
-    document.querySelectorAll('.swiper-slide .HomePG-trending-img').forEach(function(img) {
+function handleSlide14Change(swiper) {
+    document.querySelectorAll('.swiper-slide .HomePG-trending-img14').forEach(function(img) {
         img.classList.remove('scale-up');
     });
     swiper.slides.forEach(function (slide) {
         slide.classList.remove('active');
     });
 
-    const slidesPerView = swiper.params.slidesPerView;
     const activeIndex = swiper.activeIndex;
-    let middleSlideIndex;
-
-    // Nếu slidesPerView là 3, thì slide ở giữa là slide thứ 2 (index 1)
-    if (slidesPerView === 3) {
-        middleSlideIndex = activeIndex + 1;
-    }
-    // Nếu slidesPerView là 5, thì slide ở giữa là slide thứ 3 (index 2)
-    else if (slidesPerView === 5) {
-        middleSlideIndex = activeIndex + 2;
-    }
+    const middleSlideIndex = activeIndex +1;
 
     // Áp dụng class scale-up để phóng to slide giữa
     const middleSlide = swiper.slides[middleSlideIndex];
     if (middleSlide) {
-        middleSlide.querySelector('.HomePG-trending-img').classList.add('scale-up');
+        middleSlide.querySelector('.HomePG-trending-img14').classList.add('scale-up');
         middleSlide.classList.add('active');
     }
 }
-handleSlideChange(swiper12);
-// Sự kiện chuyển slide
+// Hàm xử lý sự kiện slide
+function handleSlide12Change(swiper) {
+    document.querySelectorAll('.swiper-slide .HomePG-trending-img12').forEach(function(img) {
+        img.classList.remove('scale-up');
+    });
+    swiper.slides.forEach(function (slide) {
+        slide.classList.remove('active');
+    });
+
+    const activeIndex = swiper.activeIndex;
+    const middleSlideIndex = activeIndex + 2;
+
+    // Áp dụng class scale-up để phóng to slide giữa
+    const middleSlide = swiper.slides[middleSlideIndex];
+    if (middleSlide) {
+        middleSlide.querySelector('.HomePG-trending-img12').classList.add('scale-up');
+        middleSlide.classList.add('active');
+    }
+}
 swiper12.on('slideChangeTransitionStart', function (swiper) {
-    handleSlideChange(swiper);
+    handleSlide12Change(swiper); 
+});
+swiper14.on('slideChangeTransitionStart', function (swiper) {
+    handleSlide14Change(swiper); 
 });
 
-// Sự kiện resize
-window.addEventListener('resize', function () {
-    handleSlideChange(swiper12);
+const swiper15 = new Swiper('.mySwiper15', {
+    speed: 1000,
+    navigation: {
+        nextEl: '.swiper-next',
+        prevEl: '.swiper-prev',
+    },
+    breakpoints: {
+        0: {
+            slidesPerView:2,
+            spaceBetween: 10,
+        },
+        1024: {
+            slidesPerView:3,
+            spaceBetween: 20,
+        },
+        1280: {
+            slidesPerView:4,
+            spaceBetween: 10,
+        }
+    }
 });

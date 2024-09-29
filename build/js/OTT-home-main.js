@@ -108,6 +108,15 @@ attachMouseDragEvents();
 
 // Start autoplay on page load
 startAutoplay();
-
+function addClickEvent(seasons, contents) {
+    seasons.forEach((season, index) => {
+        season.addEventListener('click', function () {
+            seasons.forEach((s, i) => {
+                s.classList.toggle('netflix', i === index);
+                contents[i].classList.toggle('hidden', i !== index);
+            });
+        });
+    });
+}
 
 

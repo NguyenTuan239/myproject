@@ -131,7 +131,7 @@
         }
     }
 }
-.mySwiper12{
+.mySwiper12, .mySwiper14{
     width: 92%;
 }
 .HomePG-trending-slide {
@@ -140,24 +140,130 @@
     
 }
 .swiper-slide.active {
-    z-index: 3; /* Đảm bảo slide active ở trên cùng */
+    z-index: 3;
 }
-.HomePG-trending-img{
-    transition: transform 0.3s ease;
-    &::before{
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.74);
-        z-index: 1;
-    }
+.HomePG-trending-img12, .HomePG-trending-img14{
+    transition: transform 0.3s ease; 
 }
 .scale-up{
     transform: scale(1.4);
     z-index: 10;
     padding: 8px;
     border: 1px solid rgb(75, 73, 73);
+}
+.HomePG-sec8-content{
+    position: relative;
+    width: 100%;
+    height: 850px;
+}
+.HomePG-sec8-poster{
+    position: absolute;
+    inset: 0;
+    top: 170px;
+    width: 76%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    animation: HomPG-des 0.7s ease-in-out forwards;
+}
+@keyframes HomPG-des {
+    0%{
+        transform: translateY(70%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.HomePG-sec8-nav{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg,rgb(28, 25, 23), rgba(0, 0, 0, 0.87), rgba(28, 25, 23, 0.708));
+    z-index: 3;
+}
+.HomePG-sec8-play-bt{
+    position: absolute;
+    padding: 8px 14px;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border: 4px solid gray;
+}
+.HomePG-sec8-nav-pt2-date{
+    position: relative;
+    padding: 7px;
+    padding-left: 10px;
+    margin-left: 13px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-image: linear-gradient(to right, var(--hover-backgournd-color),rgb(41, 37, 36,0));
+    display: flex;
+    justify-content: space-between;
+}
+.mySwiper15 .swiper-wrapper{
+    padding-bottom: 40px;
+}
+.mySwiper15 .swiper-wrapper .swiper-slide{
+    pointer-events: auto !important;
+}
+.swiper-next, .swiper-prev {
+    position: absolute;
+    bottom: 0px;
+    z-index: 41;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.swiper-next {
+right: 0px; /* Đưa nút "next" ra ngoài bên phải */
+}
+.swiper-prev {
+left: 0px; /* Đưa nút "prev" ra ngoài bên trái */
+}
+.HomePG-sec8-watchTrailer-img{
+    position: relative;
+    padding: 10px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    max-width: 680px;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 104%;
+        height: 104%;
+        top: -2%;
+        left: -2%;
+        background-color: rgba(0, 0, 0, 0.54);
+        border: 4px solid rgba(128, 128, 128, 0.244);
+        border-radius: 10px;
+        z-index: -10;
+    }
+}
+.HomePG-sec8-watchTrailer-bt{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 45;
 }
