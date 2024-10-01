@@ -267,3 +267,36 @@ left: 0px; /* Đưa nút "prev" ra ngoài bên trái */
     transform: translate(-50%,-50%);
     z-index: 45;
 }
+
+/* Movie Page css */
+.movie-slide-wrapper{
+    width: 80%;
+    padding-left: auto;
+    padding-right: auto;
+    overflow: visible !important;
+    .swiper-wrapper{
+        .swiper-slide-next,
+        .swiper-slide-prev{
+            filter: blur(5px);
+        }
+    }
+}
+.pagination_movie_page{
+    position: absolute;
+    width: 120%;
+    top: 50%;
+    left: -10%;
+}
+.pagination_movie_page div[class^="swiper-button"]::after{
+    display: none;
+}
+.pagination_movie_page div[class^="swiper-button"]{
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.5s;
+}

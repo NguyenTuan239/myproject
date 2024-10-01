@@ -1,0 +1,87 @@
+/* Merchandise store css */
+.merchandise-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.merchandise-grid-1 { grid-area: 1 / 1 / 2 / 2; }
+.merchandise-grid-2 { grid-area: 2 / 1 / 3 / 2; }
+.merchandise-grid-3 { grid-area: 3 / 1 / 5 / 2; }
+.merchandise-grid-4 { grid-area: 5 / 1 / 6 / 2; }
+.merchandise-grid-5 { grid-area: 6 / 1 / 7 / 2; }
+
+.mercha-hover{
+    position: relative;
+    background-color: rgb(20, 16, 14);
+}
+.mercha-hover-img{
+    height: 360px;
+    width: 100%;
+    overflow: hidden;
+}
+.merchandise-grid-img{
+    height: 360px;
+    width: 100%;
+    object-fit: cover;
+    transition: all 1s;
+    z-index: -1;
+}
+.mercha-hover-img-mid{
+    height: 720px;
+    width: 100%;
+    overflow: hidden;
+}
+.merchandise-grid-img-mid{
+    height: 720px;
+    width: 100%;
+    object-fit: cover;
+    transition: all 1s;
+    z-index: -1;
+}
+.mercha-hover:hover .mercha-hover-img .merchandise-grid-img{
+    transform: scale(1.1);
+}
+.mercha-hover:hover .mercha-hover-img-mid .merchandise-grid-img-mid{
+    transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+    .merchandise-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .merchandise-grid-1 { grid-area: 1 / 1 / 2 / 2; }
+    .merchandise-grid-2 { grid-area: 2 / 1 / 3 / 2; }
+    .merchandise-grid-3 { grid-area: 1 / 2 / 3 / 3; }
+    .merchandise-grid-4 { grid-area: 3 / 1 / 4 / 3; }
+    .merchandise-grid-5 { grid-area: 4 / 1 / 5 / 3; }
+}
+@media (min-width: 1024px) {
+    .merchandise-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .merchandise-grid-1 { grid-area: 1 / 1 / 2 / 2; }
+    .merchandise-grid-2 { grid-area: 2 / 1 / 3 / 2; }
+    .merchandise-grid-3 { grid-area: 1 / 2 / 3 / 3; }
+    .merchandise-grid-4 { grid-area: 1 / 3 / 2 / 4; }
+    .merchandise-grid-5 { grid-area: 2 / 3 / 3 / 4; }
+}
+.mercha-sec4-hover-item{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    display: flex;
+    gap: 20px;
+    padding: 15px 20px;
+    transition: all 1s;
+    transform-origin: center center;
+    transform: scale(0);
+}
+.mercha-sec4:hover .mercha-sec4-hover-item{
+    transform: scale(1);
+}

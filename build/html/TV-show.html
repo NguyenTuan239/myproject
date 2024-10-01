@@ -3,19 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>detail movie page</title>
+    <title>movie</title>
     <link rel="stylesheet" href="../../css/style.css">
     <script src="https://kit.fontawesome.com/aa6f8e22b4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/OTT-home-index.css">
     <link rel="stylesheet" href="../css/menu-button.css">
     <link rel="stylesheet" href="../css/OTT-home-main.css">
     <link rel="stylesheet" href="../css/OTT-home-main-sec.css">
-    <link rel="stylesheet" href="../css/login-page.css">
-    <link rel="stylesheet" href="../css/movie-detail.css">
+    <link rel="stylesheet" href="../css/homePG-main-sec.css">
     <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
 </head>
@@ -62,7 +58,7 @@
                 <a href="../../index.html"><li class="flex flex-col justify-center items-center gap-2 hover-red"><img class="w-28 lg:w-36 h-auto" src="../image/mega-menu/new-home.webp" alt="new home menu"><span>OTT Home</span></li></a>
                 <a href="home.html"><li class="flex flex-col justify-center items-center gap-2 hover-red"><img class="w-28 lg:w-36 h-auto" src="../image/mega-menu/home.webp" alt="home menu"><span>Home</span></li></a>
                 <a href="movie.html"><li class="flex flex-col justify-center items-center gap-2 hover-red"><img class="w-28 lg:w-36 h-auto" src="../image/mega-menu/movie.webp" alt="movie"><span>Movie</span></li></a>
-                <a href="TV-show.html"><li class="flex flex-col justify-center items-center gap-2 hover-red"><img class="w-28 lg:w-36 h-auto" src="../image/mega-menu/tv-show.webp" alt="Tv Show"><span>Tv Show</span></li></a>
+                <a href="TV-show.html"><li class="flex flex-col justify-center items-center gap-2 netflix"><img class="w-28 lg:w-36 h-auto" src="../image/mega-menu/tv-show.webp" alt="Tv Show"><span>Tv Show</span></li></a>
                 <a href="video.html"><li class="flex flex-col justify-center items-center gap-2 hover-red"><img class="w-28 lg:w-36 h-auto" src="../image/mega-menu/video.webp" alt="Video"><span>Video</span></li></a>
                 <a href="merchandise-store.html"><li class="flex flex-col justify-center items-center hover-red"><img class="w-28 lg:w-36 h-auto" src="../image/mega-menu/shop-home.webp" alt="Merchadise Store"><span class="w-4/6 pt-2 -mb-2">Merchadise</span><span>Store</span></li></a>
               </ul>
@@ -185,7 +181,7 @@
                 <a href="../../index.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">OTT Home</li></a>
                 <a href="home.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Home</li></a>
                 <a href="movie.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Movie</li></a>
-                <a href="TV-show.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">TV Show</li></a>
+                <a href="TV-show.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 netflix">TV Show</li></a>
                 <a href="video.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Video</li></a>
                 <a href="merchandise-store.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Merchadise</li></a>
               </ul>
@@ -275,464 +271,450 @@
           </div>
     </section>
   </header>
-  <main class="mt-14 md:mt-16 w-full">
-
-    <!-- Video baner -->
-    <section class="video-container">
-      <video
-        id="my-video"
-        class="video-js detail-video"
-        controls
-        preload="auto"
-        width="640"
-        height="264"
-        poster="https://i.ytimg.com/vi_webp/rKVEoyTedv4/maxresdefault.webp"
-        data-setup="{}"
-      >
-        <source src="../image/video/sample-video.mp4" type="video/mp4" />
-        <source src="../image/video/sample-video.webm" type="video/webm" />
-        <p class="vjs-no-js">
-          To view this video please enable JavaScript, and consider upgrading to a
-          web browser that
-          <a href="https://videojs.com/html5-video-support/" target="_blank"
-            >supports HTML5 video</a
+  <main class="w-full">
+    <!-- Section 1 -->
+    <section class="relative text-white font-light w-full">
+        <div class="swiper mySwiper11 movie-slide-wrapper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="homePG-section1">
+                    <img src="../image/movie-banner/banner-1.webp" alt="" class="homePG-section1-img">
+                    <div class="homePG-section1-poster text-gray-300 p-6 z-10">
+                        <h2 class="movie-poster-hl my-2 text-3xl font-medium md:text-6xl md:font-semibold xl:text-7xl md:py-3">VIKING</h2>
+                        <p class="font-medium text-white mr-4 text-nowrap">⭐⭐⭐⭐ 4.3/5 <span class="ml-4 font-thin">2hr 30mins</span></p>
+                        <div class="flex items-center font-bold pb-3">
+                            <span class="text-muted">Comedy<span class="netflix mx-2">•</span>Romance<span class="netflix mx-2">•</span>Action</span>
+                        </div>
+                        <p class="sec5-content mt-1">
+                        After the death of their father, two siblings fight for the throne, thereby causing a civil war known as the Dance of the Dragons. Rhaenyra tries to hold the realm together as the tension
+                        rises following a tragic loss. Meanwhile, Daemon prepares for war.
+                        </p>
+                        <a href="../html/movie-detal.html"><button id="stream-button" class="sub-button mt-3 px-7 py-3 text-sm font-bold md:mt-7"><span class="sub-bg netflix-bg rounded-md"></span><span class="sub-button1"></span><span class="sub-button2"></span><span class="uppercase">play now</span><i class="fa-solid fa-caret-right fa-xl pl-3"></i></button></a>
+                    </div>
+                    <button class="homePG-sec1-button">
+                      Watch Trailer
+                    </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="homePG-section1">
+                    <img src="../image/movie-banner/banner-2.webp" alt="" class="homePG-section1-img">
+                    <div class="homePG-section1-poster text-gray-300 p-6 z-10">
+                        <h2 class="movie-poster-hl my-2 text-3xl font-medium md:text-6xl md:font-semibold xl:text-7xl md:py-3 uppercase">THE BOYS</h2>
+                        <p class="font-medium text-white mr-4 text-nowrap">⭐⭐⭐⭐ 4.3/5 <span class="ml-4 font-thin">2hr 30mins</span></p>
+                        <div class="flex items-center font-bold pb-3">
+                            <span class="text-muted">Comedy<span class="netflix mx-2">•</span>Romance<span class="netflix mx-2">•</span>Action</span>
+                        </div>
+                        <p class="sec5-content mt-1">
+                        After the death of their father, two siblings fight for the throne, thereby causing a civil war known as the Dance of the Dragons. Rhaenyra tries to hold the realm together as the tension
+                        rises following a tragic loss. Meanwhile, Daemon prepares for war.
+                        </p>
+                        <a href="../html/movie-detal.html"><button id="stream-button" class="sub-button mt-3 px-7 py-3 text-sm font-bold md:mt-7"><span class="sub-bg netflix-bg rounded-md"></span><span class="sub-button1"></span><span class="sub-button2"></span><span class="uppercase">play now</span><i class="fa-solid fa-caret-right fa-xl pl-3"></i></button></a>
+                    </div>
+                    <button class="homePG-sec1-button">
+                      Watch Trailer
+                    </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="homePG-section1">
+                    <img src="../image/movie-banner/banner-3.webp" alt="" class="homePG-section1-img">
+                    <div class="homePG-section1-poster text-gray-300 p-6 z-10">
+                        <h2 class="movie-poster-hl my-2 text-3xl font-medium md:text-6xl md:font-semibold xl:text-7xl md:py-3">BREAKING BAD</h2>
+                        <p class="font-medium text-white mr-4 text-nowrap">⭐⭐⭐⭐ 4.3/5 <span class="ml-4 font-thin">2hr 30mins</span></p>
+                        <div class="flex items-center font-bold pb-3">
+                            <span class="text-muted">Comedy<span class="netflix mx-2">•</span>Romance<span class="netflix mx-2">•</span>Action</span>
+                        </div>
+                        <p class="sec5-content mt-1">
+                        After the death of their father, two siblings fight for the throne, thereby causing a civil war known as the Dance of the Dragons. Rhaenyra tries to hold the realm together as the tension
+                        rises following a tragic loss. Meanwhile, Daemon prepares for war.
+                        </p>
+                        <a href="../html/movie-detal.html"><button id="stream-button" class="sub-button mt-3 px-7 py-3 text-sm font-bold md:mt-7"><span class="sub-bg netflix-bg rounded-md"></span><span class="sub-button1"></span><span class="sub-button2"></span><span class="uppercase">play now</span><i class="fa-solid fa-caret-right fa-xl pl-3"></i></button></a>
+                    </div>
+                    <button class="homePG-sec1-button">
+                      Watch Trailer
+                    </button>
+                </div>
+              </div>
+            </div>
+            <div class="pagination_movie_page">
+              <div class="swiper-button-prev hover-bg-red"><i class="fa-solid fa-chevron-left fa-xl" style="color: #ffffff;"></i></div>
+              <div class="swiper-button-next hover-bg-red"><i class="fa-solid fa-chevron-right fa-xl" style="color: #ffffff;"></i></div>
+            </div>
+        </div>
+        <div class="home-trailer-container hidden">
+          <video
+            id="my-video"
+            class="video-js detail-video"
+            controls
+            preload="auto"
+            width="640"
+            height="264"
+            data-setup="{}"
           >
-        </p>
-      </video>
+            <source src="../image/video/trailer.mp4" type="video/mp4" />
+            <source src="../image/video/trailer.webm" type="video/webm" />
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a
+              web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank"
+                >supports HTML5 video</a
+              >
+            </p>
+          </video>
+        </div>
     </section>
-
-    <!-- Video description -->
-    <section class="p-4 flex flex-col md:flex-row md:justify-between xl:px-28">
-      <div>
-        <h2 class="text-3xl font-semibold movie-poster-hl md:text-7xl">Zombie Island</h2>
-        <div class="flex gap-4">
-          <ul class="flex text-yellow-400">
-            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-            <li><i class="fa fa-star" aria-hidden="true"></i></li>
-            <li><i class="fa fa-star-half" aria-hidden="true"></i></li>
-          </ul>
-          <span class="text-white ms-2">4.8 (imdb)</span>
-        </div>
-        <ul class="my-3 flex font-medium">
-          <li class="netflix"><a class="text-primary" href="./view-all-movie.html">Action&nbsp;&nbsp;•&nbsp;&nbsp;</a></li>
-          <li class="netflix"><a class="text-primary" href="./view-all-movie.html">Adventure&nbsp;&nbsp;•&nbsp;&nbsp;</a></li>
-          <li class="netflix"><a class="text-primary" href="./view-all-movie.html">Drama</a></li>
-        </ul>
-        <div class="flex gap-2 mb-4">
-          <span class="bg-slate-600 p-1 rounded-md text-xs text-center">Horror</span>
-          <span class="">1hr 48mins</span>
-          <span class="">
-            Feb 2017
-          </span>
-        </div>
-        <div class="flex items-center gap-6 flex-wrap mb-4">
-          <ul class="flex gap-6">
-            <li class="relative z-30">
-              <div class="web-nav-home rounded-full bg-white border-4 border-gray-500 z-20"><i class="fa-solid fa-share-nodes p-2 netflix"></i></div>
-              <div class="home-hover hidden bg-stone-800 absolute top-0 left-8 -z-10 w-36 h-10">
-                <a href=""><i class="fa-brands fa-facebook p-3"></i></a>
-                <a href=""><i class="fa-brands fa-twitter p-3"></i></a>
-                <a href=""><i class="fa-solid fa-link p-3"></i></a>
-              </div>
-            </li>
-            <li class=" rounded-full bg-white border-4 border-gray-500"><a href="#"><i class="fa-solid fa-heart p-2 netflix"></i></a></li>
-            <li class=" rounded-full bg-white border-4 border-gray-500"><a href="#"><i class="fa-solid fa-plus p-2 netflix"></i></a></li>
-            <li class=" rounded-full bg-white border-4 border-gray-500"><span><a href="../image/video/sample-video.mp4" download><i class="fa-solid fa-download p-2 netflix"></i></a></span></li>
-          </ul>
-          <select name="movieselect" class="movie-select w-32">
-            <option value="1">Playlist</option>
-            <option value="2">Zombie Island</option>
-            <option value="3">Sand Dust</option>
-            <option value="4">Jumbo Queen</option>
-          </select>          
-        </div>
-        <ul class="flex flex-wrap items-center gap-3 p-0">
-          <li class="mb-0 netflix">
-            <i class="fa fa-tags" aria-hidden="true"></i>
-            Tags:
-          </li>
-          <li><a class="hover-red" href="./view-all-movie.html">Action</a><span
-              class="text-secondary">,</span></li>
-          <li><a class="hover-red" href="./view-all-movie.html">Adventure</a><span
-              class="text-secondary">,</span></li>
-          <li><a class="hover-red" href="./view-all-movie.html">Drama</a></li>
-        </ul>
-      </div>
-      <div class="mt-8 w-full h-auto md:w-4/12 md:max-w-96 lg:mr-16 xl:mr-28 2xl:mr-40">
-        <a data-fslightbox="html5-video" href="https://www.youtube.com/watch?v=QCGq1epI9pQ"
-          class="relative">
-          <div class="trailer-img"><img src="../image/genre/01.webp"
-            class="" alt="" loading="lazy" /></div>
-          <span class="trailer-link">
-            <i class="fa fa-play me-2 text-white"></i>
-            <span>Trailer Link</span>
-          </span>
-        </a>
-      </div>
-    </section>
-    <section class="p-4 xl:px-28">
-      <div>
-        <div class="detail-nav-bg">
-          <div id="detail-movie-des-nav-1" class="detail-movie-des-nav toggle">
-            <span class="detail-movie-des-line"></span>
-              Description
-          </div>
-          <div id="detail-movie-des-nav-2" class="detail-movie-des-nav">
-            <span class="detail-movie-des-line"></span>
-              Rate &amp; Review
-          </div>
-          <div id="detail-movie-des-nav-3" class="detail-movie-des-nav">
-            <span class="detail-movie-des-line"></span>
-              Sources
-          </div> 
-        </div>
-        <div id="detail-movie-des-1" class="detail-movie-des">
-          <p class="py-10 font-light">
-            Zombie Island is a 1998 direct-to-video animated comedy horror film
-            based on Hanna-Barbera's Scooby-Doo Saturday-morning cartoons. In the
-            film, Shaggy, Scooby, Fred, Velma, and Daphne reunite after a
-            year-long hiatus from Mystery, Inc. to investigate a bayou island said
-            to be haunted by the ghost of the pirate Morgan Moonscar. The film was
-            directed by Jim Stenstrum, from a screenplay by Glenn Leopold.
-          </p>
-        </div>
-        <div id="detail-movie-des-2" class="detail-movie-des hidden font-light">
-          <p class="my-5">There are no reviews yet.</p>
-          <h2 class="text-3xl font-medium my-3">Be the first to review “Zombie Island”</h2>
-          <div class="w-full mb-4 red-border">
-            <p class="mb-2">Your review *</p>
-            <textarea class="red-border text-control w-full" name="comment" cols="5" rows="8" required=""></textarea>
-          </div>
-          <div class="w-full mb-4">
-            <p class="mb-2">Name*</p>
-            <input type="text" class="form-control red-border" required>
-          </div>
-          <div class="w-full mb-4">
-              <p class="mb-2">Email*</p>
-              <input type="email" class="form-control red-border" required>
-          </div>
-          <p><label><input type="checkbox" class="login-check red-border mr-2">Save my name, email, and website in this browser for the next time I comment.</label></p>
-          <button class="sub-button w-40 my-6 px-7 py-4 text-sm font-bold"><span class="sub-bg netflix-bg rounded-md"></span><span class="sub-button1"></span><span class="sub-button2"></span><span class="uppercase z-10">submit<i class="fa-solid fa-caret-right fa-xl p-2"></i></span></button>
-        </div>
-        <div id="detail-movie-des-3" class="detail-movie-des table-wrapper mt-7 hidden">
-          <table class="detail-mv-table">
-            <thead class="bg-stone-700">
-              <tr class="">
-                <th class="py-6 pl-5">
-                  Links
-                </th>
-                <th class="py-6 pl-5">
-                  Quality
-                </th>
-                <th class="py-6 pl-5">
-                  Language
-                </th>
-                <th class="py-6 pl-5">
-                  Player
-                </th>
-                <th class="py-6 pl-5">
-                  Date Added
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="bg-stone-800">
-                <td>
-                  <a href="#"><div class="sub-but my-5 w-36 h-12 text-sm font-bold"><span class="sub-bg netflix-bg rounded-md"></span><span class="sub-but1"></span><span class="sub-but2"></span><span class="sub-but-text">play now<i class="fa-solid fa-caret-right fa-xl pl-3"></i></span></div></a>
-                </td>
-                <td>
-                  1080p
-                </td>
-                <td>
-                  english
-                </td>
-                <td>
-                  MusicBee
-                </td>
-                <td>
-                  2021-11-28
-                </td>
-              </tr>
-              <tr class="bg-stone-800">
-                <td>
-                  <a href="#"><div class="sub-but my-5 w-36 h-12 text-sm font-bold"><span class="sub-bg netflix-bg rounded-md"></span><span class="sub-but1"></span><span class="sub-but2"></span><span class="sub-but-text">play now<i class="fa-solid fa-caret-right fa-xl pl-3"></i></span></div></a>
-                </td>
-                <td>
-                  800p
-                </td>
-                <td>
-                  english
-                </td>
-                <td>
-                  5KPlayer
-                </td>
-                <td>
-                  2021-11-25
-                </td>
-              </tr>
-              <tr class="bg-stone-800">
-                <td>
-                  <a href="#"><div class="sub-but my-5 w-36 h-12 text-sm font-bold"><span class="sub-bg netflix-bg rounded-md"></span><span class="sub-but1"></span><span class="sub-but2"></span><span class="sub-but-text">play now<i class="fa-solid fa-caret-right fa-xl pl-3"></i></span></div></a>
-                </td>
-                <td>
-                  720p
-                </td>
-                <td>
-                  English
-                </td>
-                <td>
-                  MediaMonkey
-                </td>
-                <td>
-                  2021-11-20
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div>
-        <div class="detail-nav-bg-2">
-          <div id="detail-movie-des-nav-4" class="detail-movie-des-nav toggle">
-            <span class="detail-movie-des-line"></span>
-              Cast
-          </div>
-          <div id="detail-movie-des-nav-5" class="detail-movie-des-nav">
-            <span class="detail-movie-des-line"></span>
-              Crew
-          </div>
-        </div>
-        <div id="detail-movie-des-4" class="detail-movie-des mt-7">
-            <div class="swiper">
-              <div class="slider-wrapper4">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="detail-movie-des-card">
-                      <img src="../image/genre/07.webp" alt="" class="detail-movie-des-img">
-                      <div class="detail-movie-des-text">
-                        <p class="text-wrap">James Chinlund</p>
-                        <p class="text-sm mt-1">As James</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="detail-movie-des-card">
-                      <img src="../image/genre/06.webp" alt="" class="detail-movie-des-img">
-                      <div class="detail-movie-des-text">
-                        <p class="text-wrap">James Chinlund</p>
-                        <p class="text-sm mt-1">As James</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-        <div id="detail-movie-des-5" class="detail-movie-des hidden mt-7">
-            <div class="swiper">
-              <div class="slider-wrapper4">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="detail-movie-des-card">
-                      <img src="../image/genre/04.webp" alt="" class="detail-movie-des-img">
-                      <div class="detail-movie-des-text">
-                        <p class="text-wrap">James Chinlund</p>
-                        <p class="text-sm mt-1">As James</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="detail-movie-des-card">
-                      <img src="../image/genre/05.webp" alt="" class="detail-movie-des-img">
-                      <div class="detail-movie-des-text">
-                        <p class="text-wrap">James Chinlund</p>
-                        <p class="text-sm mt-1">As James</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
-    </section>
-    <!-- Video Slider List -->
+    <!-- Section 2 -->
     <section class="relative text-white font-light mx-auto mt-16 w-11/12">
-      <h2 class="text-xl md:text-2xl mb-7 flex justify-start"><span>Recommended For You</span></h2>
-      <div class="swiper">
-        <div class="slider-wrapper3">
-          <div class="card-list swiper-wrapper">
-            <div class="swiper-slide card-item only-onstream-item">
-              <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/recommended/01.webp')] lg:hidden">
-              </div></a>
-              <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
-                <a href="movie-detal.html"><img src="../image/movie/recommended/01.webp" alt="" class="only-image"></a>
-                <div class="only-on-stream-content py-1">
-                  <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
-                  <p class="text-xs">1hr 45mins</p>
+        <h2 class="text-xl md:text-2xl mb-7 flex justify-start"><span>Top Pick</span></h2>
+        <div class="swiper">
+            <div class="slider-wrapper3">
+            <div class="card-list swiper-wrapper">
+                <div class="swiper-slide card-item only-onstream-item">
+                <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/top-picks/07.webp')] lg:hidden">
+                </div></a>
+                <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
+                    <a href="movie-detal.html"><img src="../image/movie/top-picks/07.webp" alt=""></a>
+                    <div class="only-on-stream-content py-1">
+                    <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
+                    <p class="text-xs">1hr 45mins</p>
+                    </div>
+                    <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
+                    <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
+                    <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
+                        <i class="fa-brands fa-facebook p-2"></i>
+                        <i class="fa-brands fa-twitter p-2"></i>
+                        <i class="fa-solid fa-link pl-1"></i>
+                    </div>
+                    <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
+                        <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
+                    </div>
+                    </div>
+                    <button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button>
                 </div>
-                <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
-                  <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
-                  <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
-                    <i class="fa-brands fa-facebook p-2"></i>
-                    <i class="fa-brands fa-twitter p-2"></i>
-                    <i class="fa-solid fa-link pl-1"></i>
-                  </div>
-                  <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
-                    <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
-                  </div>
                 </div>
-                <a href="movie-detal.html"><button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button></a>
+                <div class="swiper-slide card-item only-onstream-item">
+                <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/top-picks/06.webp')] lg:hidden">
+                </div></a>
+                <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
+                    <a href="movie-detal.html"><img src="../image/movie/top-picks/06.webp" alt=""></a>
+                    <div class="only-on-stream-content py-1">
+                    <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
+                    <p class="text-xs">1hr 45mins</p>
+                    </div>
+                    <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
+                    <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
+                    <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
+                        <i class="fa-brands fa-facebook p-2"></i>
+                        <i class="fa-brands fa-twitter p-2"></i>
+                        <i class="fa-solid fa-link pl-1"></i>
+                    </div>
+                    <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
+                        <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
+                    </div>
+                    </div>
+                    <button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button>
+                </div>
+                </div>
+                <div class="swiper-slide card-item only-onstream-item">
+                <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/top-picks/05.webp')] lg:hidden">
+                </div></a>
+                <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
+                    <a href="movie-detal.html"><img src="../image/movie/top-picks/05.webp" alt=""></a>
+                    <div class="only-on-stream-content py-1">
+                    <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
+                    <p class="text-xs">1hr 45mins</p>
+                    </div>
+                    <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
+                    <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
+                    <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
+                        <i class="fa-brands fa-facebook p-2"></i>
+                        <i class="fa-brands fa-twitter p-2"></i>
+                        <i class="fa-solid fa-link pl-1"></i>
+                    </div>
+                    <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
+                        <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
+                    </div>
+                    </div>
+                    <button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button>
+                </div>
+                </div>
+                <div class="swiper-slide card-item only-onstream-item">
+                <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/top-picks/04.webp')] lg:hidden">
+                </div></a>
+                <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
+                    <a href="movie-detal.html"><img src="../image/movie/top-picks/04.webp" alt=""></a>
+                    <div class="only-on-stream-content py-1">
+                    <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
+                    <p class="text-xs">1hr 45mins</p>
+                    </div>
+                    <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
+                    <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
+                    <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
+                        <i class="fa-brands fa-facebook p-2"></i>
+                        <i class="fa-brands fa-twitter p-2"></i>
+                        <i class="fa-solid fa-link pl-1"></i>
+                    </div>
+                    <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
+                        <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
+                    </div>
+                    </div>
+                    <button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button>
+                </div>
+                </div>
+                <div class="swiper-slide card-item only-onstream-item">
+                <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/top-picks/03.webp')] lg:hidden">
+                </div></a>
+                <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
+                    <a href="movie-detal.html"><img src="../image/movie/top-picks/03.webp" alt=""></a>
+                    <div class="only-on-stream-content py-1">
+                    <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
+                    <p class="text-xs">1hr 45mins</p>
+                    </div>
+                    <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
+                    <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
+                    <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
+                        <i class="fa-brands fa-facebook p-2"></i>
+                        <i class="fa-brands fa-twitter p-2"></i>
+                        <i class="fa-solid fa-link pl-1"></i>
+                    </div>
+                    <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
+                        <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
+                    </div>
+                    </div>
+                    <button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button>
+                </div>
+                </div>
+                <div class="swiper-slide card-item only-onstream-item">
+                <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/top-picks/02.webp')] lg:hidden">
+                </div></a>
+                <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
+                    <a href="movie-detal.html"><img src="../image/movie/top-picks/02.webp" alt=""></a>
+                    <div class="only-on-stream-content py-1">
+                    <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
+                    <p class="text-xs">1hr 45mins</p>
+                    </div>
+                    <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
+                    <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
+                    <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
+                        <i class="fa-brands fa-facebook p-2"></i>
+                        <i class="fa-brands fa-twitter p-2"></i>
+                        <i class="fa-solid fa-link pl-1"></i>
+                    </div>
+                    <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
+                        <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
+                    </div>
+                    </div>
+                    <button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button>
+                </div>
+                </div>
+                <div class="swiper-slide card-item only-onstream-item">
+                <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/upcoming/07.webp')] lg:hidden">
+                </div></a>
+                <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
+                    <a href="movie-detal.html"><img src="../image/movie/upcoming/07.webp" alt=""></a>
+                    <div class="only-on-stream-content py-1">
+                    <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
+                    <p class="text-xs">1hr 45mins</p>
+                    </div>
+                    <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
+                    <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
+                    <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
+                        <i class="fa-brands fa-facebook p-2"></i>
+                        <i class="fa-brands fa-twitter p-2"></i>
+                        <i class="fa-solid fa-link pl-1"></i>
+                    </div>
+                    <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
+                        <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
+                    </div>
+                    </div>
+                    <button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button>
+                </div>
+                </div>
+            </div>
+            <div class="pagination_">
+                <div class="swiper-button-prev hover-bg-red"><i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i></div>
+                <div class="swiper-button-next hover-bg-red"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 3 -->
+    <section class="relative text-white font-light mx-auto mt-16 w-11/12">
+        <h2 class="text-xl md:text-2xl mb-7 flex justify-start"><span>Recommended Movies</span></h2>
+        <div class="swiper">
+          <div class="slider-wrapper3">
+            <div class="card-list swiper-wrapper">
+              <div class="swiper-slide card-item only-onstream-item">
+                <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/related/04.webp')] lg:hidden">
+                </div></a>
+                <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
+                  <a href="movie-detal.html"><img src="../image/movie/related/04.webp" alt=""></a>
+                  <div class="only-on-stream-content py-1">
+                    <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
+                    <p class="text-xs">1hr 45mins</p>
+                  </div>
+                  <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
+                    <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
+                    <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
+                      <i class="fa-brands fa-facebook p-2"></i>
+                      <i class="fa-brands fa-twitter p-2"></i>
+                      <i class="fa-solid fa-link pl-1"></i>
+                    </div>
+                    <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
+                      <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
+                    </div>
+                  </div>
+                  <button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button>
+                </div>
+              </div>
+              <div class="swiper-slide card-item only-onstream-item">
+                <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/related/05.webp')] lg:hidden">
+                </div></a>
+                <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
+                  <a href="movie-detal.html"><img src="../image/movie/related/05.webp" alt=""></a>
+                  <div class="only-on-stream-content py-1">
+                    <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
+                    <p class="text-xs">1hr 45mins</p>
+                  </div>
+                  <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
+                    <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
+                    <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
+                      <i class="fa-brands fa-facebook p-2"></i>
+                      <i class="fa-brands fa-twitter p-2"></i>
+                      <i class="fa-solid fa-link pl-1"></i>
+                    </div>
+                    <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
+                      <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
+                    </div>
+                  </div>
+                  <button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button>
+                </div>
+              </div>
+              <div class="swiper-slide card-item only-onstream-item">
+                <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/related/06.webp')] lg:hidden">
+                </div></a>
+                <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
+                  <a href="movie-detal.html"><img src="../image/movie/related/06.webp" alt=""></a>
+                  <div class="only-on-stream-content py-1">
+                    <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
+                    <p class="text-xs">1hr 45mins</p>
+                  </div>
+                  <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
+                    <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
+                    <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
+                      <i class="fa-brands fa-facebook p-2"></i>
+                      <i class="fa-brands fa-twitter p-2"></i>
+                      <i class="fa-solid fa-link pl-1"></i>
+                    </div>
+                    <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
+                      <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
+                    </div>
+                  </div>
+                  <button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button>
+                </div>
+              </div>
+              <div class="swiper-slide card-item only-onstream-item">
+                <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/upcoming/04.webp')] lg:hidden">
+                </div></a>
+                <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
+                  <a href="movie-detal.html"><img src="../image/movie/upcoming/04.webp" alt=""></a>
+                  <div class="only-on-stream-content py-1">
+                    <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
+                    <p class="text-xs">1hr 45mins</p>
+                  </div>
+                  <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
+                    <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
+                    <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
+                      <i class="fa-brands fa-facebook p-2"></i>
+                      <i class="fa-brands fa-twitter p-2"></i>
+                      <i class="fa-solid fa-link pl-1"></i>
+                    </div>
+                    <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
+                      <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
+                    </div>
+                  </div>
+                  <button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button>
+                </div>
+              </div>
+              <div class="swiper-slide card-item only-onstream-item">
+                <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/upcoming/02.webp')] lg:hidden">
+                </div></a>
+                <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
+                  <a href="movie-detal.html"><img src="../image/movie/upcoming/02.webp" alt=""></a>
+                  <div class="only-on-stream-content py-1">
+                    <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
+                    <p class="text-xs">1hr 45mins</p>
+                  </div>
+                  <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
+                    <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
+                    <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
+                      <i class="fa-brands fa-facebook p-2"></i>
+                      <i class="fa-brands fa-twitter p-2"></i>
+                      <i class="fa-solid fa-link pl-1"></i>
+                    </div>
+                    <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
+                      <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
+                    </div>
+                  </div>
+                  <button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button>
+                </div>
+              </div>
+              <div class="swiper-slide card-item only-onstream-item">
+                <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/upcoming/03.webp')] lg:hidden">
+                </div></a>
+                <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
+                  <a href="movie-detal.html"><img src="../image/movie/upcoming/03.webp" alt=""></a>
+                  <div class="only-on-stream-content py-1">
+                    <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
+                    <p class="text-xs">1hr 45mins</p>
+                  </div>
+                  <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
+                    <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
+                    <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
+                      <i class="fa-brands fa-facebook p-2"></i>
+                      <i class="fa-brands fa-twitter p-2"></i>
+                      <i class="fa-solid fa-link pl-1"></i>
+                    </div>
+                    <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
+                      <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
+                    </div>
+                  </div>
+                  <button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button>
+                </div>
+              </div>
+              <div class="swiper-slide card-item only-onstream-item">
+                <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/upcoming/01.webp')] lg:hidden">
+                </div></a>
+                <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
+                  <a href="movie-detal.html"><img src="../image/movie/upcoming/01.webp" alt=""></a>
+                  <div class="only-on-stream-content py-1">
+                    <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
+                    <p class="text-xs">1hr 45mins</p>
+                  </div>
+                  <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
+                    <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
+                    <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
+                      <i class="fa-brands fa-facebook p-2"></i>
+                      <i class="fa-brands fa-twitter p-2"></i>
+                      <i class="fa-solid fa-link pl-1"></i>
+                    </div>
+                    <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
+                      <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
+                    </div>
+                  </div>
+                  <button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button>
+                </div>
               </div>
             </div>
-            <div class="swiper-slide card-item only-onstream-item">
-              <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/recommended/02.webp')] lg:hidden">
-              </div></a>
-              <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
-                <a href="movie-detal.html"><img src="../image/movie/recommended/02.webp" alt="" class="only-image"></a>
-                <div class="only-on-stream-content py-1">
-                  <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
-                  <p class="text-xs">1hr 45mins</p>
-                </div>
-                <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
-                  <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
-                  <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
-                    <i class="fa-brands fa-facebook p-2"></i>
-                    <i class="fa-brands fa-twitter p-2"></i>
-                    <i class="fa-solid fa-link pl-1"></i>
-                  </div>
-                  <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
-                    <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
-                  </div>
-                </div>
-                <a href="movie-detal.html"><button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button></a>
-              </div>
+            <div class="pagination_">
+              <div class="swiper-button-prev hover-bg-red"><i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i></div>
+              <div class="swiper-button-next hover-bg-red"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></div>
             </div>
-            <div class="swiper-slide card-item only-onstream-item">
-              <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/recommended/03.webp')] lg:hidden">
-              </div></a>
-              <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
-                <a href="movie-detal.html"><img src="../image/movie/recommended/03.webp" alt="" class="only-image"></a>
-                <div class="only-on-stream-content py-1">
-                  <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
-                  <p class="text-xs">1hr 45mins</p>
-                </div>
-                <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
-                  <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
-                  <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
-                    <i class="fa-brands fa-facebook p-2"></i>
-                    <i class="fa-brands fa-twitter p-2"></i>
-                    <i class="fa-solid fa-link pl-1"></i>
-                  </div>
-                  <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
-                    <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
-                  </div>
-                </div>
-                <a href="movie-detal.html"><button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button></a>
-              </div>
-            </div>
-            <div class="swiper-slide card-item only-onstream-item">
-              <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/recommended/04.webp')] lg:hidden">
-              </div></a>
-              <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
-                <a href="movie-detal.html"><img src="../image/movie/recommended/04.webp" alt="" class="only-image"></a>
-                <div class="only-on-stream-content py-1">
-                  <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
-                  <p class="text-xs">1hr 45mins</p>
-                </div>
-                <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
-                  <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
-                  <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
-                    <i class="fa-brands fa-facebook p-2"></i>
-                    <i class="fa-brands fa-twitter p-2"></i>
-                    <i class="fa-solid fa-link pl-1"></i>
-                  </div>
-                  <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
-                    <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
-                  </div>
-                </div>
-                <a href="movie-detal.html"><button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button></a>
-              </div>
-            </div>
-            <div class="swiper-slide card-item only-onstream-item">
-              <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/recommended/05.webp')] lg:hidden">
-              </div></a>
-              <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
-                <a href="movie-detal.html"><img src="../image/movie/recommended/05.webp" alt="" class="only-image"></a>
-                <div class="only-on-stream-content py-1">
-                  <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
-                  <p class="text-xs">1hr 45mins</p>
-                </div>
-                <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
-                  <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
-                  <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
-                    <i class="fa-brands fa-facebook p-2"></i>
-                    <i class="fa-brands fa-twitter p-2"></i>
-                    <i class="fa-solid fa-link pl-1"></i>
-                  </div>
-                  <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
-                    <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
-                  </div>
-                </div>
-                <a href="movie-detal.html"><button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button></a>
-              </div>
-            </div>
-            <div class="swiper-slide card-item only-onstream-item">
-              <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/recommended/06.webp')] lg:hidden">
-              </div></a>
-              <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
-                <a href="movie-detal.html"><img src="../image/movie/recommended/06.webp" alt="" class="only-image"></a>
-                <div class="only-on-stream-content py-1">
-                  <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
-                  <p class="text-xs">1hr 45mins</p>
-                </div>
-                <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
-                  <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
-                  <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
-                    <i class="fa-brands fa-facebook p-2"></i>
-                    <i class="fa-brands fa-twitter p-2"></i>
-                    <i class="fa-solid fa-link pl-1"></i>
-                  </div>
-                  <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
-                    <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
-                  </div>
-                </div>
-                <a href="movie-detal.html"><button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button></a>
-              </div>
-            </div>
-            <div class="swiper-slide card-item only-onstream-item">
-              <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/recommended/07.webp')] lg:hidden">
-              </div></a>
-              <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
-                <a href="movie-detal.html"><img src="../image/movie/recommended/07.webp" alt="" class="only-image"></a>
-                <div class="only-on-stream-content py-1">
-                  <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
-                  <p class="text-xs">1hr 45mins</p>
-                </div>
-                <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
-                  <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
-                  <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
-                    <i class="fa-brands fa-facebook p-2"></i>
-                    <i class="fa-brands fa-twitter p-2"></i>
-                    <i class="fa-solid fa-link pl-1"></i>
-                  </div>
-                  <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
-                    <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
-                  </div>
-                </div>
-                <a href="movie-detal.html"><button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button></a>
-              </div>
-            </div>
-          </div>
-          <div class="pagination_">
-            <div class="swiper-button-prev hover-bg-red"><i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i></div>
-            <div class="swiper-button-next hover-bg-red"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></div>
           </div>
         </div>
-      </div>
     </section>
+    <!-- Section 4 -->
     <section class="relative text-white font-light mx-auto mt-16 w-11/12">
       <h2 class="text-xl md:text-2xl mb-7 flex justify-start"><span>Related Movie</span></h2>
       <div class="swiper">
@@ -742,7 +724,7 @@
               <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/related/07.webp')] lg:hidden">
               </div></a>
               <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
-                <a href="movie-detal.html"><img src="../image/movie/related/07.webp" alt="" class="only-image"></a>
+                <a href="movie-detal.html"><img src="../image/movie/related/07.webp" alt=""></a>
                 <div class="only-on-stream-content py-1">
                   <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
                   <p class="text-xs">1hr 45mins</p>
@@ -758,14 +740,14 @@
                     <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
                   </div>
                 </div>
-                <a href="movie-detal.html"><button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button></a>
+                <button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button>
               </div>
             </div>
             <div class="swiper-slide card-item only-onstream-item">
               <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/related/06.webp')] lg:hidden">
               </div></a>
               <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
-                <a href="movie-detal.html"><img src="../image/movie/related/06.webp" alt="" class="only-image"></a>
+                <a href="movie-detal.html"><img src="../image/movie/related/06.webp" alt=""></a>
                 <div class="only-on-stream-content py-1">
                   <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
                   <p class="text-xs">1hr 45mins</p>
@@ -781,14 +763,14 @@
                     <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
                   </div>
                 </div>
-                <a href="movie-detal.html"><button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button></a>
+                <button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button>
               </div>
             </div>
             <div class="swiper-slide card-item only-onstream-item">
               <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/related/05.webp')] lg:hidden">
               </div></a>
               <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
-                <a href="movie-detal.html"><img src="../image/movie/related/05.webp" alt="" class="only-image"></a>
+                <a href="movie-detal.html"><img src="../image/movie/related/05.webp" alt=""></a>
                 <div class="only-on-stream-content py-1">
                   <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
                   <p class="text-xs">1hr 45mins</p>
@@ -804,14 +786,14 @@
                     <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
                   </div>
                 </div>
-                <a href="movie-detal.html"><button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button></a>
+                <button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button>
               </div>
             </div>
             <div class="swiper-slide card-item only-onstream-item">
               <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/related/04.webp')] lg:hidden">
               </div></a>
               <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
-                <a href="movie-detal.html"><img src="../image/movie/related/04.webp" alt="" class="only-image"></a>
+                <a href="movie-detal.html"><img src="../image/movie/related/04.webp" alt=""></a>
                 <div class="only-on-stream-content py-1">
                   <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
                   <p class="text-xs">1hr 45mins</p>
@@ -827,14 +809,14 @@
                     <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
                   </div>
                 </div>
-                <a href="movie-detal.html"><button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button></a>
+                <button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button>
               </div>
             </div>
             <div class="swiper-slide card-item only-onstream-item">
               <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/related/03.webp')] lg:hidden">
               </div></a>
               <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
-                <a href="movie-detal.html"><img src="../image/movie/related/03.webp" alt="" class="only-image"></a>
+                <a href="movie-detal.html"><img src="../image/movie/related/03.webp" alt=""></a>
                 <div class="only-on-stream-content py-1">
                   <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
                   <p class="text-xs">1hr 45mins</p>
@@ -850,14 +832,14 @@
                     <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
                   </div>
                 </div>
-                <a href="movie-detal.html"><button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button></a>
+                <button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button>
               </div>
             </div>
             <div class="swiper-slide card-item only-onstream-item">
               <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/related/02.webp')] lg:hidden">
               </div></a>
               <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
-                <a href="movie-detal.html"><img src="../image/movie/related/02.webp" alt="" class="only-image"></a>
+                <a href="movie-detal.html"><img src="../image/movie/related/02.webp" alt=""></a>
                 <div class="only-on-stream-content py-1">
                   <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
                   <p class="text-xs">1hr 45mins</p>
@@ -873,14 +855,14 @@
                     <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
                   </div>
                 </div>
-                <a href="movie-detal.html"><button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button></a>
+                <button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button>
               </div>
             </div>
             <div class="swiper-slide card-item only-onstream-item">
               <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/related/01.webp')] lg:hidden">
               </div></a>
               <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
-                <a href="movie-detal.html"><img src="../image/movie/related/01.webp" alt="" class="only-image"></a>
+                <a href="movie-detal.html"><img src="../image/movie/related/01.webp" alt=""></a>
                 <div class="only-on-stream-content py-1">
                   <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
                   <p class="text-xs">1hr 45mins</p>
@@ -896,181 +878,7 @@
                     <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
                   </div>
                 </div>
-                <a href="movie-detal.html"><button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button></a>
-              </div>
-            </div>
-          </div>
-          <div class="pagination_">
-            <div class="swiper-button-prev hover-bg-red"><i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i></div>
-            <div class="swiper-button-next hover-bg-red"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="relative text-white font-light mx-auto mt-16 w-11/12">
-      <h2 class="text-xl md:text-2xl mb-7 flex justify-start"><span>Upcoming</span></h2>
-      <div class="swiper">
-        <div class="slider-wrapper3">
-          <div class="card-list swiper-wrapper">
-            <div class="swiper-slide card-item only-onstream-item">
-              <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/upcoming/01.webp')] lg:hidden">
-              </div></a>
-              <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
-                <a href="movie-detal.html"><img src="../image/movie/upcoming/01.webp" alt="" class="only-image"></a>
-                <div class="only-on-stream-content py-1">
-                  <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
-                  <p class="text-xs">1hr 45mins</p>
-                </div>
-                <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
-                  <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
-                  <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
-                    <i class="fa-brands fa-facebook p-2"></i>
-                    <i class="fa-brands fa-twitter p-2"></i>
-                    <i class="fa-solid fa-link pl-1"></i>
-                  </div>
-                  <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
-                    <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
-                  </div>
-                </div>
-                <a href="movie-detal.html"><button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button></a>
-              </div>
-            </div>
-            <div class="swiper-slide card-item only-onstream-item">
-              <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/upcoming/02.webp')] lg:hidden">
-              </div></a>
-              <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
-                <a href="movie-detal.html"><img src="../image/movie/upcoming/02.webp" alt="" class="only-image"></a>
-                <div class="only-on-stream-content py-1">
-                  <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
-                  <p class="text-xs">1hr 45mins</p>
-                </div>
-                <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
-                  <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
-                  <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
-                    <i class="fa-brands fa-facebook p-2"></i>
-                    <i class="fa-brands fa-twitter p-2"></i>
-                    <i class="fa-solid fa-link pl-1"></i>
-                  </div>
-                  <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
-                    <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
-                  </div>
-                </div>
-                <a href="movie-detal.html"><button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button></a>
-              </div>
-            </div>
-            <div class="swiper-slide card-item only-onstream-item">
-              <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/upcoming/03.webp')] lg:hidden">
-              </div></a>
-              <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
-                <a href="movie-detal.html"><img src="../image/movie/upcoming/03.webp" alt="" class="only-image"></a>
-                <div class="only-on-stream-content py-1">
-                  <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
-                  <p class="text-xs">1hr 45mins</p>
-                </div>
-                <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
-                  <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
-                  <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
-                    <i class="fa-brands fa-facebook p-2"></i>
-                    <i class="fa-brands fa-twitter p-2"></i>
-                    <i class="fa-solid fa-link pl-1"></i>
-                  </div>
-                  <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
-                    <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
-                  </div>
-                </div>
-                <a href="movie-detal.html"><button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button></a>
-              </div>
-            </div>
-            <div class="swiper-slide card-item only-onstream-item">
-              <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/upcoming/04.webp')] lg:hidden">
-              </div></a>
-              <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
-                <a href="movie-detal.html"><img src="../image/movie/upcoming/04.webp" alt="" class="only-image"></a>
-                <div class="only-on-stream-content py-1">
-                  <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
-                  <p class="text-xs">1hr 45mins</p>
-                </div>
-                <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
-                  <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
-                  <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
-                    <i class="fa-brands fa-facebook p-2"></i>
-                    <i class="fa-brands fa-twitter p-2"></i>
-                    <i class="fa-solid fa-link pl-1"></i>
-                  </div>
-                  <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
-                    <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
-                  </div>
-                </div>
-                <a href="movie-detal.html"><button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button></a>
-              </div>
-            </div>
-            <div class="swiper-slide card-item only-onstream-item">
-              <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/upcoming/05.webp')] lg:hidden">
-              </div></a>
-              <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
-                <a href="movie-detal.html"><img src="../image/movie/upcoming/05.webp" alt="" class="only-image"></a>
-                <div class="only-on-stream-content py-1">
-                  <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
-                  <p class="text-xs">1hr 45mins</p>
-                </div>
-                <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
-                  <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
-                  <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
-                    <i class="fa-brands fa-facebook p-2"></i>
-                    <i class="fa-brands fa-twitter p-2"></i>
-                    <i class="fa-solid fa-link pl-1"></i>
-                  </div>
-                  <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
-                    <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
-                  </div>
-                </div>
-                <a href="movie-detal.html"><button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button></a>
-              </div>
-            </div>
-            <div class="swiper-slide card-item only-onstream-item">
-              <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/upcoming/06.webp')] lg:hidden">
-              </div></a>
-              <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
-                <a href="movie-detal.html"><img src="../image/movie/upcoming/06.webp" alt="" class="only-image"></a>
-                <div class="only-on-stream-content py-1">
-                  <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
-                  <p class="text-xs">1hr 45mins</p>
-                </div>
-                <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
-                  <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
-                  <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
-                    <i class="fa-brands fa-facebook p-2"></i>
-                    <i class="fa-brands fa-twitter p-2"></i>
-                    <i class="fa-solid fa-link pl-1"></i>
-                  </div>
-                  <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
-                    <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
-                  </div>
-                </div>
-                <a href="movie-detal.html"><button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button></a>
-              </div>
-            </div>
-            <div class="swiper-slide card-item only-onstream-item">
-              <a href="movie-detal.html"><div class="only-on-stream-image bg-[url('../../build/image/movie/upcoming/07.webp')] lg:hidden">
-              </div></a>
-              <div class="only-on-stream-card hidden p-3 lg:flex lg:flex-col">
-                <a href="movie-detal.html"><img src="../image/movie/upcoming/07.webp" alt="" class="only-image"></a>
-                <div class="only-on-stream-content py-1">
-                  <h2 class="font-medium text-sm">Avengers <span class="pl-3 text-xs font-thin">+Watchlist</span></h2>
-                  <p class="text-xs">1hr 45mins</p>
-                </div>
-                <div class="only-on-stream-icon flex items-center gap-2 absolute z-10">
-                  <div class="web-nav-home hover-bg-red rounded-full bg-stone-800 z-20"><i class="fa-solid fa-share-nodes p-2"></i></div>
-                  <div class="home-hover hidden bg-stone-800 absolute w-8 h-28 bottom-7 pb-4 left-0 items-center gap-2 z-10">
-                    <i class="fa-brands fa-facebook p-2"></i>
-                    <i class="fa-brands fa-twitter p-2"></i>
-                    <i class="fa-solid fa-link pl-1"></i>
-                  </div>
-                  <div class="heart-icon hover-bg-red rounded-full bg-stone-800 z-20">
-                    <i class="fa-regular fa-heart p-2"></i><div class="heart-hover bg-stone-800 flex flex-col absolute bottom-10 left-10 items-center p-1 gap-2 z-10 text-sm">+55</div>
-                  </div>
-                </div>
-                <a href="movie-detal.html"><button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button></a>
+                <button id="only-on-stream-button" class="sub-button px-3 py-3 ml-1"><span class="sub-bg netflix-bg rounded-full"></span><span class="sub-button1"></span><span class="sub-button2"></span><i class="fa-solid fa-caret-right fa-xl p-2"></i></button>
               </div>
             </div>
           </div>
@@ -1165,7 +973,6 @@
       </section>
     </footer>
   <script src="../js/OTT-home.js"></script>
-  <script src="../js/detail-movie.js"></script>
   <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="../js/script.js"></script>

@@ -155,6 +155,10 @@ body{
     background-image: linear-gradient(to right, var(--hover-backgournd-color),rgb(41, 37, 36,0));
     border-color: var(--main-color);
 }
+.web-nav-li-red-nothover{
+    background-image: linear-gradient(to right, var(--hover-backgournd-color),rgb(41, 37, 36,0));
+    border-color: var(--main-color);
+}
 .red-border:focus{
     border-color: var(--main-color);
 }
