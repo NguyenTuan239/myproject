@@ -85,3 +85,45 @@
 .mercha-sec4:hover .mercha-sec4-hover-item{
     transform: scale(1);
 }
+
+/* Cast Grid Css */
+.cast-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+.contact-us-sec4-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+@media (min-width: 640px) {
+    .cast-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+@media (min-width: 768px) {
+    .cast-grid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .contact-us-sec4-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .cast-grid{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .contact-us-sec4-grid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+}

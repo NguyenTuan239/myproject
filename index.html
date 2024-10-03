@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OTT Movie page</title>
+    <!-- Css Link -->
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/aa6f8e22b4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="build/css/OTT-home-index.css">
@@ -13,14 +14,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body class="min-h-screen w-full bg-stone-900">
+  <!-- Header navigation -->
   <header class="sticky top-0 w-full h-14 md:h-16 bg-stone-900/80 z-50">
+    <!-- Header Web navigation -->
       <section class="flex justify-center text-slate-200">
           <a href="#"><img src="logo.webp" alt="logo" class="logo absolute left-12 top-2 h-8 w-auto lg:left-4 lg:top-4 xl:left-20"></a>
           <div class="web-nav hidden relative lg:flex justify-center items-center gap-10 mt-0 ml-20 text-sm xl:gap-14">
-              <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center hover-red">Home&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
+              <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center netflix">Home&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
               <div class="home-hover hidden absolute top-16 -left-28 -right-14 lg:-left-36 lg:-right-32 h-auto w-auto bg-stone-900">
                 <ul class="my-2 mx-4 flex justify-evenly">
-                  <a href="index.html"><li class="flex flex-col justify-center items-center gap-2 hover-red"><img class="w-28 lg:w-36 h-auto" src="build/image/mega-menu/new-home.webp" alt="new home menu"><span>OTT Home</span></li></a>
+                  <a href="index.html"><li class="flex flex-col justify-center items-center gap-2 netflix"><img class="w-28 lg:w-36 h-auto" src="build/image/mega-menu/new-home.webp" alt="new home menu"><span>OTT Home</span></li></a>
                   <a href="build/html/home.html"><li class="flex flex-col justify-center items-center gap-2 hover-red"><img class="w-28 lg:w-36 h-auto" src="build/image/mega-menu/home.webp" alt="home menu"><span>Home</span></li></a>
                   <a href="build/html/movie.html"><li class="flex flex-col justify-center items-center gap-2 hover-red"><img class="w-28 lg:w-36 h-auto" src="build/image/mega-menu/movie.webp" alt="movie"><span>Movie</span></li></a>
                   <a href="build/html/TV-show.html"><li class="flex flex-col justify-center items-center gap-2 hover-red"><img class="w-28 lg:w-36 h-auto" src="build/image/mega-menu/tv-show.webp" alt="Tv Show"><span>Tv Show</span></li></a>
@@ -35,18 +38,18 @@
                   <a href="build/html/related-merchadise.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Related Merchadise</li></a>
                   <a href="build/html/playlist.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Playlist</li></a>
                   <a href="build/html/geners.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Geners</li></a>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Cast</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Tags</li>
+                  <a href="build/html/cast.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Cast</li></a>
+                  <a href="build/html/tags.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Tags</li></a>
               </div>
               <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center hover-red">Pages&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
               <div class="home-hover hidden absolute top-16 left-56 w-52 bg-stone-900 xl:left-60">
                 <ul class="py-1 text-slate-400">
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>About Us</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Contract Us</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>FAQ</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Privacy Policy</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Pricing Plan</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Comming Soon</li>
+                  <a href="build/html/about-us.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>About Us</li></a>
+                  <a href="build/html/contact-us.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Contract Us</li></a>
+                  <a href=""><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>FAQ</li></a>
+                  <a href=""><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Privacy Policy</li></a>
+                  <a href=""><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Pricing Plan</li></a>
+                  <a href=""><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Comming Soon</li></a>
                   <li class="web-nav-home li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error Page <i class="fa-solid fa-caret-right fa-sm pl-20"></i></li>
                   <div class="home-hover hidden absolute w-52 bg-stone-900 top-64 -left-52 lg:left-52">
                     <ul class="p-3 text-slate-300">
@@ -122,6 +125,7 @@
               <a href="build/html/login.html" class="absolute h-10 w-full bottom-0 bg-stone-700 text-center pt-2"><i class="fa-solid fa-right-from-bracket fa-sm"></i> <span class="hover-red">&nbsp;Logout</span></a>
           </div>
       </section>
+      <!-- Header Mobie navigation -->
       <section class="lg:hidden">
           <div id="menuButton" class="menuButton cursor-pointer absolute right-3 top-2" for="check">
               <span class="top"></span>
@@ -143,7 +147,7 @@
                   <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus1"></span></button>
                 </li>
                 <ul id="li-1">
-                  <a href="index.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">OTT Home</li></a>
+                  <a href="index.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 netflix">OTT Home</li></a>
                   <a href="build/html/home.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Home</li></a>
                   <a href="build/html/movie.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Movie</li></a>
                   <a href="build/html/TV-show.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">TV Show</li></a>
@@ -159,20 +163,20 @@
                   <a href="build/html/related-merchadise.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Related Merchandise</li></a>
                   <a href="build/html/playlist.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Playlist</li></a>
                   <a href="build/html/geners.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Geners</li></a>
-                  <a href="#"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Cast</li></a>
-                  <a href="#"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Tags</li></a>
+                  <a href="build/html/cast.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Cast</li></a>
+                  <a href="build/html/tags.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Tags</li></a>
                 </ul>
                 <li id="nav-3" class="flex justify-between items-center py-4 px-4 border-b border-slate-900 hover-red">
                   <span>Pages</span>
                   <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus3"></span></button>
                 </li>
                 <ul id="li-3">
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">About Us</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Contact Us</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">FAQ</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Privacy Policy</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Pricing Plan</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Coming Soon</li>
+                  <a href="build/html/about-us.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">About Us</li></a>
+                  <a href="build/html/contact-us.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Contact Us</li></a>
+                  <a href="#"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">FAQ</li></a>
+                  <a href="#"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Privacy Policy</li></a>
+                  <a href="#"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Pricing Plan</li></a>
+                  <a href="#"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Coming Soon</li></a>
                   <li id="nav-3-1" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
                       <span>Error Page</span>
                       <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus31"></span></button>
@@ -236,6 +240,7 @@
             </div>
       </section>
   </header>
+  <!-- Setting option -->
   <div id="setting-icon" class="fixed right-0 top-32 h-10 w-10 z-50 cursor-pointer bg-black flex justify-center items-center">
     <i class="fa-solid fa-gear fa-lg text-white "></i>
   </div>
@@ -267,7 +272,9 @@
         <button id="cancel-reset">No</button>
     </div>
   </div>
+  <!-- Back to Top -->
   <a href="#back-to-top" id="backToTop" class="netflix-bg"><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i></a>
+  <!-- OTT home main -->
   <main class="w-full overflow-hidden">
     <!-- Section 1 -->
     <section id="back-to-top" class="section-1 w-full">
@@ -1724,6 +1731,7 @@
     </section>
   </main>
   <hr class="mx-auto w-11/12 border-slate-700">
+  <!-- Footer navigation -->
   <footer>
     <section class="w-full">
       <div class="py-16 px-3 xl:px-24 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-3 text-slate-200 font-light text-sm">
@@ -1805,6 +1813,7 @@
       </div>
     </section>
   </footer>
+  <!-- Javascrip Link -->
   <script src="build/js/OTT-home.js"></script>
   <script src="build/js/OTT-home-main.js"></script>
   <script src="build/js/OTT-home-sec8.js"></script>
