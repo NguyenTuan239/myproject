@@ -1,4 +1,4 @@
-/* Detail movie page js */
+/* Playlist page js */
 const playlists = [
     { nav: 'playlist-nav-1', des: 'playlist-des-1' },
     { nav: 'playlist-nav-2', des: 'playlist-des-2' },
@@ -36,3 +36,4 @@ window.addEventListener('click', function(event) {
         creatPlaylistDialog.style.display = 'none';
     }
 });
+

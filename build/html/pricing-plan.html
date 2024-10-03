@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>terms-of-use</title>
+    <title>privacy and policy</title>
     <link rel="stylesheet" href="../../css/style.css">
     <script src="https://kit.fontawesome.com/aa6f8e22b4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/OTT-home-index.css">
@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="../css/login-page.css">
     <link rel="stylesheet" href="../css/OTT-home-main.css">
     <link rel="stylesheet" href="../css/OTT-home-main-sec.css">
+    <link rel="stylesheet" href="../css/merchandise-store.css">
+    <link rel="stylesheet" href="../css/movie-detail.css">
 </head>
-<body class="min-h-screen w-full bg-stone-900 text-slate-200">
+<body class="min-h-screen w-full bg-stone-950 text-slate-300">
   <div id="setting-icon" class="fixed right-0 top-32 h-10 w-10 z-50 cursor-pointer bg-black flex justify-center items-center">
     <i class="fa-solid fa-gear fa-lg text-white "></i>
   </div>
@@ -46,6 +48,7 @@
     </div>
     <a href="#" id="backToTop" class="netflix-bg"><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i></a>
     <header class="sticky top-0 w-full h-14 md:h-16 bg-stone-900/80 z-50">
+    <!-- Header Web Navigation -->
       <section class="flex justify-center text-slate-200">
           <a href="../../index.html"><img src="logo.webp" alt="logo" class="logo absolute left-12 top-2 h-8 w-auto lg:left-4 lg:top-4 xl:left-20"></a>
           <div class="web-nav hidden relative lg:flex justify-center items-center gap-10 mt-0 ml-20 text-sm ">
@@ -63,22 +66,22 @@
               <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center hover-red">Features&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
               <div class="home-hover hidden absolute top-16 left-28 w-52 bg-stone-900">
                 <ul class="py-1 text-slate-400">
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Restricted Content</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Related Merchadise</li>
+                  <a href="restricted-content.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Restricted Content</li></a>
+                  <a href="related-merchadise.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Related Merchadise</li></a>
                   <a href="playlist.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Playlist</li></a>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Geners</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Cast</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Tags</li>
+                  <a href="geners.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Geners</li></a>
+                  <a href="cast.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Cast</li></a>
+                  <a href="tags.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Tags</li></a>
               </div>
-              <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center hover-red">Pages&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
+              <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center netflix">Pages&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
               <div class="home-hover hidden absolute top-16 left-56 w-52 bg-stone-900">
                 <ul class="py-1 text-slate-400">
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>About Us</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Contract Us</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>FAQ</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Privacy Policy</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Pricing Plan</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Comming Soon</li>
+                  <a href="about-us.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>About Us</li></a>
+                  <a href="contact-us.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Contract Us</li></a>
+                  <a href="faq.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red-nothover absolute top-1 left-3 w-48 h-9"></span>FAQ</li></a>
+                  <a href="privacy-policy.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Privacy Policy</li></a>
+                  <a href="pricing-plan.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Pricing Plan</li></a>
+                  <a href=""><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Comming Soon</li></a>
                   <li class="web-nav-home li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error Page <i class="fa-solid fa-caret-right fa-sm pl-20"></i></li>
                   <div class="home-hover hidden absolute w-52 bg-stone-900 top-64 -left-52 lg:left-52">
                     <ul class="p-3 text-slate-300">
@@ -154,6 +157,7 @@
               <a href="login.html" class="absolute h-10 w-full bottom-0 bg-stone-700 text-center pt-2"><i class="fa-solid fa-right-from-bracket fa-sm"></i> <span class="hover-red">&nbsp;Logout</span></a>
           </div>
       </section>
+      <!-- Header Mobie Navigation -->
       <section class="lg:hidden">
           <div id="menuButton" class="menuButton cursor-pointer absolute right-3 top-2" for="check">
               <span class="top"></span>
@@ -187,24 +191,24 @@
                   <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus2"></span></button>
                 </li>
                 <ul id="li-2">
-                  <a href="#"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Restricted Content</li></a>
-                  <a href="#"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Related Merchandise</li></a>
+                  <a href="restricted-content.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Restricted Content</li></a>
+                  <a href="related-merchadise.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Related Merchandise</li></a>
                   <a href="playlist.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Playlist</li></a>
-                  <a href="#"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Geners</li></a>
-                  <a href="#"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Cast</li></a>
-                  <a href="#"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Tags</li></a>
+                  <a href="geners.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Geners</li></a>
+                  <a href="cast.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Cast</li></a>
+                  <a href="tags.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Tags</li></a>
                 </ul>
-                <li id="nav-3" class="flex justify-between items-center py-4 px-4 border-b border-slate-900 hover-red">
+                <li id="nav-3" class="flex justify-between items-center py-4 px-4 border-b border-slate-900 netflix">
                   <span>Pages</span>
                   <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus3"></span></button>
                 </li>
                 <ul id="li-3">
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">About Us</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Contact Us</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">FAQ</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Privacy Policy</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Pricing Plan</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Coming Soon</li>
+                  <a href="about-us.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">About Us</li></a>
+                  <a href="contact-us.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Contact Us</li></a>
+                  <a href="faq.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 netflix">FAQ</li></a>
+                  <a href="privacy-policy.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Privacy Policy</li></a>
+                  <a href="pricing-plan.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Pricing Plan</li></a>
+                  <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Coming Soon</li></a>
                   <li id="nav-3-1" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
                       <span>Error Page</span>
                       <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus31"></span></button>
@@ -269,41 +273,62 @@
       </section>
     </header>
     <main class="w-full h-auto font-light">
-      <!-- Section 1 -->
+    <!-- Section 1 -->
       <div class="relative w-full h-72 md:h-96">
         <img src="../image/pages/01.webp" alt="" class="w-full h-72 md:h-96 object-cover">
         <div class="term-of-use-hl">
-          <h1 class="text-3xl font-medium mb-4 flex justify-center">Terms Of Use</h2>
-          <p class="text-xl"><a href="../../index.html" class="netflix font-medium">Home</a>&nbsp;/&nbsp;<span class="netflix">Terms Of Use</span></p>
+          <h1 class="text-3xl font-medium mb-4 flex justify-center">Privacy and Policy</h2>
+          <p class="text-xl"><a href="../../index.html" class="netflix font-medium">Home</a>&nbsp;/&nbsp;<span class="netflix">Privacy and Policy</span></p>
         </div>
       </div>
-       <!-- Section 2 -->
-      <div class="p-4 lg:px-16 xl:px-28 2xl:px-48">
-        <h2 class="my-6 text-2xl font-normal text-white">1. Description of Service and Acceptance of Terms of Use</h2>
-        <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis nisl dignissim, placerat diam ac, egestas ante. Morbi varius quis orci feugiat hendrerit. Morbi ullamcorper consequat justo, in posuere nisi efficitur sed. Vestibulum semper dolor id arcu finibus volutpat. Integer condimentum ex tellus, ac finibus metus sodales in. Proin blandit congue ipsum ac dapibus. Integer blandit eros elit, vel luctus tellus finibus in. Aliquam non urna ut leo vestibulum mattis ac nec dolor. Nulla libero mauris, dapibus non aliquet viverra, elementum eget lorem</p>
-        <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis nisl dignissim, placerat diam ac, egestas ante. Morbi varius quis orci feugiat hendrerit. Morbi ullamcorper consequat justo, in posuere nisi efficitur sed.</p>
-        <p class="mb-3">Vestibulum semper dolor id arcu finibus volutpat. Integer condimentum ex tellus, ac finibus metus sodales in. Proin blandit congue ipsum ac dapibus. Integer blandit eros elit, vel luctus tellus finibus in. Aliquam non urna ut leo vestibulum mattis ac nec dolor. Nulla libero mauris, dapibus non aliquet viverra, elementum eget lorem</p>
-        <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis nisl dignissim, placerat diam ac, egestas ante. Morbi varius quis orci feugiat hendrerit. Morbi ullamcorper consequat justo, in posuere nisi efficitur sed. Vestibulum semper dolor id arcu finibus volutpat. Integer condimentum ex tellus, ac finibus metus sodales in. Proin blandit congue ipsum ac dapibus. Integer blandit eros elit, vel luctus tellus finibus in. Aliquam non urna ut leo vestibulum mattis ac nec dolor. Nulla libero mauris, dapibus non aliquet viverra, elementum eget lorem</p>
-        <h2 class="my-6 text-2xl font-normal text-white">The Streamit website works best with:</h2>
-        <ul class="custom-list ml-4">
-          <li>Latest version of Google Chrome</li>
-          <li>Latest version of Firefox</li>
-          <li>Latest version of Safari</li>
-          <li>JavaScript and cookies enabled</li>
-        </ul>
-        <h2 class="my-6 text-2xl font-normal text-white">2. Subscription Services</h2>
-        <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis nisl dignissim, placerat diam ac, egestas ante. Morbi varius quis orci feugiat hendrerit. Morbi ullamcorper consequat justo, in posuere nisi efficitur sed.</p>
-        <p class="mb-3">Vestibulum semper dolor id arcu finibus volutpat. Integer condimentum ex tellus, ac finibus metus sodales in. Proin blandit congue ipsum ac dapibus. Integer blandit eros elit, vel luctus tellus finibus in. Aliquam non urna ut leo vestibulum mattis ac nec dolor. Nulla libero mauris, dapibus non aliquet viverra, elementum eget lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis nisl dignissim, placerat diam ac, egestas ante. Morbi varius quis orci feugiat hendrerit. Morbi ullamcorper consequat justo, in posuere nisi efficitur sed.</p>
-        <p class="mb-3">Vestibulum semper dolor id arcu finibus volutpat. Integer condimentum ex tellus, ac finibus metus sodales in. Proin blandit congue ipsum ac dapibus. Integer blandit eros elit, vel luctus tellus finibus in. Aliquam non urna ut leo vestibulum mattis ac nec dolor. Nulla libero mauris, dapibus non aliquet viverra, elementum eget lorem</p>
-        <h2 class="my-6 text-2xl font-normal text-white">3. Third Party Payment Gateway - Financial Information</h2>
-        <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis nisl dignissim, placerat diam ac, egestas ante. Morbi varius quis orci feugiat hendrerit. Morbi ullamcorper consequat justo, in posuere nisi efficitur sed. Vestibulum semper dolor id arcu finibus volutpat. Integer condimentum ex tellus, ac finibus metus sodales in. Proin blandit congue ipsum ac dapibus. Integer blandit eros elit, vel luctus tellus finibus in. Aliquam non urna ut leo vestibulum mattis ac nec dolor. Nulla libero mauris, dapibus non aliquet viverra, elementum eget lorem</p>
-        <h2 class="my-6 text-2xl font-normal text-white">4. Disclosure Children's Privacy</h2>
-        <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis nisl dignissim, placerat diam ac, egestas ante. Morbi varius quis orci feugiat hendrerit. Morbi ullamcorper consequat justo, in posuere nisi efficitur sed. Vestibulum semper dolor id arcu finibus volutpat. Integer condimentum ex tellus, ac finibus metus sodales in. Proin blandit congue ipsum ac dapibus. Integer blandit eros elit, vel luctus tellus finibus in. Aliquam non urna ut leo vestibulum mattis ac nec dolor. Nulla libero mauris, dapibus non aliquet viverra, elementum eget lorem</p>
-        <h2 class="my-6 text-2xl font-normal text-white">5. Data transfer, storage & processing globally</h2>
-        <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis nisl dignissim, placerat diam ac, egestas ante. Morbi varius quis orci feugiat hendrerit. Morbi ullamcorper consequat justo, in posuere nisi efficitur sed. Vestibulum semper dolor id arcu finibus volutpat. Integer condimentum ex tellus, ac finibus metus sodales in. Proin blandit congue ipsum ac dapibus. Integer blandit eros elit, vel luctus tellus finibus in. Aliquam non urna ut leo vestibulum mattis ac nec dolor. Nulla libero mauris, dapibus non aliquet viverra, elementum eget lorem</p>
-
-      </div>
+      <!-- Section 2 -->
+       <section class="w-11/12 mx-auto my-7 font-normal">
+        <div class="contact-us-sec4-grid ">
+            <div class="relative">
+                <p class="pl-14 py-16 text-2xl">Free</p>
+                <div class="bg-stone-900 w-full h-auto p-14">
+                    <p class="pb-7 text-lg p-0.5"><i class="fa-solid fa-check pr-4 netflix"></i>Ads free movies and shows</p>
+                    <p class="pb-7 text-lg">✖️ &nbsp;Watch on TV or Laptop</p>
+                    <p class="pb-7 text-lg">✖️ &nbsp;Streamit Special</p>
+                    <p class="pb-7 text-lg">✖️ &nbsp;Max video quality</p>
+                    <a href="#"><div class="sub-but mt-5 w-full h-12 text-sm font-bold"><span class="sub-bg netflix-bg rounded-md"></span><span class="sub-but1"></span><span class="sub-but2"></span><span class="sub-but-text">select free<i class="fa-solid fa-caret-right fa-xl pl-3"></i></span></div></a>
+                </div>
+                <span class="absolute w-full h-0.5 top-0 netflix-bg"></span>
+                <span class="absolute w-0.5 h-full left-0 top-0 linear-red"></span>
+                <span class="absolute w-0.5 h-full right-0 top-0 linear-red"></span>
+            </div>
+            <div class="relative">
+                <p class="pl-14 pt-16 pb-10 text-2xl">Premium</p>
+                <p class="pl-14 pb-14 text-2xl"><span class="text-5xl line-through">$49</span><span class="netflix text-5xl">$39</span>/3 Month</p>
+                <div class="bg-stone-900 w-full h-auto p-14">
+                    <p class="pb-7 text-lg p-0.5"><i class="fa-solid fa-check pr-4 netflix"></i>Ads free movies and shows</p>
+                    <p class="pb-7 text-lg p-0.5"><i class="fa-solid fa-check pr-4 netflix"></i>Watch on TV or Laptop</p>
+                    <p class="pb-7 text-lg p-0.5"><i class="fa-solid fa-check pr-4 netflix"></i>Streamit Special</p>
+                    <p class="pb-7 text-lg p-0.5"><i class="fa-solid fa-check pr-4 netflix"></i>Max video quality</p>
+                    <a href="#"><div class="sub-but mt-5 w-full h-12 text-sm font-bold"><span class="sub-bg netflix-bg rounded-md"></span><span class="sub-but1"></span><span class="sub-but2"></span><span class="sub-but-text">select premium<i class="fa-solid fa-caret-right fa-xl pl-3"></i></span></div></a>
+                </div>
+                <span class="absolute w-full h-10 top-0 netflix-bg flex justify-center items-center"> Save 20%</span>
+                <span class="absolute w-0.5 h-full left-0 top-0 linear-red"></span>
+                <span class="absolute w-0.5 h-full right-0 top-0 linear-red"></span>
+            </div>
+            <div class="relative">
+                <p class="pl-14 pt-16 pb-10 text-2xl">Basic</p>
+                <p class="pl-14 pb-14 text-2xl"><span class="netflix text-5xl">$19</span>/1 Month</p>
+                <div class="bg-stone-900 w-full h-auto p-14">
+                    <p class="pb-7 text-lg">✖️ &nbsp;Ads free movies and shows</p>
+                    <p class="pb-7 text-lg p-0.5"><i class="fa-solid fa-check pr-4 netflix"></i>Watch on TV or Laptop</p>
+                    <p class="pb-7 text-lg p-0.5"><i class="fa-solid fa-check pr-4 netflix"></i>Streamit Special</p>
+                    <p class="pb-7 text-lg p-0.5"><i class="fa-solid fa-check pr-4 netflix"></i>Max video quality</p>
+                    <a href="#"><div class="sub-but mt-5 w-full h-12 text-sm font-bold"><span class="sub-bg netflix-bg rounded-md"></span><span class="sub-but1"></span><span class="sub-but2"></span><span class="sub-but-text">select basic<i class="fa-solid fa-caret-right fa-xl pl-3"></i></span></div></a>
+                </div>
+                <span class="absolute w-full h-0.5 top-0 netflix-bg flex justify-center items-center"></span>
+                <span class="absolute w-0.5 h-full left-0 top-0 linear-red"></span>
+                <span class="absolute w-0.5 h-full right-0 top-0 linear-red"></span>
+            </div>
+        </div>
+       </section>
     </main>
+    <hr class="mx-auto w-11/12 border-slate-700">
     <footer>
         <section class="w-full">
           <div class="py-16 px-3 xl:px-24 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-3 text-slate-200 font-light text-sm">

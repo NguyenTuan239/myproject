@@ -1,4 +1,8 @@
 /* Merchandise store css */
+:root{
+    --main-color: #ff0000;
+    --hover-backgournd-color:#ff00002a;
+}
 .merchandise-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -126,4 +130,40 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(1, 1fr);
     }
+}
+
+/* FAQ Css */
+.faq-container{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    max-width: 1200px;
+}
+.faq-plus-line{
+    position: absolute;
+    width: 2px;
+    height: 16px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.faq-des {
+    position: relative;
+    width: 100%;
+    padding: 0 24px; 
+    overflow: hidden; 
+    transition: all 0.5s ease;
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    &.active{
+        max-height: 500px; 
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+
+/* Pricing Plan Css */
+.linear-red{
+    background-image: linear-gradient(to bottom, var(--main-color),rgb(41, 37, 36,0));
 }
