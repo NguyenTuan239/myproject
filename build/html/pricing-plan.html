@@ -15,7 +15,12 @@
     <link rel="stylesheet" href="../css/movie-detail.css">
 </head>
 <body class="min-h-screen w-full bg-stone-950 text-slate-300">
-  <div id="setting-icon" class="fixed right-0 top-32 h-10 w-10 z-50 cursor-pointer bg-black flex justify-center items-center">
+  <!-- Loading video -->
+  <div class="z-50 fixed w-full h-full bg-zinc-950 flex justify-center items-center" id="gif-loader">
+    <img src="../image/loader.gif" alt="Loading" id="loading-gif" class="h-60 w-auto">
+  </div>
+  <!-- Setting option -->
+  <div id="setting-icon" class="fixed right-0 top-32 h-10 w-10 z-40 cursor-pointer bg-black flex justify-center items-center">
     <i class="fa-solid fa-gear fa-lg text-white "></i>
   </div>
   <div id="setting-bar" class="setting-bar fixed right-0 top-32 h-64 w-72 z-50 bg-slate-100 flex flex-col p-4 gap-4 reactive">
@@ -81,7 +86,7 @@
                   <a href="faq.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red-nothover absolute top-1 left-3 w-48 h-9"></span>FAQ</li></a>
                   <a href="privacy-policy.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Privacy Policy</li></a>
                   <a href="pricing-plan.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Pricing Plan</li></a>
-                  <a href=""><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Comming Soon</li></a>
+                  <a href="coming-soon.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Comming Soon</li></a>
                   <li class="web-nav-home li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error Page <i class="fa-solid fa-caret-right fa-sm pl-20"></i></li>
                   <div class="home-hover hidden absolute w-52 bg-stone-900 top-64 -left-52 lg:left-52">
                     <ul class="p-3 text-slate-300">
@@ -208,7 +213,7 @@
                   <a href="faq.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 netflix">FAQ</li></a>
                   <a href="privacy-policy.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Privacy Policy</li></a>
                   <a href="pricing-plan.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Pricing Plan</li></a>
-                  <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Coming Soon</li></a>
+                  <a href="coming-soon.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Coming Soon</li></a>
                   <li id="nav-3-1" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
                       <span>Error Page</span>
                       <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus31"></span></button>

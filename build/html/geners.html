@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="../css/OTT-home-main-sec.css">
 </head>
 <body class="min-h-screen w-full bg-stone-950 text-slate-200">
+  <!-- Loading video -->
+  <div class="z-50 absolute w-full h-full bg-zinc-950 flex justify-center items-center" id="gif-loader">
+    <img src="../image/loader.gif" alt="Loading" id="loading-gif" class="h-60 w-auto">
+  </div>
+  <!-- Setting option -->
   <div id="setting-icon" class="fixed right-0 top-32 h-10 w-10 z-50 cursor-pointer bg-black flex justify-center items-center">
     <i class="fa-solid fa-gear fa-lg text-white "></i>
   </div>
@@ -45,6 +50,7 @@
         </div>
     </div>
     <a href="#" id="backToTop" class="netflix-bg"><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i></a>
+    <!-- Header Navigation -->
     <header class="sticky top-0 w-full h-14 md:h-16 bg-stone-900/80 z-50">
       <section class="flex justify-center text-slate-200">
           <a href="../../index.html"><img src="logo.webp" alt="logo" class="logo absolute left-12 top-2 h-8 w-auto lg:left-4 lg:top-4 xl:left-20"></a>
@@ -268,6 +274,7 @@
             </div>
       </section>
     </header>
+    <!-- main section -->
     <main class="w-full h-auto font-light">
       <div class="relative w-full h-72 md:h-96">
         <img src="../image/pages/01.webp" alt="" class="w-full h-72 md:h-96 object-cover">
@@ -424,6 +431,7 @@
       </section>
     </main>
     <hr class="mx-auto w-11/12 border-slate-700">
+    <!-- footer section -->
     <footer>
         <section class="w-full">
           <div class="py-16 px-3 xl:px-24 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-3 text-slate-200 font-light text-sm">

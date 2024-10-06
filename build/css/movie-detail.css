@@ -212,11 +212,16 @@
     width: 100%;
 }
 .detail-mv-table{
+    position: relative;
     width: 100%;
     border-collapse: separate;
-    border-spacing: 0 10px;
+    border-spacing: 0 5px;
     text-align: left;
     min-width: 700px;
+}
+.detail-mv-table thead{
+    position: relative;
+    top: 10px;
 }
 .detail-nav-bg th, td{
     padding-left: 20px;

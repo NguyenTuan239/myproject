@@ -1,37 +1,34 @@
+// Section 8 js
+const handleSeasons = (seasons) => {
+    seasons.forEach(({ nav, des }, index) => {
+        document.getElementById(nav).addEventListener('click', function() {
+            seasons.forEach(({ nav: otherNav, des: otherDes }, otherIndex) => {
+                const isActive = index === otherIndex;
+                document.getElementById(otherNav).classList.toggle('netflix', isActive);
+                document.getElementById(otherDes).classList.toggle('hidden', !isActive);
+            });
+        });
+    });
+};
 
-const seasons1 = [
-    document.getElementById("sec8-season1"),
-    document.getElementById("sec8-season2"),
-    document.getElementById("sec8-season3")
-];
-const contents1 = [
-    document.getElementById("sec8-season1-content"),
-    document.getElementById("sec8-season2-content"),
-    document.getElementById("sec8-season3-content")
-];
-
-const seasons2 = [
-    document.getElementById("sec8-season1-s2"),
-    document.getElementById("sec8-season2-s2"),
-    document.getElementById("sec8-season3-s2")
-];
-const contents2 = [
-    document.getElementById("sec8-season1-content-s2"),
-    document.getElementById("sec8-season2-content-s2"),
-    document.getElementById("sec8-season3-content-s2")
+const homeSec8S1 = [
+    { nav: 'sec8-season1', des: 'sec8-season1-content' },
+    { nav: 'sec8-season2', des: 'sec8-season2-content' },
+    { nav: 'sec8-season3', des: 'sec8-season3-content' },
 ];
 
-const seasons3 = [
-    document.getElementById("sec8-season1-s3"),
-    document.getElementById("sec8-season2-s3"),
-    document.getElementById("sec8-season3-s3")
-];
-const contents3 = [
-    document.getElementById("sec8-season1-content-s3"),
-    document.getElementById("sec8-season2-content-s3"),
-    document.getElementById("sec8-season3-content-s3")
+const homeSec8S2 = [
+    { nav: 'sec8-season1-s2', des: 'sec8-season1-content-s2' },
+    { nav: 'sec8-season2-s2', des: 'sec8-season2-content-s2' },
+    { nav: 'sec8-season3-s2', des: 'sec8-season3-content-s2' },
 ];
 
-addClickEvent(seasons1, contents1);
-addClickEvent(seasons2, contents2);
-addClickEvent(seasons3, contents3);
+const homeSec8S3 = [
+    { nav: 'sec8-season1-s3', des: 'sec8-season1-content-s3' },
+    { nav: 'sec8-season2-s3', des: 'sec8-season2-content-s3' },
+    { nav: 'sec8-season3-s3', des: 'sec8-season3-content-s3' },
+];
+
+handleSeasons(homeSec8S1);
+handleSeasons(homeSec8S2);
+handleSeasons(homeSec8S3);

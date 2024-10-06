@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
+    <title>My account</title>
     <link rel="stylesheet" href="../../css/style.css">
     <script src="https://kit.fontawesome.com/aa6f8e22b4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/OTT-home-index.css">
+    <link rel="stylesheet" href="../css/OTT-home-main.css">
     <link rel="stylesheet" href="../css/menu-button.css">
     <link rel="stylesheet" href="../css/login-page.css">
-    <link rel="stylesheet" href="../css/OTT-home-main.css">
-    <link rel="stylesheet" href="../css/OTT-home-main-sec.css">
+    <link rel="stylesheet" href="../css/movie-detail.css">
     <link rel="stylesheet" href="../css/merchandise-store.css">
+    <link rel="stylesheet" href="../css/blog-list.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 </head>
-<body class="min-h-screen w-full bg-stone-950 text-slate-300">
+<body class="min-h-screen w-full bg-stone-950 text-slate-50">
   <!-- Loading video -->
-  <div class="z-50 absolute w-full h-full bg-zinc-950 flex justify-center items-center" id="gif-loader">
+  <div class="z-50 fixed w-full h-full bg-zinc-950 flex justify-center items-center" id="gif-loader">
     <img src="../image/loader.gif" alt="Loading" id="loading-gif" class="h-60 w-auto">
   </div>
   <!-- Setting option -->
-  <div id="setting-icon" class="fixed right-0 top-32 h-10 w-10 z-50 cursor-pointer bg-black flex justify-center items-center">
+  <div id="setting-icon" class="fixed right-0 top-32 h-10 w-10 z-40 cursor-pointer bg-black flex justify-center items-center">
     <i class="fa-solid fa-gear fa-lg text-white "></i>
   </div>
   <div id="setting-bar" class="setting-bar fixed right-0 top-32 h-64 w-72 z-50 bg-slate-100 flex flex-col p-4 gap-4 reactive">
@@ -51,7 +55,6 @@
         </div>
     </div>
     <a href="#" id="backToTop" class="netflix-bg"><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i></a>
-    <!-- Header Navigation -->
     <header class="sticky top-0 w-full h-14 md:h-16 bg-stone-900/80 z-50">
     <!-- Header Web Navigation -->
       <section class="flex justify-center text-slate-200">
@@ -71,27 +74,27 @@
               <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center hover-red">Features&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
               <div class="home-hover hidden absolute top-16 left-28 w-52 bg-stone-900">
                 <ul class="py-1 text-slate-400">
-                  <a href="restricted-content.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Restricted Content</li></a>
-                  <a href="related-merchadise.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Related Merchadise</li></a>
-                  <a href="playlist.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Playlist</li></a>
-                  <a href="geners.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Geners</li></a>
-                  <a href="cast.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Cast</li></a>
-                  <a href="tags.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Tags</li></a>
+                  <a href="restricted-content.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Restricted Content</li></a>
+                  <a href="related-merchadise.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Related Merchadise</li></a>
+                  <a href="playlist.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Playlist</li></a>
+                  <a href="geners.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Geners</li></a>
+                  <a href="cast.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Cast</li></a>
+                  <a href="tags.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Tags</li></a>
               </div>
               <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center netflix">Pages&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
               <div class="home-hover hidden absolute top-16 left-56 w-52 bg-stone-900">
                 <ul class="py-1 text-slate-400">
-                  <a href="about-us.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>About Us</li></a>
-                  <a href="contact-us.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Contract Us</li></a>
-                  <a href="faq.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red-nothover absolute top-1 left-3 w-48 h-9"></span>FAQ</li></a>
-                  <a href=""><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Privacy Policy</li></a>
-                  <a href=""><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Pricing Plan</li></a>
-                  <a href=""><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Comming Soon</li></a>
+                  <a href="about-us.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>About Us</li></a>
+                  <a href="contact-us.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Contract Us</li></a>
+                  <a href="faq.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red-nothover absolute top-1 left-3 w-48 h-9"></span>FAQ</li></a>
+                  <a href="privacy-policy.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Privacy Policy</li></a>
+                  <a href="pricing-plan.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Pricing Plan</li></a>
+                  <a href="coming-soon.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Comming Soon</li></a>
                   <li class="web-nav-home li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error Page <i class="fa-solid fa-caret-right fa-sm pl-20"></i></li>
                   <div class="home-hover hidden absolute w-52 bg-stone-900 top-64 -left-52 lg:left-52">
                     <ul class="p-3 text-slate-300">
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error page 1</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error page 2</li>
+                      <a href="eror-page1.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error page 1</li></a>
+                      <a href="error-page2.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error page 2</li></a>
                     </ul>
                   </div>
                 </ul>
@@ -99,33 +102,33 @@
               <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center hover-red">Blog&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
               <div class="home-hover hidden absolute top-16 -right-10 w-52 bg-stone-900">
                 <ul class="py-1 text-slate-400">
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Listing</li>
+                  <a href="blog-listing.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Listing</li></a>
                   <li class="web-nav-home li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Grid<i class="fa-solid fa-caret-right fa-sm absolute top-5 right-5"></i></li>
                   <div class="home-hover hidden absolute w-52 bg-stone-900 top-11 -left-52 lg:left-52">
                     <ul class="p-3 text-slate-300">
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>1 Colume</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>2 Colume</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>3 Colume</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>4 Colume</li>
+                      <a href=""><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>1 Colume</li></a>
+                      <a href=""><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>2 Colume</li></a>
+                      <a href=""><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>3 Colume</li></a>
+                      <a href=""><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>4 Colume</li></a>
                     </ul>
                   </div>
                   <li class="web-nav-home li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Sidebar<i class="fa-solid fa-caret-right fa-sm absolute top-5 right-5"></i></li>
                   <div class="home-hover hidden absolute w-52 bg-stone-900 top-20 -left-52 lg:left-52">
                     <ul class="p-3 text-slate-300">
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Left Sidebar</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Right Sidebar</li>
+                      <a href=""><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Left Sidebar</li></a>
+                      <a href=""><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Right Sidebar</li></a>
                     </ul>
                   </div>
                   <li class="web-nav-home li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Single<i class="fa-solid fa-caret-right fa-sm absolute top-5 right-5"></i></li>
                   <div class="home-hover hidden absolute w-52 bg-stone-900 top-32 -left-52 lg:left-52">
                     <ul class="p-3 text-slate-300">
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Template</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Standard</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Audio</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Video</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Link</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Quote</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Gallery</li>
+                      <a href=""><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Template</li></a>
+                      <a href=""><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Standard</li></a>
+                      <a href=""><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Audio</li></a>
+                      <a href=""><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Video</li></a>
+                      <a href=""><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Link</li></a>
+                      <a href=""><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Quote</li></a>
+                      <a href=""><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Gallery</li></a>
                     </ul>
                   </div>
                 </ul>
@@ -133,12 +136,12 @@
               <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center hover-red z-10">Shop&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
               <div class="home-hover hidden absolute top-16 -right-24 w-44 bg-stone-900">
                 <ul class="py-1 text-slate-400">
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Shop</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>My Account Page</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Cart Page</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Wishlist Page</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Checkout Page</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Order Page</li>
+                  <a href="shop.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Shop</li></a>
+                  <a href="my-account.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>My Account Page</li></a>
+                  <a href=""><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Cart Page</li></a>
+                  <a href=""><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Wishlist Page</li></a>
+                  <a href=""><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Checkout Page</li></a>
+                  <a href=""><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Order Page</li></a>
                 </ul>
               </div>
           </div>
@@ -211,16 +214,16 @@
                   <a href="about-us.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">About Us</li></a>
                   <a href="contact-us.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Contact Us</li></a>
                   <a href="faq.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 netflix">FAQ</li></a>
-                  <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Privacy Policy</li></a>
-                  <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Pricing Plan</li></a>
-                  <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Coming Soon</li></a>
+                  <a href="privacy-policy.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Privacy Policy</li></a>
+                  <a href="pricing-plan.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Pricing Plan</li></a>
+                  <a href="coming-soon.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Coming Soon</li></a>
                   <li id="nav-3-1" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
                       <span>Error Page</span>
                       <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus31"></span></button>
                   </li>
                   <ul id="li-3-1">
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Error Page 1</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Error Page 2</li>
+                      <a href="eror-page1.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Error Page 1</li></a>
+                      <a href="error-page2.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Error Page 2</li></a>
                   </ul>
                 </ul>
                 <li id="nav-4" class="flex justify-between items-center py-4 px-4 border-b border-slate-900 hover-red">
@@ -228,37 +231,37 @@
                   <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus4"></span></button>
                 </li>
                 <ul id="li-4">
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Listing</li>
+                  <a href="blog-listing.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Listing</li></a>
                   <li id="nav-4-1" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
                       <span>Blog Grid</span>
                       <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus41"></span></button>
                   </li>
                   <ul id="li-4-1">
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">1 Colume</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">2 Colume</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">3 Colume</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">4 Colume</li>
+                      <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">1 Colume</li></a>
+                      <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">2 Colume</li></a>
+                      <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">3 Colume</li></a>
+                      <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">4 Colume</li></a>
                   </ul>
                   <li id="nav-4-2" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
                       <span>Blog Sidebar</span>
                       <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus42"></span></button>
                   </li>
                   <ul id="li-4-2">
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Left Sidebar</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Right Sidebar</li>
+                      <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Left Sidebar</li></a>
+                      <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Right Sidebar</li></a>
                   </ul>
                   <li id="nav-4-3" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
                       <span>Blog Single</span>
                       <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus43"></span></button>
                   </li>
                   <ul id="li-4-3">
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Blog Template</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Standard</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Audio</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Video</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Link</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Quote</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Gallery</li>
+                      <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Blog Template</li></a>
+                      <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Standard</li></a>
+                      <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Audio</li></a>
+                      <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Video</li></a>
+                      <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Link</li></a>
+                      <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Quote</li></a>
+                      <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Gallery</li></a>
                   </ul>
                 </ul>
                 <li id="nav-5" class="flex justify-between items-center py-4 px-4 border-b border-slate-900 hover-red">
@@ -266,12 +269,12 @@
                   <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus5"></span></button>
                 </li>
                 <ul id="li-5">
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Shop</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">My Account</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Cart Page</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Wishlist Page</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Check Out Page</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Order Tracking</li>
+                  <a href="shop.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Shop</li></a>
+                  <a href="my-account.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">My Account</li></a>
+                  <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Cart Page</li></a>
+                  <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Wishlist Page</li></a>
+                  <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Check Out Page</li></a>
+                  <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Order Tracking</li></a>
                 </ul>
               </ul>
             </div>
@@ -282,68 +285,82 @@
       <div class="relative w-full h-72 md:h-96">
         <img src="../image/pages/01.webp" alt="" class="w-full h-72 md:h-96 object-cover">
         <div class="term-of-use-hl">
-          <h1 class="text-3xl font-medium mb-4 flex justify-center">FAQ</h2>
-          <p class="text-xl"><a href="../../index.html" class="netflix font-medium">Home</a>&nbsp;/&nbsp;<span class="netflix">FAQ</span></p>
+          <h1 class="text-3xl font-medium mb-4 flex justify-center">My Account</h2>
+          <p class="text-xl"><a href="../../index.html" class="netflix font-medium">Home</a>&nbsp;/&nbsp;<span class="netflix">My Account</span></p>
         </div>
       </div>
       <!-- Section 2 -->
-      <section class="w-11/12 mx-auto mt-10">
-        <div class="faq-container mx-auto">
-            <div class="bg-stone-900 overflow-hidden my-5">
-                <div id="faq-nav1" class="flex justify-between items-center cursor-pointer">
-                    <h2 class="text-xl p-6 text-white font-normal md:text-2xl lg:text-3xl">What is streamit?</h2>
-                    <div class="relative netflix-bg w-10 h-10 flex justify-center items-center mr-5">
-                        <span class="w-4 h-0.5 bg-white"></span>
-                        <span id="faq-plus1" class="faq-plus-line hidden"></span>
-                    </div>
+      <section class="w-11/12 mx-auto my-7">
+        <div>
+            <div class="flex flex-wrap gap-10 justify-center items-center">
+                <div>
+                    <span class="px-2 py-0.5 rounded-full netflix-bg">1</span>
+                    <span class="pl-1">Shopping Cart</span>
                 </div>
-                <hr class="mx-auto w-11/12 border-slate-700">
-                <div id="faq-des1" class="faq-des active">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</div>
-            </div>
-            <div class="bg-stone-900 overflow-hidden my-5">
-                <div id="faq-nav2" class="flex justify-between items-center cursor-pointer">
-                    <h2 class="text-xl p-6 text-white font-normal md:text-2xl lg:text-3xl">Will my account work outside my country?</h2>
-                    <div class="relative netflix-bg w-10 h-10 flex justify-center items-center mr-5">
-                        <span class="w-4 h-0.5 bg-white"></span>
-                        <span id="faq-plus2" class="faq-plus-line"></span>
-                    </div>
+                <div class="border border-slate-400 text-slate-400 px-2 rounded-full"><i class="fa-solid fa-chevron-right fa-2xs" style="color: #ffffff;"></i></div>
+                <div>
+                    <span class="px-2 py-0.5 rounded-full bg-stone-900">2</span>
+                    <span class="pl-1">Checkout</span>
                 </div>
-                <hr class="mx-auto w-11/12 border-slate-700">
-                <div id="faq-des2" class="faq-des">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</div>
-            </div>
-            <div class="bg-stone-900 overflow-hidden my-5">
-                <div id="faq-nav3" class="flex justify-between items-center cursor-pointer">
-                    <h2 class="text-xl p-6 text-white font-normal md:text-2xl lg:text-3xl">I am facing video playback issues. What do I do?</h2>
-                    <div class="relative netflix-bg w-10 h-10 flex justify-center items-center mr-5">
-                        <span class="w-4 h-0.5 bg-white"></span>
-                        <span id="faq-plus3" class="faq-plus-line"></span>
-                    </div>
+                <div class="border border-slate-400 text-slate-400 px-2 rounded-full"><i class="fa-solid fa-chevron-right fa-2xs" style="color: #ffffff;"></i></div>
+                <div>
+                    <span class="px-2 py-0.5 rounded-full bg-stone-900">2</span>
+                    <span class="pl-1">Order Summary</span>
                 </div>
-                <hr class="mx-auto w-11/12 border-slate-700">
-                <div id="faq-des3" class="faq-des">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</div>
             </div>
-            <div class="bg-stone-900 overflow-hidden my-5">
-                <div id="faq-nav4" class="flex justify-between items-center cursor-pointer">
-                    <h2 class="text-xl p-6 text-white font-normal md:text-2xl lg:text-3xl">What benefits do I get with the packs?</h2>
-                    <div class="relative netflix-bg w-10 h-10 flex justify-center items-center mr-5">
-                        <span class="w-4 h-0.5 bg-white"></span>
-                        <span id="faq-plus4" class="faq-plus-line"></span>
+            <div class="table-wrapper">
+                <table class="detail-mv-table">
+                    <thead class="bg-black">
+                      <tr class="">
+                        <th class="py-6 pl-5">
+                            Product
+                        </th>
+                        <th class="py-6 pl-5">
+                            Price
+                        </th>
+                        <th class="py-6 pl-5">
+                            Quantity
+                        </th>
+                        <th class="py-6 pl-5">
+                            Subtotal
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="bg-black">
+                        <td class="flex gap-3 items-center">
+                          <img src="../image/shop/product/08.webp" alt="" class="w-20 h-20">
+                          <span>Coffee Cup</span>
+                        </td>
+                        <td class="text-nowrap">
+                            $15.00
+                        </td>
+                        <td class="text-nowrap">
+                            3
+                        </td>
+                        <td class="">
+                            <a href=""><i class="fa-regular fa-trash-can p-4" style="color: #ffffff;"></i></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="flex justify-between items-center flex-wrap gap-5 my-5">
+                <div class="flex justify-between items-center flex-wrap gap-4">
+                    <div class="flex items-center justify-start gap-3">
+                        <span>Coupon:</span>
+                    <div><input type="text" class="form-control red-border !bg-black" name="" placeholder="Coupon code"></div>
                     </div>
+                    <a href="#"><div class="sub-but my-3 w-40 h-12 text-sm font-bold"><span class="sub-bg netflix-bg rounded-md"></span><span class="sub-but1"></span><span class="sub-but2"></span><span class="sub-but-text">apply coupon<i class="fa-solid fa-caret-right fa-xl pl-3"></i></span></div></a>
                 </div>
-                <hr class="mx-auto w-11/12 border-slate-700">
-                <div id="faq-des4" class="faq-des">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</div>
-            </div>
-            <div class="bg-stone-900 overflow-hidden my-5">
-                <div id="faq-nav5" class="flex justify-between items-center cursor-pointer">
-                    <h2 class="text-xl p-6 text-white font-normal md:text-2xl lg:text-3xl">How can I manage notifications?</h2>
-                    <div class="relative netflix-bg w-10 h-10 flex justify-center items-center mr-5">
-                        <span class="w-4 h-0.5 bg-white"></span>
-                        <span id="faq-plus5" class="faq-plus-line"></span>
-                    </div>
+                <div>
+                    <a href="#"><div class="sub-but my-3 w-40 h-12 text-sm font-bold"><span class="sub-bg netflix-bg rounded-md"></span><span class="sub-but1"></span><span class="sub-but2"></span><span class="sub-but-text">update cart<i class="fa-solid fa-caret-right fa-xl pl-3"></i></span></div></a>
                 </div>
-                <hr class="mx-auto w-11/12 border-slate-700">
-                <div id="faq-des5" class="faq-des">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</div>
             </div>
+        </div>
+        <div>
+            <p>Cart Totals</p>
+            
         </div>
       </section>
     </main>
@@ -352,7 +369,7 @@
         <section class="w-full">
           <div class="py-16 px-3 xl:px-24 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-3 text-slate-200 font-light text-sm">
             <div>
-              <a href="../../index.html"><img src="logo.webp" alt="logo" class="logo h-8 w-auto cursor-pointer mb-8"></a>
+              <div class="relative bg-[url('../logo.webp')] bg-cover h-10 w-40 cursor-pointer mb-8"><a href="../../index.html" class="absolute top-0 left-0 w-full h-full"><div class="absolute top-0 left-0 w-full h-full"></div></a></div>
               <p>Email us: <a href="mailto:customer@streamit.com" class="font-normal">customer@streamit.com</a></p>
               <p class="mt-4">CUSTOMER SERVICES</p>
               <h3 class="text-lg font-semibold">+ (480) 555-0103</h3>
@@ -430,7 +447,7 @@
         </section>
       </footer>
     <script src="../js/OTT-home.js"></script>
-    <script src="../js/faq.js"></script>
+    <script src="../js/my-account.js"></script>
     <script src="../js/setting.js"></script>
 </body>
 </html>

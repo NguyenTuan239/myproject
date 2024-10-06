@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>privacy and policy</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="https://kit.fontawesome.com/aa6f8e22b4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/OTT-home-index.css">
+    <link rel="stylesheet" href="../css/menu-button.css">
+    <link rel="stylesheet" href="../css/login-page.css">
+    <link rel="stylesheet" href="../css/OTT-home-main.css">
+    <link rel="stylesheet" href="../css/OTT-home-main-sec.css">
+    <link rel="stylesheet" href="../css/merchandise-store.css">
+    <link rel="stylesheet" href="../css/movie-detail.css">
+</head>
+<body class="min-h-screen w-full bg-stone-950 text-slate-300">
+    <!-- Loading video -->
+  <div class="z-50 absolute w-full h-full bg-zinc-950 flex justify-center items-center" id="gif-loader">
+    <img src="../image/loader.gif" alt="Loading" id="loading-gif" class="h-60 w-auto">
+  </div>
+  <!-- Setting option -->
+  <div id="setting-icon" class="fixed right-0 top-32 h-10 w-10 z-40 cursor-pointer bg-black flex justify-center items-center">
+    <i class="fa-solid fa-gear fa-lg text-white "></i>
+  </div>
+  <div id="setting-bar" class="setting-bar fixed right-0 top-32 h-64 w-72 z-50 bg-slate-100 flex flex-col p-4 gap-4 reactive">
+      <div class="flex justify-between my-1 items-center">
+          <h2 class="text-md text-zinc-700">Live Customizer</h2>
+          <button id="reset" class="netflix reset">
+              <div class="reset-text">Reset All Settings</div>
+              <i class="fa-solid fa-rotate fa-sm"></i>
+          </button>
+          <button id="setting-bar-exit" class="text-sm">✖️</button>
+      </div>
+      <div class="flex space-x-2">
+          <button id="ltr" class="flex-1 border border-black bg-black text-white py-1 rounded-sm">LTR</button>
+          <button id="rtl" class="flex-1 border border-black text-zinc-700 py-1 rounded-sm">RTL</button>
+      </div>
+      <h3 class="text-md text-zinc-700">Color Customizer</h3>
+      <div class="grid grid-cols-2 gap-4">
+          <button class="theme-buttons border border-black bg-black text-white py-1 rounded-sm" data-color="#ff0000" hover-bg-color="#ff00002a" logo-color="logo.webp">Netflix</button>
+          <button class="theme-buttons border border-black text-zinc-700 py-1 rounded-sm" data-color="#0000ff" hover-bg-color="#0000ff2a" logo-color="logo-hotstar.webp">Hotstar</button>
+          <button class="theme-buttons border border-black text-zinc-700 py-1 rounded-sm" data-color="#02afaf" hover-bg-color="#00ffff2a" logo-color="logo-prime.webp">Prime</button>
+          <button class="theme-buttons border border-black text-zinc-700 py-1 rounded-sm" data-color="#599401" hover-bg-color="#adff2f2a" logo-color="logo-hulu.webp">Hulu</button>
+      </div>
+  </div>
+    <div id="reset-dialog" class="dialog">
+        <div class="dialog-content">
+            <p>Are you sure you want to reset your settings?</p>
+            <button id="confirm-reset">Yes</button>
+            <button id="cancel-reset">No</button>
+        </div>
+    </div>
+    <!-- Main section -->
+     <section class="relative w-full min-h-screen bg-[url('../build/image/pages/404-two.webp')] flex flex-col justify-center items-center">
+        <div class="flex flex-col items-center">
+            <div class="relative text-nowrap w-full pl-5">
+                <span class="error-page-number-41"><span>4</span><span class="error-page-number-410">4</span></span>
+                <span class="error-page-number-0">0</span>
+                <span class="error-page-number-42"><span>4</span><span class="error-page-number-410">4</span></span>
+            </div>
+            <div class="error-page-text">
+                ohhh no..! you lost in imagination.
+            </div>
+            <div class="text-center p-10">we are sorry, but the page you are looking for doesn't exist.</div>
+            <a href="../../index.html"><div class="sub-but my-5 w-36 h-12 text-sm font-bold"><span class="sub-bg netflix-bg rounded-md"></span><span class="sub-but1"></span><span class="sub-but2"></span><span class="sub-but-text">back to home<i class="fa-solid fa-caret-right fa-xl pl-3"></i></span></div></a>
+        </div>
+     </section>
+
+    <script src="../js/setting.js"></script>
+</body>
+</html>

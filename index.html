@@ -14,8 +14,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body class="min-h-screen w-full bg-stone-900">
+  <!-- Loading video -->
+  <div class="z-50 fixed w-full h-full bg-zinc-950 flex justify-center items-center" id="gif-loader">
+    <img src="build/image/loader.gif" alt="Loading" id="loading-gif" class="h-60 w-auto">
+  </div>
   <!-- Header navigation -->
-  <header class="sticky top-0 w-full h-14 md:h-16 bg-stone-900/80 z-50">
+  <header class="sticky top-0 w-full h-14 md:h-16 bg-stone-900/80 z-40">
     <!-- Header Web navigation -->
       <section class="flex justify-center text-slate-200">
           <a href="#"><img src="logo.webp" alt="logo" class="logo absolute left-12 top-2 h-8 w-auto lg:left-4 lg:top-4 xl:left-20"></a>
@@ -34,27 +38,27 @@
               <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center hover-red">Features&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
               <div class="home-hover hidden absolute top-16 left-28 w-52 bg-stone-900">
                 <ul class="py-1 text-slate-400">
-                  <a href="build/html/restricted-content.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Restricted Content</li></a>
-                  <a href="build/html/related-merchadise.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Related Merchadise</li></a>
-                  <a href="build/html/playlist.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Playlist</li></a>
-                  <a href="build/html/geners.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Geners</li></a>
-                  <a href="build/html/cast.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Cast</li></a>
-                  <a href="build/html/tags.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Tags</li></a>
+                  <a href="build/html/restricted-content.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Restricted Content</li></a>
+                  <a href="build/html/related-merchadise.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Related Merchadise</li></a>
+                  <a href="build/html/playlist.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Playlist</li></a>
+                  <a href="build/html/geners.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Geners</li></a>
+                  <a href="build/html/cast.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Cast</li></a>
+                  <a href="build/html/tags.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Tags</li></a>
               </div>
               <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center hover-red">Pages&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
               <div class="home-hover hidden absolute top-16 left-56 w-52 bg-stone-900 xl:left-60">
                 <ul class="py-1 text-slate-400">
-                  <a href="build/html/about-us.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>About Us</li></a>
-                  <a href="build/html/contact-us.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Contract Us</li></a>
-                  <a href="build/html/faq.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>FAQ</li></a>
-                  <a href="build/html/privacy-policy.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Privacy Policy</li></a>
-                  <a href="build/html/pricing-plan.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Pricing Plan</li></a>
-                  <a href=""><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Comming Soon</li></a>
+                  <a href="build/html/about-us.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>About Us</li></a>
+                  <a href="build/html/contact-us.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Contract Us</li></a>
+                  <a href="build/html/faq.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>FAQ</li></a>
+                  <a href="build/html/privacy-policy.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Privacy Policy</li></a>
+                  <a href="build/html/pricing-plan.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Pricing Plan</li></a>
+                  <a href="build/html/coming-soon.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Comming Soon</li></a>
                   <li class="web-nav-home li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error Page <i class="fa-solid fa-caret-right fa-sm pl-20"></i></li>
                   <div class="home-hover hidden absolute w-52 bg-stone-900 top-64 -left-52 lg:left-52">
                     <ul class="p-3 text-slate-300">
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error page 1</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error page 2</li>
+                      <a href="build/html/eror-page1.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error page 1</li></a>
+                      <a href="build/html/error-page2.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error page 2</li></a>
                     </ul>
                   </div>
                 </ul>
@@ -62,33 +66,33 @@
               <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center hover-red">Blog&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
               <div class="home-hover hidden absolute top-16 -right-10 w-52 bg-stone-900 xl:-right-8">
                 <ul class="py-1 text-slate-400">
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Listing</li>
+                  <a href="build/html/blog-listing.html"></a><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Listing</li>
                   <li class="web-nav-home li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Grid<i class="fa-solid fa-caret-right fa-sm absolute top-5 right-5"></i></li>
                   <div class="home-hover hidden absolute w-52 bg-stone-900 top-11 -left-52 lg:left-52">
                     <ul class="p-3 text-slate-300">
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>1 Colume</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>2 Colume</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>3 Colume</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>4 Colume</li>
+                      <a href="build/html/blog-detail.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>1 Colume</li></a>
+                      <a href="build/html/blog-detail.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>2 Colume</li></a>
+                      <a href="build/html/blog-detail.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>3 Colume</li></a>
+                      <a href="build/html/blog-detail.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>4 Colume</li></a>
                     </ul>
                   </div>
                   <li class="web-nav-home li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Sidebar<i class="fa-solid fa-caret-right fa-sm absolute top-5 right-5"></i></li>
                   <div class="home-hover hidden absolute w-52 bg-stone-900 top-20 -left-52 lg:left-52">
                     <ul class="p-3 text-slate-300">
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Left Sidebar</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Right Sidebar</li>
+                      <a href="build/html/blog-detail.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Left Sidebar</li></a>
+                      <a href="build/html/blog-detail.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Right Sidebar</li></a>
                     </ul>
                   </div>
                   <li class="web-nav-home li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Single<i class="fa-solid fa-caret-right fa-sm absolute top-5 right-5"></i></li>
                   <div class="home-hover hidden absolute w-52 bg-stone-900 top-32 -left-52 lg:left-52">
                     <ul class="p-3 text-slate-300">
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Template</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Standard</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Audio</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Video</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Link</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Quote</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Gallery</li>
+                      <a href="build/html/blog-detail.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Template</li></a>
+                      <a href="build/html/blog-detail.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Standard</li></a>
+                      <a href="build/html/blog-detail.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Audio</li></a>
+                      <a href="build/html/blog-detail.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Video</li></a>
+                      <a href="build/html/blog-detail.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Link</li></a>
+                      <a href="build/html/blog-detail.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Quote</li></a>
+                      <a href="build/html/blog-detail.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Gallery</li></a>
                     </ul>
                   </div>
                 </ul>
@@ -96,12 +100,12 @@
               <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center hover-red z-10">Shop&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
               <div class="home-hover hidden absolute top-16 -right-24 w-44 bg-stone-900 xl:-right-28">
                 <ul class="py-1 text-slate-400">
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Shop</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>My Account Page</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Cart Page</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Wishlist Page</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Checkout Page</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Order Page</li>
+                  <a href="build/html/shop.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Shop</li></a>
+                  <a href="build/html/my-account.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>My Account Page</li></a>
+                  <a href="build/html/cart.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Cart Page</li></a>
+                  <a href=""><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Wishlist Page</li></a>
+                  <a href=""><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Checkout Page</li></a>
+                  <a href=""><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Order Page</li></a>
                 </ul>
               </div>
           </div>
@@ -176,14 +180,14 @@
                   <a href="build/html/faq.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">FAQ</li></a>
                   <a href="build/html/privacy-policy.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Privacy Policy</li></a>
                   <a href="build/html/pricing-plan.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Pricing Plan</li></a>
-                  <a href="#"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Coming Soon</li></a>
+                  <a href="build/html/coming-soon.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Coming Soon</li></a>
                   <li id="nav-3-1" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
                       <span>Error Page</span>
                       <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus31"></span></button>
                   </li>
                   <ul id="li-3-1">
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Error Page 1</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Error Page 2</li>
+                      <a href="build/html/eror-page1.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Error Page 1</li></a>
+                      <a href="build/html/error-page2.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Error Page 2</li></a>
                   </ul>
                 </ul>
                 <li id="nav-4" class="flex justify-between items-center py-4 px-4 border-b border-slate-900 hover-red">
@@ -191,37 +195,37 @@
                   <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus4"></span></button>
                 </li>
                 <ul id="li-4">
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Listing</li>
+                  <a href="build/html/blog-listing.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Listing</li></a>
                   <li id="nav-4-1" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
                       <span>Blog Grid</span>
                       <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus41"></span></button>
                   </li>
                   <ul id="li-4-1">
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">1 Colume</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">2 Colume</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">3 Colume</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">4 Colume</li>
+                      <a href="build/html/blog-detail.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">1 Colume</li></a>
+                      <a href="build/html/blog-detail.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">2 Colume</li></a>
+                      <a href="build/html/blog-detail.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">3 Colume</li></a>
+                      <a href="build/html/blog-detail.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">4 Colume</li></a>
                   </ul>
                   <li id="nav-4-2" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
                       <span>Blog Sidebar</span>
                       <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus42"></span></button>
                   </li>
                   <ul id="li-4-2">
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Left Sidebar</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Right Sidebar</li>
+                      <a href="build/html/blog-detail.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Left Sidebar</li></a>
+                      <a href="build/html/blog-detail.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Right Sidebar</li></a>
                   </ul>
                   <li id="nav-4-3" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
                       <span>Blog Single</span>
                       <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus43"></span></button>
                   </li>
                   <ul id="li-4-3">
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Blog Template</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Standard</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Audio</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Video</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Link</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Quote</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Gallery</li>
+                      <a href="build/html/blog-detail.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Blog Template</li></a>
+                      <a href="build/html/blog-detail.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Standard</li></a>
+                      <a href="build/html/blog-detail.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Audio</li></a>
+                      <a href="build/html/blog-detail.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Video</li></a>
+                      <a href="build/html/blog-detail.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Link</li></a>
+                      <a href="build/html/blog-detail.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Quote</li></a>
+                      <a href="build/html/blog-detail.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Gallery</li></a>
                   </ul>
                 </ul>
                 <li id="nav-5" class="flex justify-between items-center py-4 px-4 border-b border-slate-900 hover-red">
@@ -229,19 +233,19 @@
                   <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus5"></span></button>
                 </li>
                 <ul id="li-5">
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Shop</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">My Account</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Cart Page</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Wishlist Page</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Check Out Page</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Order Tracking</li>
+                  <a href="build/html/shop.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Shop</li></a>
+                  <a href="build/html/my-account.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">My Account</li></a>
+                  <a href="build/html/cart.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Cart Page</li></a>
+                  <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Wishlist Page</li></a>
+                  <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Check Out Page</li></a>
+                  <a href=""><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Order Tracking</li></a>
                 </ul>
               </ul>
             </div>
       </section>
   </header>
   <!-- Setting option -->
-  <div id="setting-icon" class="fixed right-0 top-32 h-10 w-10 z-50 cursor-pointer bg-black flex justify-center items-center">
+  <div id="setting-icon" class="fixed right-0 top-32 h-10 w-10 z-40 cursor-pointer bg-black flex justify-center items-center">
     <i class="fa-solid fa-gear fa-lg text-white "></i>
   </div>
   <div id="setting-bar" class="setting-bar fixed right-0 top-32 h-64 w-72 z-50 bg-slate-100 flex flex-col p-4 gap-4 reactive">
@@ -273,98 +277,113 @@
     </div>
   </div>
   <!-- Back to Top -->
-  <a href="#back-to-top" id="backToTop" class="netflix-bg"><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i></a>
+  <a href="#" id="backToTop" class="netflix-bg"><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i></a>
   <!-- OTT home main -->
   <main class="w-full overflow-hidden">
     <!-- Section 1 -->
-    <section id="back-to-top" class="section-1 w-full">
-      <div id="slide1">
-        <div class="item1 bg-[url('../build/image/movie/ott1.webp')]">
-          <div class="moviePoster text-gray-300 p-3">
-              <div class="moviePoster-content1 flex items-center font-bold pb-3">
-                <span class="bg-white text-xs  px-4 py-2 text-black">PG</span>
-                <span class="text-muted ml-4"><a class="transition-all duration-500 ease-in-out hover-red cursor-pointer">Adventure</a><span class="netflix mx-2">•</span><a class="transition-all duration-500 ease-in-out hover-red cursor-pointer">Thriller</a><span class="netflix mx-2">•</span><a class="transition-all duration-500 ease-in-out hover-red cursor-pointer">Drama</a></span>
+    <section class="section-1 w-full">
+      <div class="swiper mySwiper00">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="item1 bg-[url('../build/image/movie/ott1.webp')]">
+              <div class="moviePoster text-gray-300 p-3">
+                  <div class="moviePoster-content1 flex items-center font-bold pb-3">
+                    <span class="bg-white text-xs  px-4 py-2 text-black">PG</span>
+                    <span class="text-muted ml-4"><a class="transition-all duration-500 ease-in-out hover-red cursor-pointer">Adventure</a><span class="netflix mx-2">•</span><a class="transition-all duration-500 ease-in-out hover-red cursor-pointer">Thriller</a><span class="netflix mx-2">•</span><a class="transition-all duration-500 ease-in-out hover-red cursor-pointer">Drama</a></span>
+                  </div>
+                  <h2 class="moviePoster-content2 movie-poster-hl text-3xl font-bold mt-2 tracking-widest md:text-6xl lg:text-7xl">The Hunter</h2>
+                  <p class="moviePoster-content3 mt-1 clamped-text">
+                    After the death of their father, two siblings fight for the throne, thereby causing a civil war known as the Dance of the Dragons. Rhaenyra tries to hold the realm together as the tension
+                    rises following a tragic loss. Meanwhile, Daemon prepares for war.
+                  </p>
+                  <div class="moviePoster-content4 flex items-center mt-4 flex-wrap">
+                    <span class="font-medium text-white mr-4 text-nowrap">⭐ 4.3/5</span>
+                    <span><img src="build/image/movie/imdb-logo.svg" alt="" class="h-14 w-auto"></span>
+                    <span class="ml-4 text-nowrap">2hr 6mins</span>
+                    <span class="netflix ml-4 text-nowrap">Genres: <a class="transition-all duration-500 ease-in-out hover-red cursor-pointer text-slate-200">Drama</a></span>
+                    <span class="netflix ml-4 text-nowrap">Starting: <a class="transition-all duration-500 ease-in-out hover-red cursor-pointer text-slate-200">Jeffrey Silver</a></span>
+                  </div>
+                  <a href="build/html/movie-detal.html"><button id="stream-button" class="sub-button moviePoster-content5 mt-8 px-7 py-3 text-sm font-bold"><span class="sub-bg netflix-bg rounded-md"></span><span class="sub-button1"></span><span class="sub-button2"></span><span class="uppercase">stream now</span><i class="fa-solid fa-caret-right fa-xl pl-3"></i></button></a>
               </div>
-              <h2 class="moviePoster-content2 movie-poster-hl text-3xl font-bold mt-2 tracking-widest md:text-6xl lg:text-7xl">The Hunter</h2>
-              <p class="moviePoster-content3 mt-1 clamped-text">
-                After the death of their father, two siblings fight for the throne, thereby causing a civil war known as the Dance of the Dragons. Rhaenyra tries to hold the realm together as the tension
-                rises following a tragic loss. Meanwhile, Daemon prepares for war.
-              </p>
-              <div class="moviePoster-content4 flex items-center mt-4 flex-wrap">
-                <span class="font-medium text-white mr-4 text-nowrap">⭐ 4.3/5</span>
-                <span><img src="build/image/movie/imdb-logo.svg" alt="" class="h-14 w-auto"></span>
-                <span class="ml-4 text-nowrap">2hr 6mins</span>
-                <span class="netflix ml-4 text-nowrap">Genres: <a class="transition-all duration-500 ease-in-out hover-red cursor-pointer text-slate-200">Drama</a></span>
-                <span class="netflix ml-4 text-nowrap">Starting: <a class="transition-all duration-500 ease-in-out hover-red cursor-pointer text-slate-200">Jeffrey Silver</a></span>
-              </div>
-              <a href="build/html/movie-detal.html"><button id="stream-button" class="sub-button moviePoster-content5 mt-8 px-7 py-3 text-sm font-bold"><span class="sub-bg netflix-bg rounded-md"></span><span class="sub-button1"></span><span class="sub-button2"></span><span class="uppercase">stream now</span><i class="fa-solid fa-caret-right fa-xl pl-3"></i></button></a>
+            </div>
           </div>
-        </div>
-        <div class="item1 bg-[url('../build/image/movie/ott2.webp')]">
-          <div class="moviePoster text-gray-300 p-3">
-              <div class="moviePoster-content1 flex items-center font-bold pb-3">
-                <span class="bg-white text-xs  px-4 py-2 text-black">NC-17</span>
-                <span class="text-muted ml-4"><a class="transition-all duration-500 ease-in-out hover-red cursor-pointer">Animation</a><span class="netflix mx-2">•</span><a class="transition-all duration-500 ease-in-out hover-red cursor-pointer">Sci-Fi</a><span class="netflix mx-2">•</span><a class="transition-all duration-500 ease-in-out hover-red cursor-pointer">Action</a></span>
+          <div class="swiper-slide">
+            <div class="item1 bg-[url('../build/image/movie/ott2.webp')]">
+              <div class="moviePoster text-gray-300 p-3">
+                  <div class="moviePoster-content1 flex items-center font-bold pb-3">
+                    <span class="bg-white text-xs  px-4 py-2 text-black">NC-17</span>
+                    <span class="text-muted ml-4"><a class="transition-all duration-500 ease-in-out hover-red cursor-pointer">Animation</a><span class="netflix mx-2">•</span><a class="transition-all duration-500 ease-in-out hover-red cursor-pointer">Sci-Fi</a><span class="netflix mx-2">•</span><a class="transition-all duration-500 ease-in-out hover-red cursor-pointer">Action</a></span>
+                  </div>
+                  <h2 class="moviePoster-content2 movie-poster-hl text-3xl font-bold mt-2 tracking-widest md:text-6xl lg:text-7xl">The Mandalorian</h2>
+                  <p class="moviePoster-content3 mt-1 clamped-text">
+                    After the fall of the Galactic Empire, a lone gunfighter makes his way through the outer reaches of the lawless galaxy. The show follows the adventures of a lone Mandalorian bounty hunter, Din Djarin, as he navigates the outer reaches of...
+                  </p>
+                  <div class="moviePoster-content4 flex items-center mt-4 flex-wrap">
+                    <span class="font-medium text-white mr-4 text-nowrap">⭐ 4.3/5</span>
+                    <span><img src="build/image/movie/imdb-logo.svg" alt="" class="h-14 w-auto"></span>
+                    <span class="ml-4 text-nowrap">2hr 6mins</span>
+                    <span class="netflix ml-4 text-nowrap">Genres: <a class="transition-all duration-500 ease-in-out hover-red cursor-pointer text-slate-200">Sci-Fi</a></span>
+                    <span class="netflix ml-4 text-nowrap">Starting: <a class="transition-all duration-500 ease-in-out hover-red cursor-pointer text-slate-200">James Chinlund</a></span>
+                  </div>
+                  <a href="build/html/movie-detal.html"><button id="stream-button" class="sub-button moviePoster-content5 mt-8 px-7 py-3 text-sm font-bold"><span class="sub-bg netflix-bg rounded-md"></span><span class="sub-button1"></span><span class="sub-button2"></span><span class="uppercase">stream now</span><i class="fa-solid fa-caret-right fa-xl pl-3"></i></button></a>
               </div>
-              <h2 class="moviePoster-content2 movie-poster-hl text-3xl font-bold mt-2 tracking-widest md:text-6xl lg:text-7xl">The Mandalorian</h2>
-              <p class="moviePoster-content3 mt-1 clamped-text">
-                After the fall of the Galactic Empire, a lone gunfighter makes his way through the outer reaches of the lawless galaxy. The show follows the adventures of a lone Mandalorian bounty hunter, Din Djarin, as he navigates the outer reaches of...
-              </p>
-              <div class="moviePoster-content4 flex items-center mt-4 flex-wrap">
-                <span class="font-medium text-white mr-4 text-nowrap">⭐ 4.3/5</span>
-                <span><img src="build/image/movie/imdb-logo.svg" alt="" class="h-14 w-auto"></span>
-                <span class="ml-4 text-nowrap">2hr 6mins</span>
-                <span class="netflix ml-4 text-nowrap">Genres: <a class="transition-all duration-500 ease-in-out hover-red cursor-pointer text-slate-200">Sci-Fi</a></span>
-                <span class="netflix ml-4 text-nowrap">Starting: <a class="transition-all duration-500 ease-in-out hover-red cursor-pointer text-slate-200">James Chinlund</a></span>
-              </div>
-              <a href="build/html/movie-detal.html"><button id="stream-button" class="sub-button moviePoster-content5 mt-8 px-7 py-3 text-sm font-bold"><span class="sub-bg netflix-bg rounded-md"></span><span class="sub-button1"></span><span class="sub-button2"></span><span class="uppercase">stream now</span><i class="fa-solid fa-caret-right fa-xl pl-3"></i></button></a>
+            </div>
           </div>
-        </div>
-        <div class="item1 bg-[url('../build/image/movie/ott3.webp')]">
-          <div class="moviePoster text-gray-300 p-3">
-              <div class="moviePoster-content1 flex items-center font-bold pb-3">
-                <span class="bg-white text-xs  px-4 py-2 text-black">G</span>
-                <span class="text-muted ml-4"><a class="transition-all duration-500 ease-in-out hover-red cursor-pointer">History</a><span class="netflix mx-2">•</span><a class="transition-all duration-500 ease-in-out hover-red cursor-pointer">Action</a></span>
+          <div class="swiper-slide">
+            <div class="item1 bg-[url('../build/image/movie/ott3.webp')]">
+              <div class="moviePoster text-gray-300 p-3">
+                  <div class="moviePoster-content1 flex items-center font-bold pb-3">
+                    <span class="bg-white text-xs  px-4 py-2 text-black">G</span>
+                    <span class="text-muted ml-4"><a class="transition-all duration-500 ease-in-out hover-red cursor-pointer">History</a><span class="netflix mx-2">•</span><a class="transition-all duration-500 ease-in-out hover-red cursor-pointer">Action</a></span>
+                  </div>
+                  <h2 class="moviePoster-content2 movie-poster-hl text-3xl font-bold mt-2 tracking-widest md:text-6xl lg:text-7xl">Better Call Saul</h2>
+                  <p class="moviePoster-content3 mt-1 clamped-text">
+                    After the fall of the Galactic Empire, a lone gunfighter makes his way through the outer reaches of the lawless galaxy. The show follows the adventures of a lone Mandalorian bounty hunter, Din Djarin, as he navigates the outer reaches of...
+                  </p>
+                  <div class="moviePoster-content4 flex items-center mt-4 flex-wrap">
+                    <span class="font-medium text-white mr-4 text-nowrap">⭐ 4.3/5</span>
+                    <span><img src="build/image/movie/imdb-logo.svg" alt="" class="h-14 w-auto"></span>
+                    <span class="ml-4 text-nowrap">2hr 6mins</span>
+                    <span class="netflix ml-4 text-nowrap">Genres: <a class="transition-all duration-500 ease-in-out hover-red cursor-pointer text-slate-200">Sci-Fi</a></span>
+                    <span class="netflix ml-4 text-nowrap">Starting: <a class="transition-all duration-500 ease-in-out hover-red cursor-pointer text-slate-200">James Chinlund</a></span>
+                  </div>
+                  <a href="build/html/movie-detal.html"><button id="stream-button" class="sub-button moviePoster-content5 mt-8 px-7 py-3 text-sm font-bold"><span class="sub-bg netflix-bg rounded-md"></span><span class="sub-button1"></span><span class="sub-button2"></span><span class="uppercase">stream now</span><i class="fa-solid fa-caret-right fa-xl pl-3"></i></button></a>
               </div>
-              <h2 class="moviePoster-content2 movie-poster-hl text-3xl font-bold mt-2 tracking-widest md:text-6xl lg:text-7xl">Better Call Saul</h2>
-              <p class="moviePoster-content3 mt-1 clamped-text">
-                After the fall of the Galactic Empire, a lone gunfighter makes his way through the outer reaches of the lawless galaxy. The show follows the adventures of a lone Mandalorian bounty hunter, Din Djarin, as he navigates the outer reaches of...
-              </p>
-              <div class="moviePoster-content4 flex items-center mt-4 flex-wrap">
-                <span class="font-medium text-white mr-4 text-nowrap">⭐ 4.3/5</span>
-                <span><img src="build/image/movie/imdb-logo.svg" alt="" class="h-14 w-auto"></span>
-                <span class="ml-4 text-nowrap">2hr 6mins</span>
-                <span class="netflix ml-4 text-nowrap">Genres: <a class="transition-all duration-500 ease-in-out hover-red cursor-pointer text-slate-200">Sci-Fi</a></span>
-                <span class="netflix ml-4 text-nowrap">Starting: <a class="transition-all duration-500 ease-in-out hover-red cursor-pointer text-slate-200">James Chinlund</a></span>
-              </div>
-              <a href="build/html/movie-detal.html"><button id="stream-button" class="sub-button moviePoster-content5 mt-8 px-7 py-3 text-sm font-bold"><span class="sub-bg netflix-bg rounded-md"></span><span class="sub-button1"></span><span class="sub-button2"></span><span class="uppercase">stream now</span><i class="fa-solid fa-caret-right fa-xl pl-3"></i></button></a>
+            </div>
           </div>
         </div>
       </div>
-      <div id="slide2" class="hidden lg:block">
-          <div class="item2 bg-[url('../build/image/movie/ott1.webp')]">
-            <div class="poster-card-des">
-              <p class="font-medium text-white">The Hunter</p>
-              <p class="font-light text-sm text-white">2hr 6 minute</p>
+      <div class="slide2 hidden lg:block">
+        <div class="swiper mySwiper01">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="item2 bg-[url('../build/image/movie/ott1.webp')]">
+                <div class="poster-card-des">
+                  <p class="font-medium text-white">The Hunter</p>
+                  <p class="font-light text-sm text-white">2hr 6 minute</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item2 bg-[url('../build/image/movie/ott2.webp')]">
+                <div class="poster-card-des">
+                  <p class="font-medium text-white">The Mandalorian</p>
+                  <p class="font-light text-sm text-white">2hr 14 minute</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item2 bg-[url('../build/image/movie/ott3.webp')]">
+                <div class="poster-card-des">
+                  <p class="font-medium text-white">Better call saul</p>
+                  <p class="font-light text-sm text-white">2hr 55 minute</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="item2 bg-[url('../build/image/movie/ott2.webp')]">
-            <div class="poster-card-des">
-              <p class="font-medium text-white">The Mandalorian</p>
-              <p class="font-light text-sm text-white">2hr 14 minute</p>
-            </div>
-          </div>
-          <div class="item2 bg-[url('../build/image/movie/ott3.webp')]">
-            <div class="poster-card-des">
-              <p class="font-medium text-white">Better call saul</p>
-              <p class="font-light text-sm text-white">2hr 55 minute</p>
-            </div>
-          </div>
-      </div>
-      <div id="item2-list1-click"></div>
-      <div id="poster-card-button" class="hidden lg:block">
-        <i id="prevButton" class="fa-solid fa-circle-chevron-left fa-2xl mr-3 text-gray-600 transition-all duration-500 ease-in-out hover-red"></i>
-        <i id="nextButton" class="fa-solid fa-circle-chevron-right fa-2xl text-gray-600 transition-all duration-500 ease-in-out hover-red"></i>
+          <div class="prev-button hover-bg-red"><i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i></div>
+          <div class="next-button hover-bg-red"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></div>
+        </div> 
       </div>
     </section>
     <!-- Section 2 -->
@@ -1815,7 +1834,6 @@
   </footer>
   <!-- Javascrip Link -->
   <script src="build/js/OTT-home.js"></script>
-  <script src="build/js/OTT-home-main.js"></script>
   <script src="build/js/OTT-home-sec8.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="build/js/script.js"></script>

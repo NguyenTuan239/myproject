@@ -1,3 +1,11 @@
+// Loading Gif
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        const loader = document.getElementById('gif-loader');
+        loader.style.display = 'none';
+    }, 100);
+});
+
 // Chức năng của tab cài đặt
 const settingIcon = document.getElementById('setting-icon');
 const settingBar = document.getElementById('setting-bar');

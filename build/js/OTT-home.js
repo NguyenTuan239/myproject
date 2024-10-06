@@ -121,5 +121,3 @@ window.onscroll = function() {
         backToTop.classList.remove('show');
     }
 };
-
-

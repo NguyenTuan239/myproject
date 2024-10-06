@@ -1,3 +1,38 @@
+
+/* main section1 js*/
+const swiper00 = new Swiper('.mySwiper00', {
+    loop: true,
+    speed: 1000,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+      },
+});
+const swiper01 = new Swiper('.mySwiper01', {
+    loop: true,
+    speed: 1000,
+    slidesPerView:2,
+    spaceBetween: 10,
+    slideToClickedSlide: true,
+    // Navigation arrows
+    navigation: {
+        nextEl: '.next-button',
+        prevEl: '.prev-button',
+      },
+});
+// Đồng bộ hóa mySwiper2 với mySwiper khi slide của mySwiper thay đổi
+swiper00.on('slideChangeTransitionStart', function () {
+    swiper01.slideToLoop(swiper00.realIndex); // Chuyển slide mySwiper2 dựa trên realIndex của mySwiper
+});
+
+// Đồng bộ hóa mySwiper khi slide của mySwiper2 thay đổi
+swiper01.on('slideChangeTransitionStart', function () {
+    swiper00.slideToLoop(swiper01.realIndex); // Chuyển slide mySwiper dựa trên realIndex của mySwiper2
+});
 /* main section2 js*/
 const swiper = new Swiper('.slider-wrapper', {
     loop: false,

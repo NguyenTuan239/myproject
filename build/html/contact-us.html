@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="../css/merchandise-store.css">
 </head>
 <body class="min-h-screen w-full bg-stone-950 text-slate-300">
+  <!-- Loading video -->
+  <div class="z-50 absolute w-full h-full bg-zinc-950 flex justify-center items-center" id="gif-loader">
+    <img src="../image/loader.gif" alt="Loading" id="loading-gif" class="h-60 w-auto">
+  </div>
+  <!-- Setting option -->
   <div id="setting-icon" class="fixed right-0 top-32 h-10 w-10 z-50 cursor-pointer bg-black flex justify-center items-center">
     <i class="fa-solid fa-gear fa-lg text-white "></i>
   </div>
@@ -46,6 +51,7 @@
         </div>
     </div>
     <a href="#" id="backToTop" class="netflix-bg"><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i></a>
+    <!-- Header  Navigation -->
     <header class="sticky top-0 w-full h-14 md:h-16 bg-stone-900/80 z-50">
     <!-- Header Web Navigation -->
       <section class="flex justify-center text-slate-200">

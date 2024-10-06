@@ -83,7 +83,6 @@
     gap: 20px;
     padding: 15px 20px;
     transition: all 1s;
-    transform-origin: center center;
     transform: scale(0);
 }
 .mercha-sec4:hover .mercha-sec4-hover-item{
@@ -166,4 +165,54 @@
 /* Pricing Plan Css */
 .linear-red{
     background-image: linear-gradient(to bottom, var(--main-color),rgb(41, 37, 36,0));
+}
+
+/* Error Page Css */
+.error-page-number-41, 
+.error-page-number-0, 
+.error-page-number-42 {
+    font-size: min(35vw, 300px);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 40px;
+}
+
+.error-page-number-41 {
+    position: relative;
+    transform: rotate(20deg);
+    display: inline-block; /* Đảm bảo phần tử có thể xoay */
+}
+.error-page-number-410{
+    position: absolute;
+    transform: translateX(-115%);
+    color: rgba(128, 128, 128, 0.6);
+    z-index: -1;
+}
+.error-page-number-42 {
+    position: relative;
+    transform: rotate(-20deg);
+    display: inline-block; /* Đảm bảo phần tử có thể xoay */
+}
+.error-page-number-41-ft{
+    position: absolute;
+    bottom: 25%;
+    left: 30%;
+    width: 70%;
+    height: 3px;
+    background-image: linear-gradient(to right, rgb(41, 37, 36,0),var(--main-color),rgb(41, 37, 36,0));
+    filter: blur(3px);
+    transform: rotate(-20deg);
+    z-index: 2;
+}
+.error-page-text{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 10px;
+    background-image: linear-gradient(to right, rgb(41, 37, 36,0),rgb(0, 0, 0),rgb(41, 37, 36,0));
+}
+.error-page-line-color{
+    background-image: linear-gradient(to right, rgb(41, 37, 36,0),var(--main-color),rgb(41, 37, 36,0));
 }
