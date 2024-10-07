@@ -14,7 +14,12 @@
     <link rel="stylesheet" href="../css/merchandise-store.css">
 </head>
 <body class="min-h-screen w-full bg-stone-950 text-slate-200">
-  <div id="setting-icon" class="fixed right-0 top-32 h-10 w-10 z-50 cursor-pointer bg-black flex justify-center items-center">
+  <!-- Loading video -->
+  <div class="z-50 fixed w-full h-full bg-zinc-950 flex justify-center items-center" id="gif-loader">
+    <img src="../image/loader.gif" alt="Loading" id="loading-gif" class="h-60 w-auto">
+  </div>
+  <!-- Setting option -->
+  <div id="setting-icon" class="fixed right-0 top-32 h-10 w-10 z-40 cursor-pointer bg-black flex justify-center items-center">
     <i class="fa-solid fa-gear fa-lg text-white "></i>
   </div>
   <div id="setting-bar" class="setting-bar fixed right-0 top-32 h-64 w-72 z-50 bg-slate-100 flex flex-col p-4 gap-4 reactive">
@@ -46,7 +51,9 @@
         </div>
     </div>
     <a href="#" id="backToTop" class="netflix-bg"><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i></a>
+    <!-- Header navigation -->
     <header class="sticky top-0 w-full h-14 md:h-16 bg-stone-900/80 z-50">
+    <!-- Header Web Navigation -->
       <section class="flex justify-center text-slate-200">
           <a href="../../index.html"><img src="logo.webp" alt="logo" class="logo absolute left-12 top-2 h-8 w-auto lg:left-4 lg:top-4 xl:left-20"></a>
           <div class="web-nav hidden relative lg:flex justify-center items-center gap-10 mt-0 ml-20 text-sm ">
@@ -64,27 +71,27 @@
               <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center hover-red">Features&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
               <div class="home-hover hidden absolute top-16 left-28 w-52 bg-stone-900">
                 <ul class="py-1 text-slate-400">
-                  <a href="restricted-content.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Restricted Content</li></a>
-                  <a href="related-merchadise.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Related Merchadise</li></a>
-                  <a href="playlist.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Playlist</li></a>
-                  <a href="geners.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Geners</li></a>
-                  <a href="cast.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Cast</li></a>
-                  <a href="tags.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red-nothover absolute top-1 left-3 w-48 h-9"></span>Tags</li></a>
+                  <a href="restricted-content.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Restricted Content</li></a>
+                  <a href="related-merchadise.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Related Merchadise</li></a>
+                  <a href="playlist.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Playlist</li></a>
+                  <a href="geners.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Geners</li></a>
+                  <a href="cast.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Cast</li></a>
+                  <a href="tags.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Tags</li></a>
               </div>
-              <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center hover-red">Pages&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
+              <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center netflix">Pages&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
               <div class="home-hover hidden absolute top-16 left-56 w-52 bg-stone-900">
                 <ul class="py-1 text-slate-400">
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>About Us</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Contract Us</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>FAQ</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Privacy Policy</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Pricing Plan</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Comming Soon</li>
+                  <a href="about-us.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>About Us</li></a>
+                  <a href="contact-us.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Contract Us</li></a>
+                  <a href="faq.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red-nothover absolute top-1 left-3 w-48 h-9"></span>FAQ</li></a>
+                  <a href="privacy-policy.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Privacy Policy</li></a>
+                  <a href="pricing-plan.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Pricing Plan</li></a>
+                  <a href="coming-soon.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Comming Soon</li></a>
                   <li class="web-nav-home li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error Page <i class="fa-solid fa-caret-right fa-sm pl-20"></i></li>
                   <div class="home-hover hidden absolute w-52 bg-stone-900 top-64 -left-52 lg:left-52">
                     <ul class="p-3 text-slate-300">
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error page 1</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error page 2</li>
+                      <a href="eror-page1.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error page 1</li></a>
+                      <a href="error-page2.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Error page 2</li></a>
                     </ul>
                   </div>
                 </ul>
@@ -92,33 +99,33 @@
               <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center hover-red">Blog&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
               <div class="home-hover hidden absolute top-16 -right-10 w-52 bg-stone-900">
                 <ul class="py-1 text-slate-400">
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Listing</li>
+                  <a href="blog-listing.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Listing</li></a>
                   <li class="web-nav-home li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Grid<i class="fa-solid fa-caret-right fa-sm absolute top-5 right-5"></i></li>
                   <div class="home-hover hidden absolute w-52 bg-stone-900 top-11 -left-52 lg:left-52">
                     <ul class="p-3 text-slate-300">
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>1 Colume</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>2 Colume</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>3 Colume</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>4 Colume</li>
+                      <a href="coming-soon.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>1 Colume</li></a>
+                      <a href="coming-soon.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>2 Colume</li></a>
+                      <a href="coming-soon.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>3 Colume</li></a>
+                      <a href="coming-soon.html"><li class="li-font p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>4 Colume</li></a>
                     </ul>
                   </div>
                   <li class="web-nav-home li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Sidebar<i class="fa-solid fa-caret-right fa-sm absolute top-5 right-5"></i></li>
                   <div class="home-hover hidden absolute w-52 bg-stone-900 top-20 -left-52 lg:left-52">
                     <ul class="p-3 text-slate-300">
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Left Sidebar</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Right Sidebar</li>
+                      <a href="coming-soon.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Left Sidebar</li></a>
+                      <a href="coming-soon.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Right Sidebar</li></a>
                     </ul>
                   </div>
                   <li class="web-nav-home li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Single<i class="fa-solid fa-caret-right fa-sm absolute top-5 right-5"></i></li>
                   <div class="home-hover hidden absolute w-52 bg-stone-900 top-32 -left-52 lg:left-52">
                     <ul class="p-3 text-slate-300">
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Template</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Standard</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Audio</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Video</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Link</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Quote</li>
-                      <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Gallery</li>
+                      <a href="coming-soon.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Blog Template</li></a>
+                      <a href="coming-soon.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Standard</li></a>
+                      <a href="coming-soon.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Audio</li></a>
+                      <a href="coming-soon.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Video</li></a>
+                      <a href="coming-soon.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Link</li></a>
+                      <a href="coming-soon.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Quote</li></a>
+                      <a href="coming-soon.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Gallery</li></a>
                     </ul>
                   </div>
                 </ul>
@@ -126,12 +133,12 @@
               <p class="web-nav-home cursor-pointer px-2 h-16 flex justify-center items-center hover-red z-10">Shop&nbsp;<i class="fa-solid fa-caret-down fa-sm"></i></p>
               <div class="home-hover hidden absolute top-16 -right-24 w-44 bg-stone-900">
                 <ul class="py-1 text-slate-400">
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Shop</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>My Account Page</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Cart Page</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Wishlist Page</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Checkout Page</li>
-                  <li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Order Page</li>
+                  <a href="shop/shop.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Shop</li></a>
+                  <a href="my-account.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>My Account Page</li></a>
+                  <a href="shop/cart.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Cart Page</li></a>
+                  <a href="coming-soon.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Wishlist Page</li></a>
+                  <a href="shop/checkout.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Checkout Page</li></a>
+                  <a href="coming-soon.html"><li class="li-font cursor-pointer p-3 pl-5 relative bg-transparent"><span class="web-nav-li web-nav-li-red absolute top-1 left-3 w-48 h-9"></span>Order Page</li></a>
                 </ul>
               </div>
           </div>
@@ -155,6 +162,7 @@
               <a href="login.html" class="absolute h-10 w-full bottom-0 bg-stone-700 text-center pt-2"><i class="fa-solid fa-right-from-bracket fa-sm"></i> <span class="hover-red">&nbsp;Logout</span></a>
           </div>
       </section>
+      <!-- Header Mobie Navigation -->
       <section class="lg:hidden">
           <div id="menuButton" class="menuButton cursor-pointer absolute right-3 top-2" for="check">
               <span class="top"></span>
@@ -193,26 +201,26 @@
                   <a href="playlist.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Playlist</li></a>
                   <a href="geners.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Geners</li></a>
                   <a href="cast.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Cast</li></a>
-                  <a href="tags.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 netflix">Tags</li></a>
+                  <a href="tags.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Tags</li></a>
                 </ul>
-                <li id="nav-3" class="flex justify-between items-center py-4 px-4 border-b border-slate-900 hover-red">
+                <li id="nav-3" class="flex justify-between items-center py-4 px-4 border-b border-slate-900 netflix">
                   <span>Pages</span>
                   <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus3"></span></button>
                 </li>
                 <ul id="li-3">
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">About Us</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Contact Us</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">FAQ</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Privacy Policy</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Pricing Plan</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Coming Soon</li>
+                  <a href="about-us.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">About Us</li></a>
+                  <a href="contact-us.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Contact Us</li></a>
+                  <a href="faq.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 netflix">FAQ</li></a>
+                  <a href="privacy-policy.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Privacy Policy</li></a>
+                  <a href="pricing-plan.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Pricing Plan</li></a>
+                  <a href="coming-soon.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Coming Soon</li></a>
                   <li id="nav-3-1" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
                       <span>Error Page</span>
                       <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus31"></span></button>
                   </li>
                   <ul id="li-3-1">
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Error Page 1</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Error Page 2</li>
+                      <a href="eror-page1.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Error Page 1</li></a>
+                      <a href="error-page2.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Error Page 2</li></a>
                   </ul>
                 </ul>
                 <li id="nav-4" class="flex justify-between items-center py-4 px-4 border-b border-slate-900 hover-red">
@@ -220,37 +228,37 @@
                   <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus4"></span></button>
                 </li>
                 <ul id="li-4">
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Listing</li>
+                  <a href="blog-listing.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Listing</li></a>
                   <li id="nav-4-1" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
                       <span>Blog Grid</span>
                       <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus41"></span></button>
                   </li>
                   <ul id="li-4-1">
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">1 Colume</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">2 Colume</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">3 Colume</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">4 Colume</li>
+                      <a href="coming-soon.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">1 Colume</li></a>
+                      <a href="coming-soon.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">2 Colume</li></a>
+                      <a href="coming-soon.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">3 Colume</li></a>
+                      <a href="coming-soon.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">4 Colume</li></a>
                   </ul>
                   <li id="nav-4-2" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
                       <span>Blog Sidebar</span>
                       <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus42"></span></button>
                   </li>
                   <ul id="li-4-2">
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Left Sidebar</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Right Sidebar</li>
+                      <a href="coming-soon.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Left Sidebar</li></a>
+                      <a href="coming-soon.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Right Sidebar</li></a>
                   </ul>
                   <li id="nav-4-3" class="flex justify-between items-center py-4 px-7 border-b border-slate-900 hover-red">
                       <span>Blog Single</span>
                       <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus43"></span></button>
                   </li>
                   <ul id="li-4-3">
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Blog Template</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Standard</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Audio</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Video</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Link</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Quote</li>
-                      <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Gallery</li>
+                      <a href="coming-soon.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Blog Template</li></a>
+                      <a href="coming-soon.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Standard</li></a>
+                      <a href="coming-soon.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Audio</li></a>
+                      <a href="coming-soon.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Video</li></a>
+                      <a href="coming-soon.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Link</li></a>
+                      <a href="coming-soon.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Quote</li></a>
+                      <a href="coming-soon.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Gallery</li></a>
                   </ul>
                 </ul>
                 <li id="nav-5" class="flex justify-between items-center py-4 px-4 border-b border-slate-900 hover-red">
@@ -258,12 +266,12 @@
                   <button class="netflix-bg h-5 w-5 text-slate-50 relative"><span class="plus"></span><span class="plus5"></span></button>
                 </li>
                 <ul id="li-5">
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Shop</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">My Account</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Cart Page</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Wishlist Page</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Check Out Page</li>
-                  <li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Order Tracking</li>
+                  <a href="shop/shop.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Shop</li></a>
+                  <a href="my-account.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">My Account</li></a>
+                  <a href="shop/cart.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Cart Page</li></a>
+                  <a href="coming-soon.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Wishlist Page</li></a>
+                  <a href="shop/checkout.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Check Out Page</li></a>
+                  <a href="coming-soon.html"><li class="py-4 pr-4 pl-7 border-b border-slate-900 hover-red">Order Tracking</li></a>
                 </ul>
               </ul>
             </div>
