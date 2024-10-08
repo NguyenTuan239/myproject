@@ -1560,11 +1560,6 @@ video {
   background-color: rgb(9 9 11 / var(--tw-bg-opacity));
 }
 
-.bg-gray-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-}
-
 .bg-\[url\(\'\.\.\/\.\.\/build\/image\/movie\/recommended\/01\.webp\'\)\] {
   background-image: url('../../build/image/movie/recommended/01.webp');
 }
@@ -2680,14 +2675,6 @@ video {
 
   .lg\:w-36 {
     width: 9rem;
-  }
-
-  .lg\:w-5\/12 {
-    width: 41.666667%;
-  }
-
-  .lg\:w-7\/12 {
-    width: 58.333333%;
   }
 
   .lg\:w-4\/12 {
